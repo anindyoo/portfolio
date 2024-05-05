@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  @apply box-border
+}
