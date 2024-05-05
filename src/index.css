@@ -10,3 +10,7 @@
 body {
   @apply box-border
 }
+
+.NAVLINK-CONTAINER:hover > .NAVLINK-MAIN-TEXT {
+  -webkit-text-stroke: 0.05rem hsl(0, 0%, 0%);
+}
