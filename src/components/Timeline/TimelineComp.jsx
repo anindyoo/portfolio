@@ -15,16 +15,16 @@ const TimelineComp = (props) => {
   return (
     <>
       {isOdd ? (
-        <>
+        <li className="grid grid-cols-subgrid col-span-2">
           <TimelineDesc {...descAttributes} />
           <TimelineImg />
-        </>
+        </li>
 
       ) : (
-        <>
+        <li className="grid grid-cols-subgrid col-span-2">
           <TimelineImg />
           <TimelineDesc {...descAttributes} />
-        </>
+        </li>
 
       )}
       {!isLast && (
