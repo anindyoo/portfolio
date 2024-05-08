@@ -1,7 +1,7 @@
 import TimelineComp from '../Timeline/TimelineComp';
 
 const Projects = () => {
-  const timelines = ['title 1', 'title 2', 'title 3', 'title 4'];
+  const timelines = ['title 1', 'title 2', 'title 3'];
   const timelinesLength = timelines.length;
   return (
     <section className="
@@ -19,7 +19,7 @@ const Projects = () => {
           <span>{letter}</span>
         ))}
       </div>
-      <div className="
+      <ul className="
       PROJECTS-TIMLINE-CONTAINER
       grid grid-cols-2"
       >
@@ -32,7 +32,7 @@ const Projects = () => {
             isLast={timelinesLength === index + 1}
           />
         ))}
-      </div>
+      </ul>
       <div className="
       PROJECTS-MORE
       w-full
