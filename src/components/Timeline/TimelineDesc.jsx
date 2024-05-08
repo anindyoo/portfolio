@@ -2,22 +2,24 @@ const TimelineDesc = (props) => {
   const {
     title,
     isOdd,
+    isLast,
   } = props;
 
   return (
-    <div className={`
-      TIMELINE-DESCRIPTION
-      border-b
-      w-full h-screen max-h-[33.125rem]
-      px-[2.188rem]
-      flex flex-col justify-center
-      ${isOdd
-      ? 'border-l border-black rounded-bl-[12.5rem]'
-      : 'border-r border-black rounded-br-[12.5rem]'}`}
+    <div
+      className={`
+        TIMELINE-DESCRIPTION
+        w-full h-screen max-h-[calc(100vh*(66.25/100))]
+        px-[2.188rem]
+        flex flex-col justify-center
+        border-black 
+        ${isOdd
+        ? `border-l ${!isLast && 'border-b rounded-bl-[12.5rem]'}`
+        : `border-r ${!isLast && 'border-b rounded-br-[12.5rem]'}`
+        }`}
     >
       <div className="
         DESCRIPTION-TEXT-CONTAINER
-        border border-lime-700
         flex flex-col"
       >
         <span className="text-base">year</span>
