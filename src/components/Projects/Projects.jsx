@@ -7,7 +7,7 @@ const Projects = () => {
     <section className="
       PROJECTS-SECTION
       flex flex-col
-      pt-[7.5rem]"
+      py-[7.5rem]"
     >
       <div className="
       PROJECTS-TITLE
