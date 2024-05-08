@@ -60,7 +60,7 @@ gsap.registerPlugin(ScrollTrigger);
 const pinLogo = () => {
   const pinElement = document.querySelector('.NAME-BANNER-LOGO');
   const trigger = ScrollTrigger.create({
-    trigger: '.NAME-BANNER-LOGO',
+    trigger: pinElement,
     start: 'top top',
     end: 'max',
     pin: true,
@@ -84,7 +84,7 @@ const pinLogo = () => {
       const targetTop = gsap.utils.interpolate(0, 20, adjustedProgress);
 
       gsap
-        .to('.NAME-BANNER-LOGO', {
+        .to(pinElement, {
           top: progress === 0 ? 0 : `${targetTop}`,
           height: progress === 0 ? document.querySelector('.name-ref').clientHeight : 'fit-content',
           width: progress === 0 ? document.querySelector('.name-ref').clientWidth : 'fit-content',
