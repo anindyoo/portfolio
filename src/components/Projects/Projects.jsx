@@ -1,7 +1,7 @@
 import TimelineComp from '../Timeline/TimelineComp';
 
 const Projects = () => {
-  const timelines = ['title 1', 'title 2', 'title 3'];
+  const timelines = ['title 1', 'title 2', 'title 3', 'title 4'];
   const timelinesLength = timelines.length;
   return (
     <section className="
@@ -19,7 +19,6 @@ const Projects = () => {
           <span>{letter}</span>
         ))}
       </div>
-
       <div className="
       PROJECTS-TIMLINE-CONTAINER
       grid grid-cols-2"
@@ -34,7 +33,16 @@ const Projects = () => {
           />
         ))}
       </div>
-
+      <div className="
+      PROJECTS-MORE
+      w-full
+      flex flew-row justify-between
+      text-2xl"
+      >
+        {[...'see more projects'].map((letter) => (
+          <span>{letter}</span>
+        ))}
+      </div>
     </section>
   );
 };
