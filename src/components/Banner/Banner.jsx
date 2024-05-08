@@ -68,7 +68,7 @@ const pinLogo = () => {
     pinSpacing: false,
     pinSpacer: false,
     id: 'namePin',
-    markers: true,
+    markers: false,
     onUpdate: (self) => {
       const { progress } = self;
       const spacerElement = document.querySelector('.pin-spacer-namePin');
