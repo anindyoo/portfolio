@@ -72,7 +72,6 @@ const pinLogo = () => {
     onUpdate: (self) => {
       const { progress } = self;
       const spacerElement = document.querySelector('.pin-spacer-namePin');
-      console.log(spacerElement);
 
       const screenHeigth = window.innerHeight;
 
@@ -137,7 +136,7 @@ const Banner = () => {
         text-9xl font-bold tracking-tight"
         >
           <span className={`name-ref ${nameBannerStyle}`}>muhammad</span>
-          <span className={`NAME-BANNER-LOGO border text-9xl ${nameBannerStyle} italic !font-normal`}>anindyo</span>
+          <span className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal`}>anindyo</span>
           <span className={nameBannerStyle}>poetra</span>
           <span className={nameBannerStyle}>mufatyta</span>
         </div>
