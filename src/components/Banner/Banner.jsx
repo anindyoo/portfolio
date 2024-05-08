@@ -55,10 +55,58 @@ const menuNavlinkTrigger = (menuName, menuIndex) => {
   return trigger;
 };
 
+gsap.registerPlugin(ScrollTrigger);
+
+const pinLogo = () => {
+  const pinElement = document.querySelector('.NAME-BANNER-LOGO');
+  const trigger = ScrollTrigger.create({
+    trigger: '.NAME-BANNER-LOGO',
+    start: 'top top',
+    end: 'max',
+    pin: true,
+    scrub: true,
+    pinSpacing: false,
+    pinSpacer: false,
+    id: 'namePin',
+    markers: true,
+    onUpdate: (self) => {
+      const { progress } = self;
+      const spacerElement = document.querySelector('.pin-spacer-namePin');
+      console.log(spacerElement);
+
+      const screenHeigth = window.innerHeight;
+
+      const scallingFactor = screenHeigth / pinElement.clientHeight;
+      const adjustedProgress = Math.min(progress * scallingFactor, 1);
+
+      const targetFontSize = gsap.utils.interpolate(128, 24, adjustedProgress);
+      const targetLetterSpacing = gsap.utils.interpolate(-0.025, -0.08, adjustedProgress);
+      const targetTop = gsap.utils.interpolate(0, 20, adjustedProgress);
+
+      gsap
+        .to('.NAME-BANNER-LOGO', {
+          top: progress === 0 ? 0 : `${targetTop}`,
+          height: progress === 0 ? document.querySelector('.name-ref').clientHeight : 'fit-content',
+          width: progress === 0 ? document.querySelector('.name-ref').clientWidth : 'fit-content',
+          fontSize: progress === 0 ? '128px' : `${targetFontSize}px`,
+          letterSpacing: progress === 0 ? '-0.025em' : `${targetLetterSpacing}em`,
+          duration: 0,
+        })
+
+      gsap.to(spacerElement, {
+        height: document.querySelector('.name-ref').clientHeight,
+      });
+    },
+  });
+  return trigger;
+};
+
 const Banner = () => {
   const nameBannerStyle = 'mt-[-2.031rem]';
 
   useEffect(() => {
+    const triggerPinLogo = pinLogo();
+
     const triggers = [];
     menuNavlinks.forEach((menu, index) => {
       const { className } = menu
@@ -67,6 +115,7 @@ const Banner = () => {
     });
 
     return () => {
+      triggerPinLogo.kill();
       triggers.forEach((trigger) => trigger.kill());
     }
   });
@@ -87,8 +136,8 @@ const Banner = () => {
         flex flex-col
         text-9xl font-bold tracking-tight"
         >
-          <span className={`out ${nameBannerStyle}`}>muhammad</span>
-          <span className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal`}>anindyo</span>
+          <span className={`name-ref ${nameBannerStyle}`}>muhammad</span>
+          <span className={`NAME-BANNER-LOGO border text-9xl ${nameBannerStyle} italic !font-normal`}>anindyo</span>
           <span className={nameBannerStyle}>poetra</span>
           <span className={nameBannerStyle}>mufatyta</span>
         </div>
