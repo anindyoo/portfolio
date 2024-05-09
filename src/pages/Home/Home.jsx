@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Banner from '../../components/Banner/Banner';
 import Projects from '../../components/Projects/Projects';
+import Experiences from '../../components/Experiences/Experiences';
 
 const Home = () => {
   useEffect(() => {
@@ -11,12 +12,7 @@ const Home = () => {
     <>
       <Banner />
       <Projects />
-      <section className="
-      EXPERIENCES-SECTION
-      h-screen"
-      >
-        EXPERIENCES SECTION
-      </section>
+      <Experiences />
       <section className="
       ABOUT-SECTION
       h-screen"
