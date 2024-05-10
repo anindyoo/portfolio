@@ -2,22 +2,31 @@ import gsap from 'gsap';
 import { useEffect, useState } from 'react';
 import { Draggable } from 'gsap/all';
 import SkewedCard from '../SkewedCard/SkewedCard';
+import ExperiencesTitle from './ExperiencesTitle';
 
 gsap.registerPlugin(Draggable);
 
-const animateMarquee = (element) => {
-  gsap.set('.SKEWED-CARD', {
-    x: (i) => i * element.clientWidth,
+const animateMarquee = (element, className, direction, duration) => {
+  const count = 4;
+  const elementWidth = element.clientWidth;
+  const widthTotal = elementWidth * count;
+
+  gsap.set(className, {
+    x: (i) => i * elementWidth,
   });
 
-  const animation = gsap.to('.SKEWED-CARD', {
-    duration: 20,
+  const animation = gsap.to(className, {
+    duration,
     ease: 'none',
-    x: `+=${element.clientWidth * 4}`,
+    x: `${direction}=${widthTotal}`,
     modifiers: {
-      x: gsap.utils.unitize((x) => parseFloat(x) % (element.clientWidth * 4)),
+      x: gsap.utils.unitize((x) => (
+        direction === '+'
+          ? parseFloat(x) % (widthTotal)
+          : ((parseFloat(x) - (widthTotal)) % (widthTotal)) + (widthTotal))),
     },
     repeat: -1,
+    // paused: true,
   });
 
   // Draggable.create('.SKEWED-CARD', {
@@ -35,57 +44,85 @@ const animateMarquee = (element) => {
 
 const Experiences = () => {
   const [expCardsW, setExpCardsW] = useState(0);
-  // const ref = useRef(null);
+  const [expCardsH, setExpCardsH] = useState(0);
 
   useEffect(() => {
-    const experiencesCards = document.querySelector('.EXPERIENCES-CARDS');
     const cardElement = document.querySelector('.SKEWED-CARD');
+    const titleElement = document.querySelector('.EXPERIENCES-TITLE');
 
     setExpCardsW(cardElement.clientWidth);
+    setExpCardsH(cardElement.clientHeight);
 
-    // console.log(cardElement);
+    const cardMarquee = animateMarquee(cardElement, '.SKEWED-CARD', '+', 20);
+    const titleMarquee = animateMarquee(titleElement, '.EXPERIENCES-TITLE', '-', 40);
 
-    const cardMarquee = animateMarquee(cardElement);
-    experiencesCards.addEventListener('onmouseenter', () => cardMarquee.pause());
-
-    return () => cardMarquee.kill()
+    return () => {
+      cardMarquee.kill();
+      titleMarquee.kill();
+    }
   }, []);
 
   return (
     <section className="
       EXPERIENCES-SECTION
       flex flex-col justify-center
+      relative
       h-screen"
     >
-      <div className="EXPERIENCES-TITLE">
-        <span>EXPERIENCES</span>
+      <div className="absolute w-screen top-20">
+        <div className="
+        EXPERIENCES-TITLE-CONTAINER
+        relative
+        flex top-[200]
+        mx-[-28px]
+        overflow-hidden"
+        >
+          <div
+            className="
+            EXPERIENCES-TITLES
+            relative
+            flex items-center"
+            style={{
+              height: expCardsH * 0.8,
+              right: expCardsW,
+            }}
+          >
+            {[1, 2, 3, 4].map((card, index) => (
+              <ExperiencesTitle
+                key={card}
+                isOdd={(index + 1) % 2 === 1}
+              />
+            ))}
+          </div>
+        </div>
       </div>
       <div className="
       EXPERIENCES-CARD-CONTAINER
-      border border-blue-700
       relative
-      max-w-[100vw] h-40
+      flex top-[200]
       mx-[-28px]
       overflow-hidden"
       >
         <div
           className="
           EXPERIENCES-CARDS
-          relative"
+          relative
+          flex items-center"
           style={{
+            height: expCardsH * 1.8,
             left: -expCardsW,
-            // left: 222,
           }}
         >
-          {[1, 2, 3, 4].map((card) => (
+          {[1, 2, 3, 4].map((card, index) => (
             <SkewedCard
               key={card}
               desc={card}
+              isOdd={(index + 1) % 2 === 1}
             />
           ))}
         </div>
       </div>
-      <div className="EXPERIENCES-TITLE">
+      <div className="EXPERIENCES-sssss">
         <span>EXPERIENCES</span>
       </div>
     </section>
