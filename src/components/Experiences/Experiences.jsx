@@ -122,8 +122,16 @@ const Experiences = () => {
           ))}
         </div>
       </div>
-      <div className="EXPERIENCES-sssss">
-        <span>EXPERIENCES</span>
+      <div className="
+      EXPERIENCES-FOOTER
+      w-full
+      flex flew-row justify-between
+      pt-7
+      text-2xl"
+      >
+        {[...'see more experiences'].map((letter) => (
+          <span>{letter}</span>
+        ))}
       </div>
     </section>
   );
