@@ -75,6 +75,7 @@ const Experiences = () => {
         relative
         flex top-[200]
         mx-[-28px]
+        text-xl
         overflow-hidden"
         >
           <div
