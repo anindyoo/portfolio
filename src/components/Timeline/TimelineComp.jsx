@@ -37,12 +37,12 @@ const TimelineComp = (props) => {
         >
           <div className={`
           TIMLINE-BUFFER-BORDER
-          w-full h-[calc(100%+2px)]
+          h-[calc(100%+2px)]
           absolute
           top-[-1px]
-          border-[-2px] border-t border-black
+          border-t border-black
           ${isOdd
-            ? 'col-start-2 border-r rounded-tr-[12.5rem]'
+            ? 'col-start-2 w-full border-r rounded-tr-[12.5rem]'
             : 'col-start-1 w-[50%] border-l rounded-tl-[12.5rem]'}`}
           />
         </div>
