@@ -29,6 +29,7 @@ const Projects = () => {
             key={index}
             title={x}
             isOdd={(index + 1) % 2 === 1}
+            isFirst={index === 0}
             isLast={timelinesLength === index + 1}
           />
         ))}
