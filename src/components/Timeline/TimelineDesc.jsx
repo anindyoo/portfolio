@@ -24,7 +24,7 @@ const TimelineDesc = (props) => {
       >
         <span className="text-base">year</span>
         <span className="text-[4rem] italic">{title}</span>
-        <span className="text-md font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        <span className="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
       </div>
     </div>
   )
