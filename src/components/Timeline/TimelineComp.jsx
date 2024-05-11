@@ -5,11 +5,12 @@ const TimelineComp = (props) => {
   const {
     title,
     isOdd,
+    isFirst,
     isLast,
   } = props;
 
   const descAttributes = {
-    title, isOdd, isLast,
+    title, isOdd, isFirst, isLast,
   };
 
   return (
