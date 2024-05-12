@@ -53,8 +53,8 @@ const Experiences = () => {
     setExpCardsW(cardElement.clientWidth);
     setExpCardsH(cardElement.clientHeight);
 
-    const cardMarquee = animateMarquee(cardElement, '.SKEWED-CARD', '+', 20);
-    const titleMarquee = animateMarquee(titleElement, '.EXPERIENCES-TITLE', '-', 40);
+    const cardMarquee = animateMarquee(cardElement, '.SKEWED-CARD', '+', 10);
+    const titleMarquee = animateMarquee(titleElement, '.EXPERIENCES-TITLE', '-', 10);
 
     return () => {
       cardMarquee.kill();
@@ -69,13 +69,18 @@ const Experiences = () => {
       relative
       h-screen"
     >
-      <div className="absolute w-screen top-20">
+      <div className="
+      EXPERIENCES-TITLE-ABS-WRAPPER
+      absolute
+      top-20"
+      >
         <div className="
         EXPERIENCES-TITLE-CONTAINER
         relative
-        flex top-[200]
+        flex
         mx-[-28px]
         text-xl
+        w-[calc(100vw-20px)]
         overflow-hidden"
         >
           <div
