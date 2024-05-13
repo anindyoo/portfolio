@@ -72,7 +72,7 @@ const Experiences = () => {
       <div className="
       EXPERIENCES-TITLE-ABS-WRAPPER
       absolute
-      top-20"
+      top-60"
       >
         <div className="
         EXPERIENCES-TITLE-CONTAINER
@@ -105,7 +105,7 @@ const Experiences = () => {
       <div className="
       EXPERIENCES-CARD-CONTAINER
       relative
-      flex top-[200]
+      flex
       mx-[-28px]
       overflow-hidden"
       >
