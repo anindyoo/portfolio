@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Banner from '../../components/Banner/Banner';
 import Projects from '../../components/Projects/Projects';
 import Experiences from '../../components/Experiences/Experiences';
+import About from '../../components/About/About';
 
 const Home = () => {
   useEffect(() => {
@@ -13,12 +14,7 @@ const Home = () => {
       <Banner />
       <Projects />
       <Experiences />
-      <section className="
-      ABOUT-SECTION
-      h-screen"
-      >
-        ABOUT SECTION
-      </section>
+      <About />
     </>
   );
 };
