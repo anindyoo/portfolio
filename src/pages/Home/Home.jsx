@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Banner from '../../components/Banner/Banner';
 import Projects from '../../components/Projects/Projects';
 import Experiences from '../../components/Experiences/Experiences';
-import About from '../../components/About/About';
+import Contact from '../../components/Contact/Contact';
 
 const Home = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const Home = () => {
       <Banner />
       <Projects />
       <Experiences />
-      <About />
+      <Contact />
     </>
   );
 };
