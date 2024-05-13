@@ -53,8 +53,8 @@ const Experiences = () => {
     setExpCardsW(cardElement.clientWidth);
     setExpCardsH(cardElement.clientHeight);
 
-    const cardMarquee = animateMarquee(cardElement, '.SKEWED-CARD', '+', 10);
-    const titleMarquee = animateMarquee(titleElement, '.EXPERIENCES-TITLE', '-', 10);
+    const cardMarquee = animateMarquee(cardElement, '.SKEWED-CARD', '+', 20);
+    const titleMarquee = animateMarquee(titleElement, '.EXPERIENCES-TITLE', '-', 40);
 
     return () => {
       cardMarquee.kill();
