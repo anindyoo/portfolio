@@ -1,32 +1,32 @@
-[
-  {
-    "name": "anindyo0216@gmail.com",
-    "url": "",
-    "category": "enquiries"
-  },
-  {
-    "name": "github",
-    "url": "https://github.com/anindyoo",
-    "category": "projects"
-  },
-  {
-    "name": "frontend mentor",
-    "url": "https://www.frontendmentor.io/profile/anindyoo",
-    "category": "projects"
-  },
-  {
-    "name": "khan academy",
-    "url": "https://www.khanacademy.org/profile/anindyo333",
-    "category": "projects"
-  },
-  {
-    "name": "linkedin",
-    "url": "https://www.linkedin.com/in/muhammad-anindyo-poetra-mufatyta-a1a8971b7",
-    "category": "socials"
-  },
-  {
-    "name": "instagram",
-    "url": "https://www.instagram.com/anindyo._",
-    "category": "socials"
-  }
-]
+{
+  "enquiries": [
+    {
+      "name": "anindyo0216@gmail.com",
+      "url": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "github",
+      "url": "https://github.com/anindyoo"
+    },
+    {
+      "name": "frontend mentor",
+      "url": "https://www.frontendmentor.io/profile/anindyoo"
+    },
+    {
+      "name": "khan academy",
+      "url": "https://www.khanacademy.org/profile/anindyo333"
+    }
+  ],
+  "socials": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/muhammad-anindyo-poetra-mufatyta-a1a8971b7"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/anindyo._"
+    }
+  ]
+}
