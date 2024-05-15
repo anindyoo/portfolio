@@ -29,8 +29,8 @@ const TimelineComp = (props) => {
 
       )}
       {!isLast && (
-        <div className={
-        `TIMLINE-BUFFER-CONTAINERE
+        <li className={
+        `TIMLINE-BUFFER-CONTAINER
         relative 
         h-screen max-h-60
         grid grid-cols-subgrid col-span-2`
@@ -46,7 +46,7 @@ const TimelineComp = (props) => {
             ? 'col-start-2 w-full border-r rounded-tr-[12.5rem]'
             : 'col-start-1 w-[50%] border-l rounded-tl-[12.5rem]'}`}
           />
-        </div>
+        </li>
       )}
     </>
   );
