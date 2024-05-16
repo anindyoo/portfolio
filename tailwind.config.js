@@ -11,7 +11,11 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
     },
-    extend: {      
+    extend: { 
+      backgroundImage: {
+        'timeline_gradient_utb': 'linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%)',
+        'timeline_gradient_btu': 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%)',
+      }     
     },
   },
   plugins: [],
