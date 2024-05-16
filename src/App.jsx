@@ -15,7 +15,7 @@ const App = () => {
     <div className="
     APP
     relative
-    box-border"
+    box-border bg-stone-400"
     >
       <div className="
       SCREEN-FRAME-CONTAINER
