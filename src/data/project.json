@@ -1,0 +1,272 @@
+[
+  {
+    "id": "project-1",
+    "title": "Numania",
+    "type": "Mobile Game",
+    "role": "Game Artist",
+    "status": "Prototype",
+    "inDevelopment": false,
+    "descritption": {
+      "short": "",
+      "long": ""
+    },
+    "startDate": "2021-11-01T12:00:00Z",
+    "endDate": "2021-12-05T12:00:00Z",    
+    "contents": [
+
+    ],
+    "repo": "https://github.com/rg-km/final-project-engineering-72",
+    "deployment": "",
+    "download": "",
+    "tags": [""],
+    "thumbnail": "",
+    "technologies": {
+      "frontEnd": {
+        "languages": [],
+        "css": [],
+        "libraries": []
+      },
+      "backEnd": {
+        "languages": [],
+        "frameworks": [],
+        "databases": []
+      },
+      "devOps": {
+        "versionControl": "Git",
+        "deployements": ""
+      },
+      "misc": [
+        {"type": "", "tools": []}
+      ]
+    },
+    "images": [
+      {"name": "", "file": "", "caption": ""},
+      {"name": "", "file": "", "caption": ""}
+    ]
+  },
+  {
+    "id": "project-2",
+    "name": "Subaku",
+    "type": "Web App",
+    "role": "Front End Engineer",
+    "status": "Prototype (Discontinued)",
+    "inDevelopment": false,
+    "descritption": {
+      "short": "",
+      "long": ""
+    },
+    "startDate": "2022-06-01T12:00:00Z",
+    "endDate": "2022-06-29T12:00:00Z",
+    "contents": [
+
+    ],
+    "repo": "https://github.com/rg-km/final-project-engineering-72",
+    "deployment": "",
+    "download": "",
+    "tags": [""],
+    "thumbnail": "",
+    "technologies": {
+      "frontEnd": {
+        "languages": [],
+        "css": [],
+        "libraries": []
+      },
+      "backEnd": {
+        "languages": [],
+        "frameworks": [],
+        "databases": []
+      },
+      "devOps": {
+        "versionControl": "Git",
+        "deployements": ""
+      },
+      "misc": [
+        {"type": "", "tools": []}
+      ]
+    },
+    "images": [
+      {"name": "", "file": "", "caption": ""},
+      {"name": "", "file": "", "caption": ""}
+    ]
+  },
+  {
+    "id": "project-3",
+    "name": "Inviora",
+    "type": "Mobile App (Android)",
+    "role": "Android Developer",
+    "status": "Released (Apk)",
+    "inDevelopment": false,
+    "descritption": {
+      "short": "",
+      "long": ""
+    },
+    "startDate": "2022-07-29T12:00:00Z",
+    "endDate": "2022-08-05T12:00:00Z",
+    "contents": [
+
+    ],
+    "repo": "",
+    "deployment": "",
+    "download": "",
+    "tags": [""],
+    "thumbnail": "",
+    "technologies": {
+      "frontEnd": {
+        "languages": [],
+        "css": [],
+        "libraries": []
+      },
+      "backEnd": {
+        "languages": [],
+        "frameworks": [],
+        "databases": []
+      },
+      "devOps": {
+        "versionControl": "Git",
+        "deployements": ""
+      },
+      "misc": [
+        {"type": "", "tools": []}
+      ]
+    },
+    "images": [
+      {"name": "", "file": "", "caption": ""},
+      {"name": "", "file": "", "caption": ""}
+    ]
+  },
+  {
+    "id": "project-4",
+    "name": "Mom & Kids App",
+    "type": "Mobile App (Multi Platform)",
+    "role": "Front End Engineer",
+    "status": "In Development",
+    "inDevelopment": false,
+    "descritption": {
+      "short": "",
+      "long": ""
+    },
+    "startDate": "2022-08-15T12:00:00Z",
+    "endDate": "2022-11-15T12:00:00Z",
+    "contents": [
+
+    ],
+    "repo": "",
+    "deployment": "",
+    "download": "",
+    "tags": [""],
+    "thumbnail": "",
+    "technologies": {
+      "frontEnd": {
+        "languages": [],
+        "css": [],
+        "libraries": []
+      },
+      "backEnd": {
+        "languages": [],
+        "frameworks": [],
+        "databases": []
+      },
+      "devOps": {
+        "versionControl": "Git",
+        "deployements": ""
+      },
+      "misc": [
+        {"type": "", "tools": []}
+      ]
+    },
+    "images": [
+      {"name": "", "file": "", "caption": ""},
+      {"name": "", "file": "", "caption": ""}
+    ]
+  },
+  {
+    "id": "project-5",
+    "name": "GitHub User App",
+    "type": "Mobile App (Android)",
+    "role": "Android Developer",
+    "status": "Released (Apk)",
+    "inDevelopment": false,
+    "descritption": {
+      "short": "",
+      "long": ""
+    },
+    "startDate": "2022-09-13T12:00:00Z",
+    "endDate": "2022-11-18T12:00:00Z",
+    "contents": [
+
+    ],
+    "repo": "",
+    "deployment": "",
+    "download": "",
+    "tags": [""],
+    "thumbnail": "",
+    "technologies": {
+      "frontEnd": {
+        "languages": [],
+        "css": [],
+        "libraries": []
+      },
+      "backEnd": {
+        "languages": [],
+        "frameworks": [],
+        "databases": []
+      },
+      "devOps": {
+        "versionControl": "Git",
+        "deployements": ""
+      },
+      "misc": [
+        {"type": "", "tools": []}
+      ]
+    },
+    "images": [
+      {"name": "", "file": "", "caption": ""},
+      {"name": "", "file": "", "caption": ""}
+    ]
+  },
+  {
+    "id": "project-6",
+    "name": "Dermanifest",
+    "type": "Web App (E-commerce)",
+    "role": "Full Stack Developer",
+    "status": "Deployed (On hold)",
+    "inDevelopment": false,
+    "descritption": {
+      "short": "",
+      "long": ""
+    },
+    "startDate": "2023-07-20T12:00:00Z",
+    "endDate": "2022-01-04T12:00:00Z",
+    "contents": [
+
+    ],
+    "repo": "",
+    "deployment": "",
+    "download": "",
+    "tags": [""],
+    "thumbnail": "",
+    "technologies": {
+      "frontEnd": {
+        "languages": [],
+        "css": [],
+        "libraries": []
+      },
+      "backEnd": {
+        "languages": [],
+        "frameworks": [],
+        "databases": []
+      },
+      "devOps": {
+        "versionControl": "Git",
+        "deployements": ""
+      },
+      "misc": [
+        {"type": "", "tools": []}
+      ]
+    },
+    "images": [
+      {"name": "", "file": "", "caption": ""},
+      {"name": "", "file": "", "caption": ""}
+    ]
+  }
+]
