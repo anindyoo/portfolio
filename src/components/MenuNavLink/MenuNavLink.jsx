@@ -15,6 +15,7 @@ const MenuNavLink = (props) => {
   return (
     <NavLink
       to={link}
+      title={name}
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
       className={`
