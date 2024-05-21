@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import MenuNavLink from '../MenuNavLink/MenuNavLink';
 
 const menuNavlinksClassName = (menu) => `MENU-NAVLINK-${menu}`;
@@ -123,20 +124,26 @@ const Banner = () => {
     <section className="
       BANNER-SECTION
       h-screen
+      relative
       flex items-center"
     >
       <div className="
       BANNER-SECTION-CONTAINER
+      absolute
+      z-50
       flex w-full flex-row justify-between"
       >
-
         <div className="
         NAME-BANNER
         flex flex-col
         text-9xl font-bold tracking-tight"
         >
           <span className={`name-ref ${nameBannerStyle}`}>muhammad</span>
-          <span className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal`}>anindyo</span>
+          <span className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal hover:underline`}>
+            <Link to="/">
+              anindyo
+            </Link>
+          </span>
           <span className={nameBannerStyle}>poetra</span>
           <span className={nameBannerStyle}>mufatyta</span>
         </div>
