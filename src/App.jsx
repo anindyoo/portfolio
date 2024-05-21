@@ -1,41 +1,37 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import Footer from './components/Footer/Footer';
+import Main from './layouts/Main';
+import Projects from './pages/Projects/Projects';
 
-/* eslint-disable arrow-body-style */
 const App = () => {
   const router = createBrowserRouter([
     {
-      path: '/',
-      element: <Home />,
+      element: <Main withNavbar />,
+      children: [
+        {
+          path: '/projects',
+          element: <Projects />,
+        },
+      ],
+    },
+    {
+      element: <Main withNavbar={false} />,
+      children: [
+        {
+          path: '/',
+          element: <Home />,
+        },
+      ],
     },
   ]);
   return (
     <div className="
     APP
     relative
+    min-h-screen
     box-border bg-stone-400"
     >
-      <div className="
-      SCREEN-FRAME-CONTAINER
-      fixed z-10
-      w-full h-screen
-      p-3 pointer-events-none"
-      >
-        <div className="
-        SCREEN-FRAME
-        h-full
-        border border-black box"
-        />
-      </div>
-      <main className="
-      MAIN-CONTAINER
-      px-7 py-5"
-      >
-        <RouterProvider router={router} />
-      </main>
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 };
