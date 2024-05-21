@@ -139,7 +139,10 @@ const Banner = () => {
         text-9xl font-bold tracking-tight"
         >
           <span className={`name-ref ${nameBannerStyle}`}>muhammad</span>
-          <span className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal hover:underline`}>
+          <span
+            title="anindyo logo"
+            className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal hover:underline`}
+          >
             <Link to="/">
               anindyo
             </Link>
