@@ -1,20 +1,21 @@
+import { Fragment } from 'react';
 import TimelineDesc from './TimelineDesc';
 import TimelineImg from './TimelineImg';
 
 const TimelineComp = (props) => {
   const {
-    title,
+    project,
     isOdd,
     isFirst,
     isLast,
   } = props;
 
   const descAttributes = {
-    title, isOdd, isFirst, isLast,
+    project, isOdd, isFirst, isLast,
   };
 
   return (
-    <>
+    <Fragment key={project.id}>
       {isOdd ? (
         <li className="grid grid-cols-subgrid col-span-2">
           <TimelineDesc {...descAttributes} />
@@ -48,7 +49,7 @@ const TimelineComp = (props) => {
           />
         </li>
       )}
-    </>
+    </Fragment>
   );
 };
 
