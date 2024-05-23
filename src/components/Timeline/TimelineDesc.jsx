@@ -1,11 +1,15 @@
-/* eslint-disable no-unused-vars */
 const TimelineDesc = (props) => {
   const {
-    title,
+    project,
     isOdd,
     isFirst,
     isLast,
   } = props;
+
+  const options = { month: 'long', year: 'numeric' };
+  const startFinal = new Intl.DateTimeFormat('en-US', options).format(new Date(project.startDate));
+  const endFinal = new Intl.DateTimeFormat('en-US', options).format(new Date(project.endDate));
+  const finalDate = `${startFinal}—${endFinal}`;
 
   return (
     <div
@@ -31,9 +35,9 @@ const TimelineDesc = (props) => {
         DESCRIPTION-TEXT-CONTAINER
         flex flex-col"
       >
-        <span className="text-base">year</span>
-        <span className="text-[4rem] italic">{title}</span>
-        <span className="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        <span className="text-base">{finalDate}</span>
+        <span className="text-[4rem] italic">{project.title}</span>
+        <span className="text-base font-light">{project.subtitle}</span>
       </div>
     </div>
   )
