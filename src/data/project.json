@@ -2,7 +2,7 @@
   {
     "id": "project-1",
     "title": "Numania",
-    "type": "Mobile Game",
+    "subtitle": "Mobile Game",
     "role": "Game Artist",
     "status": "Prototype",
     "inDevelopment": false,
@@ -48,7 +48,7 @@
   {
     "id": "project-2",
     "title": "Subaku",
-    "type": "Web App",
+    "subtitle": "Web App",
     "role": "Front End Engineer",
     "status": "Prototype (Discontinued)",
     "inDevelopment": false,
@@ -94,7 +94,7 @@
   {
     "id": "project-3",
     "title": "Inviora",
-    "type": "Mobile App (Android)",
+    "subtitle": "Mobile App (Android)",
     "role": "Android Developer",
     "status": "Released (Apk)",
     "inDevelopment": false,
@@ -140,7 +140,7 @@
   {
     "id": "project-4",
     "title": "Mom & Kids App",
-    "type": "Mobile App (Multi Platform)",
+    "subtitle": "Mobile App (Multi Platform)",
     "role": "Front End Engineer",
     "status": "In Development",
     "inDevelopment": false,
@@ -186,7 +186,7 @@
   {
     "id": "project-5",
     "title": "GitHub User App",
-    "type": "Mobile App (Android)",
+    "subtitle": "Mobile App (Android)",
     "role": "Android Developer",
     "status": "Released (Apk)",
     "inDevelopment": false,
@@ -232,7 +232,7 @@
   {
     "id": "project-6",
     "title": "Dermanifest",
-    "type": "Web App (E-commerce)",
+    "subtitle": "Web App (E-commerce)",
     "role": "Full Stack Developer",
     "status": "Deployed (On hold)",
     "inDevelopment": false,
