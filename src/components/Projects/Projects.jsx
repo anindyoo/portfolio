@@ -18,7 +18,7 @@ const Projects = (props) => {
       flex flew-row justify-between
       text-2xl"
       >
-        {[...'latest projects'].map((letter, index) => (
+        {[...'highlighted projects'].map((letter, index) => (
           <span key={`latestProjects-${index}`}>{letter}</span>
         ))}
       </div>
