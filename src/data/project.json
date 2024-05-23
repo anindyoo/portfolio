@@ -6,6 +6,7 @@
     "role": "Game Artist",
     "status": "Prototype",
     "inDevelopment": false,
+    "topProject": false,
     "descritption": {
       "short": "",
       "long": ""
@@ -28,8 +29,8 @@
       },
       "backEnd": {
         "languages": [],
-        "frameworks": [],
-        "databases": []
+        "databases": [],
+        "frameworks": []
       },
       "devOps": {
         "versionControl": "Git",
@@ -46,11 +47,12 @@
   },
   {
     "id": "project-2",
-    "name": "Subaku",
+    "title": "Subaku",
     "type": "Web App",
     "role": "Front End Engineer",
     "status": "Prototype (Discontinued)",
     "inDevelopment": false,
+    "topProject": true,
     "descritption": {
       "short": "",
       "long": ""
@@ -73,8 +75,8 @@
       },
       "backEnd": {
         "languages": [],
-        "frameworks": [],
-        "databases": []
+        "databases": [],
+        "frameworks": []
       },
       "devOps": {
         "versionControl": "Git",
@@ -91,11 +93,12 @@
   },
   {
     "id": "project-3",
-    "name": "Inviora",
+    "title": "Inviora",
     "type": "Mobile App (Android)",
     "role": "Android Developer",
     "status": "Released (Apk)",
     "inDevelopment": false,
+    "topProject": false,
     "descritption": {
       "short": "",
       "long": ""
@@ -118,8 +121,8 @@
       },
       "backEnd": {
         "languages": [],
-        "frameworks": [],
-        "databases": []
+        "databases": [],
+        "frameworks": []
       },
       "devOps": {
         "versionControl": "Git",
@@ -136,11 +139,12 @@
   },
   {
     "id": "project-4",
-    "name": "Mom & Kids App",
+    "title": "Mom & Kids App",
     "type": "Mobile App (Multi Platform)",
     "role": "Front End Engineer",
     "status": "In Development",
     "inDevelopment": false,
+    "topProject": true,
     "descritption": {
       "short": "",
       "long": ""
@@ -163,8 +167,8 @@
       },
       "backEnd": {
         "languages": [],
-        "frameworks": [],
-        "databases": []
+        "databases": [],
+        "frameworks": []
       },
       "devOps": {
         "versionControl": "Git",
@@ -181,11 +185,12 @@
   },
   {
     "id": "project-5",
-    "name": "GitHub User App",
+    "title": "GitHub User App",
     "type": "Mobile App (Android)",
     "role": "Android Developer",
     "status": "Released (Apk)",
     "inDevelopment": false,
+    "topProject": false,
     "descritption": {
       "short": "",
       "long": ""
@@ -208,8 +213,8 @@
       },
       "backEnd": {
         "languages": [],
-        "frameworks": [],
-        "databases": []
+        "databases": [],
+        "frameworks": []
       },
       "devOps": {
         "versionControl": "Git",
@@ -226,17 +231,18 @@
   },
   {
     "id": "project-6",
-    "name": "Dermanifest",
+    "title": "Dermanifest",
     "type": "Web App (E-commerce)",
     "role": "Full Stack Developer",
     "status": "Deployed (On hold)",
     "inDevelopment": false,
+    "topProject": true,
     "descritption": {
       "short": "",
       "long": ""
     },
     "startDate": "2023-07-20T12:00:00Z",
-    "endDate": "2022-01-04T12:00:00Z",
+    "endDate": "2024-01-04T12:00:00Z",
     "contents": [
 
     ],
@@ -253,8 +259,8 @@
       },
       "backEnd": {
         "languages": [],
-        "frameworks": [],
-        "databases": []
+        "databases": [],
+        "frameworks": []
       },
       "devOps": {
         "versionControl": "Git",
