@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import TimelineComp from '../Timeline/TimelineComp';
 
 const Projects = (props) => {
@@ -17,8 +18,8 @@ const Projects = (props) => {
       flex flew-row justify-between
       text-2xl"
       >
-        {[...'latest projects'].map((letter) => (
-          <span>{letter}</span>
+        {[...'latest projects'].map((letter, index) => (
+          <span key={`latestProjects-${index}`}>{letter}</span>
         ))}
       </div>
       <ul className="
@@ -27,9 +28,8 @@ const Projects = (props) => {
       >
         {projects.map((project, index) => (
           <TimelineComp
-            // eslint-disable-next-line react/no-array-index-key
-            key={index}
-            title={project.title}
+            key={project.id}
+            project={project}
             isOdd={(index + 1) % 2 === 1}
             isFirst={index === 0}
             isLast={timelinesLength === index + 1}
@@ -42,8 +42,8 @@ const Projects = (props) => {
       flex flew-row justify-between
       text-2xl"
       >
-        {[...'see more projects'].map((letter) => (
-          <span>{letter}</span>
+        {[...'see more projects'].map((letter, index) => (
+          <span key={`seeMoreProjects-${index}`}>{letter}</span>
         ))}
       </div>
     </section>
