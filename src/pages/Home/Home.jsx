@@ -20,7 +20,7 @@ const Home = () => {
   useEffect(() => {
     document.title = 'home - muhammad anindyo poetra mufatyta';
     setTopProjects(sortProjects);
-  }, []);
+  }, [sortProjects]);
 
   return (
     <>
