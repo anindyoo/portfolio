@@ -1,8 +1,10 @@
 import TimelineComp from '../Timeline/TimelineComp';
 
-const Projects = () => {
-  const timelines = ['title 1', 'title 2', 'title 3'];
-  const timelinesLength = timelines.length;
+const Projects = (props) => {
+  const { projects } = props;
+
+  const timelinesLength = projects.length;
+
   return (
     <section className="
       PROJECTS-SECTION
@@ -23,11 +25,11 @@ const Projects = () => {
       PROJECTS-TIMLINE-CONTAINER
       grid grid-cols-2"
       >
-        {timelines.map((x, index) => (
+        {projects.map((project, index) => (
           <TimelineComp
             // eslint-disable-next-line react/no-array-index-key
             key={index}
-            title={x}
+            title={project.title}
             isOdd={(index + 1) % 2 === 1}
             isFirst={index === 0}
             isLast={timelinesLength === index + 1}
