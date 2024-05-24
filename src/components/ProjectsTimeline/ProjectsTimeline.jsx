@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import TimelineComp from '../Timeline/TimelineComp';
 
-const Projects = (props) => {
+const ProjectsTimeline = (props) => {
   const { projects } = props;
 
   const timelinesLength = projects.length;
@@ -50,4 +50,4 @@ const Projects = (props) => {
   );
 };
 
-export default Projects;
+export default ProjectsTimeline;
