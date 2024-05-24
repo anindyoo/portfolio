@@ -13,8 +13,9 @@ const menuNavlinks = [
 const Navbar = () => (
   <nav className="
     NAVBAR
-    relative z-50
+    fixed z-50
     flex flex-row justify-between
+    w-full
     px-7 py-5
     text-2xl tracking-[-0.08em]"
   >
