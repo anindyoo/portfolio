@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <ProjectsTimeline projects={topProjects} />
+      <ProjectsTimeline projects={topProjects} isHome />
       <Experiences />
       <Contact />
     </>
