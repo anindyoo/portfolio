@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
-import Projects from '../../components/Projects/Projects';
+import ProjectsTimeline from '../../components/ProjectsTimeline/ProjectsTimeline';
 import Experiences from '../../components/Experiences/Experiences';
 import Contact from '../../components/Contact/Contact';
 import projectsData from '../../data/project.json'
@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <Projects projects={topProjects} />
+      <ProjectsTimeline projects={topProjects} />
       <Experiences />
       <Contact />
     </>
