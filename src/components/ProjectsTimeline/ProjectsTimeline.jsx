@@ -2,7 +2,10 @@
 import TimelineComp from '../Timeline/TimelineComp';
 
 const ProjectsTimeline = (props) => {
-  const { projects } = props;
+  const {
+    projects,
+    isHome,
+  } = props;
 
   const timelinesLength = projects.length;
 
@@ -18,7 +21,7 @@ const ProjectsTimeline = (props) => {
       flex flew-row justify-between
       text-2xl"
       >
-        {[...'highlighted projects'].map((letter, index) => (
+        {[...`${isHome ? 'highlighted ' : ''}projects`].map((letter, index) => (
           <span key={`latestProjects-${index}`}>{letter}</span>
         ))}
       </div>
@@ -42,7 +45,7 @@ const ProjectsTimeline = (props) => {
       flex flew-row justify-between
       text-2xl"
       >
-        {[...'see more projects'].map((letter, index) => (
+        {isHome && [...'see more projects'].map((letter, index) => (
           <span key={`seeMoreProjects-${index}`}>{letter}</span>
         ))}
       </div>
