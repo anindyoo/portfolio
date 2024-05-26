@@ -32,9 +32,17 @@ const ProjectBanner = () => {
           MIDDLE-SECTION
           flex flex-col text-base"
           >
-            <span className="SHORT-DESCRIPTION font-light">SHORT DESCRIPTION HERE</span>
-            <div className="ROLE-STATUS
-            flex flex-row justify-between"
+            <span className="
+            SHORT-DESCRIPTION
+            font-light
+            pb-3"
+            >
+              SHORT DESCRIPTION HERE
+            </span>
+            <div className="
+            ROLE-STATUS
+            flex flex-row justify-between
+            pb-5"
             >
               <div className="
               ROLE-CONTAINER
