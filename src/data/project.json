@@ -1,6 +1,6 @@
 [
   {
-    "id": "project-1",
+    "id": "numania",
     "title": "Numania",
     "subtitle": "Mobile Game",
     "role": "Game Artist",
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "id": "project-2",
+    "id": "subaku",
     "title": "Subaku",
     "subtitle": "Web App",
     "role": "Front End Engineer",
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "id": "project-3",
+    "id": "inviora",
     "title": "Inviora",
     "subtitle": "Mobile App (Android)",
     "role": "Android Developer",
@@ -138,7 +138,7 @@
     ]
   },
   {
-    "id": "project-4",
+    "id": "mom-and-kids-app",
     "title": "Mom & Kids App",
     "subtitle": "Mobile App (Multi Platform)",
     "role": "Front End Engineer",
@@ -184,7 +184,7 @@
     ]
   },
   {
-    "id": "project-5",
+    "id": "github-user-app",
     "title": "GitHub User App",
     "subtitle": "Mobile App (Android)",
     "role": "Android Developer",
@@ -230,7 +230,7 @@
     ]
   },
   {
-    "id": "project-6",
+    "id": "dermanifest",
     "title": "Dermanifest",
     "subtitle": "Web App (E-commerce)",
     "role": "Full Stack Developer",
