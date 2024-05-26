@@ -19,6 +19,7 @@ const TimelineDesc = (props) => {
         flex flex-col justify-center
         w-full h-screen max-h-[calc(100vh*(66.25/100))]
         px-[2.188rem]
+        before:pointer-events-none
         ${(isFirst || isLast)
         ? `${isFirst
           ? 'before:bg-timeline_gradient_utb before:pb-px'
