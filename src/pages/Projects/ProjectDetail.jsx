@@ -14,7 +14,7 @@ const ProjectDetail = () => {
   useEffect(() => {
     const projectById = projectsData.find((proj) => proj.id === projectId);
     setProject(projectById);
-  }, []);
+  }, [projectId]);
 
   return (
     project === undefined
