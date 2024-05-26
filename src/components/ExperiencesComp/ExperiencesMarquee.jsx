@@ -42,7 +42,7 @@ const animateMarquee = (element, className, direction, duration) => {
   return animation
 };
 
-const Experiences = () => {
+const ExperiencesMarquee = () => {
   const [expCardsW, setExpCardsW] = useState(0);
   const [expCardsH, setExpCardsH] = useState(0);
 
@@ -143,4 +143,4 @@ const Experiences = () => {
   );
 };
 
-export default Experiences;
+export default ExperiencesMarquee;
