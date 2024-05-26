@@ -35,7 +35,7 @@ const TimelineDesc = (props) => {
         DESCRIPTION-TEXT-CONTAINER
         flex flex-col"
       >
-        <span className="text-base">{finalDate}</span>
+        <span className="text-base font-medium">{finalDate}</span>
         <span className="text-[4rem] italic">{project.title}</span>
         <span className="text-base font-light">{project.subtitle}</span>
       </div>
