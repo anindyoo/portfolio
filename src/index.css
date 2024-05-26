@@ -15,8 +15,9 @@ body {
   -webkit-text-stroke: 0.05rem hsl(0, 0%, 0%);
 }
 
-.TIMELINE-DESCRIPTION:before {
+.TIMELINE-DESCRIPTION:before,
+.PROJECT-BANNER-DESCRIPTION:before {
   -webkit-mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
