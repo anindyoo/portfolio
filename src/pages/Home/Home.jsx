@@ -9,7 +9,7 @@ const Home = () => {
   const [topProjects, setTopProjects] = useState([]);
 
   useEffect(() => {
-    document.title = 'home - muhammad anindyo poetra mufatyta';
+    document.title = 'home — muhammad anindyo poetra mufatyta';
 
     const compareDate = (a, b) => {
       const dateA = new Date(a);

@@ -6,7 +6,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    document.title = 'projects - muhammad anindyo poetra mufatyta';
+    document.title = 'projects — muhammad anindyo poetra mufatyta';
 
     const compareDate = (a, b) => {
       const dateA = new Date(a);
