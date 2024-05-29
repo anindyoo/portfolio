@@ -16,6 +16,8 @@ const ProjectDetail = () => {
 
     const projectById = projectsData.find((proj) => proj.id === projectId);
     setProject(projectById);
+
+    document.title = `${projectById.title} — muhammad anindyo poetra mufatyta`;
   }, [projectId]);
 
   return (
@@ -23,10 +25,10 @@ const ProjectDetail = () => {
       ? <NotFound />
       : (
         <>
-          <ProjectBanner />
-          <ProjectDescription />
-          <ProjectTechnologies />
-          <ProjectGallery />
+          <ProjectBanner project={project} />
+          <ProjectDescription project={project} />
+          <ProjectTechnologies project={project} />
+          <ProjectGallery project={project} />
         </>
       )
   );
