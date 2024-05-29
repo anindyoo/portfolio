@@ -21,21 +21,21 @@
     "tags": [],
     "thumbnail": "",
     "technologies": {
-      "frontEnd": {
+      "front-end": {
         "languages": [],
         "css": [],
         "libraries": []
       },
-      "backEnd": {
+      "back-end": {
         "languages": [],
         "databases": [],
         "frameworks": []
       },
-      "devOps": {
-        "versionControl": ["Git"],
+      "devops": {
+        "version-control": ["Git"],
         "deployements": []
       },
-      "misc": []
+      "miscellaneous": {}
     },
     "images": [
       {"name": "", "file": "", "caption": ""},
@@ -64,21 +64,21 @@
     "tags": [],
     "thumbnail": "",
     "technologies": {
-      "frontEnd": {
+      "front-end": {
         "languages": [],
         "css": [],
         "libraries": []
       },
-      "backEnd": {
+      "back-end": {
         "languages": [],
         "databases": [],
         "frameworks": []
       },
-      "devOps": {
-        "versionControl": ["Git"],
+      "devops": {
+        "version-control": ["Git"],
         "deployements": []
       },
-      "misc": []
+      "miscellaneous": {}
     },
     "images": [
       {"name": "", "file": "", "caption": ""},
@@ -107,21 +107,21 @@
     "tags": [],
     "thumbnail": "",
     "technologies": {
-      "frontEnd": {
+      "front-end": {
         "languages": [],
         "css": [],
         "libraries": []
       },
-      "backEnd": {
+      "back-end": {
         "languages": [],
         "databases": [],
         "frameworks": []
       },
-      "devOps": {
-        "versionControl": ["Git"],
+      "devops": {
+        "version-control": ["Git"],
         "deployements": []
       },
-      "misc": []
+      "miscellaneous": {}
     },
     "images": [
       {"name": "", "file": "", "caption": ""},
@@ -150,21 +150,21 @@
     "tags": [],
     "thumbnail": "",
     "technologies": {
-      "frontEnd": {
+      "front-end": {
         "languages": [],
         "css": [],
         "libraries": []
       },
-      "backEnd": {
+      "back-end": {
         "languages": [],
         "databases": [],
         "frameworks": []
       },
-      "devOps": {
-        "versionControl": ["Git"],
+      "devops": {
+        "version-control": ["Git"],
         "deployements": []
       },
-      "misc": []
+      "miscellaneous": {}
     },
     "images": [
       {"name": "", "file": "", "caption": ""},
@@ -193,21 +193,21 @@
     "tags": [],
     "thumbnail": "",
     "technologies": {
-      "frontEnd": {
+      "front-end": {
         "languages": [],
         "css": [],
         "libraries": []
       },
-      "backEnd": {
+      "back-end": {
         "languages": [],
         "databases": [],
         "frameworks": []
       },
-      "devOps": {
-        "versionControl": ["Git"],
+      "devops": {
+        "version-control": ["Git"],
         "deployements": []
       },
-      "misc": []
+      "miscellaneous": {}
     },
     "images": [
       {"name": "", "file": "", "caption": ""},
@@ -236,24 +236,24 @@
     "tags": ["E-Commerce", "Web App", "Full Stack", "PHP", "Laravel", "MySQL", "Bootstrap"],
     "thumbnail": "",
     "technologies": {
-      "frontEnd": {
+      "front-end": {
         "languages": ["HTML"],
         "css": ["CSS 3", "Bootstrap"],
         "libraries": ["JQuery"]
       },
-      "backEnd": {
+      "back-end": {
         "languages": ["PHP"],
         "databases": ["MySQL"],
         "frameworks": ["Laravel"]
       },
-      "devOps": {
-        "versionControl": ["Git"],
+      "devops": {
+        "version-control": ["Git"],
         "deployements": []
       },
-      "misc": [
-        {"type": "Shipping Cost", "tools": ["RajaOngkir — Indonesian shipping cost API service"]},
-        {"type": "Transaction", "tools": ["Midtrans"]}
-      ]
+      "miscellaneous": {
+        "shipping-cost": ["RajaOngkir — Indonesian shipping cost API service"],
+        "transaction": ["Midtrans"]
+      }      
     },
     "images": [
       {"name": "", "file": "", "caption": ""},
