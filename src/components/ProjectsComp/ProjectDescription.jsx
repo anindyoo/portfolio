@@ -5,9 +5,9 @@ const ProjectDescription = () => {
   return (
     <div className="
     PROJECT-DESCRIPTION
-    flex flex-col gap-8 border
+    flex flex-col gap-10 border
     min-h-screen
-    py-10"
+    py-16"
     >
       <div className="
       THE-STORY
