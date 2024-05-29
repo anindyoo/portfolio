@@ -1,5 +1,6 @@
-const ProjectTechnologies = () => {
-  console.log()
+const ProjectTechnologies = (props) => {
+  const { project } = props;
+  const isNotEmpty = (arrayObjects) => Object.values(arrayObjects).some((value) => value.length);
 
   return (
     <div className="
@@ -23,84 +24,41 @@ const ProjectTechnologies = () => {
       flex flex-row justify-center gap-32
       tracking-[-0.06em]"
       >
-        <div className="
-        FRONT-END-LIST-CONTAINER
-        flex flex-col gap-2"
-        >
-          <span className="text-4xl italic">front end</span>
-          <div className="
-          FRONT-END-SUBTECH-LIST
-          flex flex-col gap-2.5"
+        {project.technologies
+        && Object
+          .entries(project?.technologies)
+          .map(([stack, subStacks]) => isNotEmpty(subStacks) && (
+          <div
+            key={stack}
+            className={`
+            ${stack}-LIST-CONTAINER
+            flex flex-col gap-2`}
           >
-            <div>
-              <span className="text-xl">languages</span>
-              <ul className="
-              THE-LIST
-              list-disc ps-8"
-              >
-                <li>HTML</li>
-              </ul>
-            </div>
-            <div>
-              <span className="text-xl">css</span>
-              <ul className="
-              THE-LIST
-              list-disc ps-8"
-              >
-                <li>Bootstrap</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-            <div>
-              <span className="text-xl">libraries</span>
-              <ul className="
-              THE-LIST
-              list-disc ps-8"
-              >
-                <li>React</li>
-              </ul>
+            <span className="text-4xl italic">{stack.split('-').join(' ')}</span>
+            <div className={`
+            ${stack}-SUBSTACK-LIST-CONTAINER
+            flex flex-col gap-2.5`}
+            >
+              {Object.entries(subStacks).map(([subStack, techs]) => techs.length > 0 && (
+                <div
+                  key={subStack}
+                  className={`
+                  ${subStack}-SUBSTACK`}
+                >
+                  <span className="text-xl">{subStack.split('-').join(' ')}</span>
+                  <ul className={`
+                  ${subStack}-TECH-LIST
+                  list-disc ps-8`}
+                  >
+                    {techs.map((tech) => (
+                      <li key={tech}>{tech}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-        <div className="
-        BACK-END-LIST-CONTAINER
-        flex flex-col gap-2"
-        >
-          <span className="text-4xl italic">back end</span>
-          <div className="
-          FRONT-END-SUBTECH-LIST
-          flex flex-col gap-2.5"
-          >
-            <div>
-              <span className="text-xl">languages</span>
-              <ul className="
-              THE-LIST
-              list-disc ps-8"
-              >
-                <li>PHP</li>
-                <li>Python</li>
-              </ul>
-            </div>
-            <div>
-              <span className="text-xl">databases</span>
-              <ul className="
-              THE-LIST
-              list-disc ps-8"
-              >
-                <li>SQL</li>
-              </ul>
-            </div>
-            <div>
-              <span className="text-xl">frameworks</span>
-              <ul className="
-              THE-LIST
-              list-disc ps-8"
-              >
-                <li>Laravel</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          ))}
       </div>
     </div>
   )
