@@ -30,8 +30,8 @@
         "frameworks": []
       },
       "devOps": {
-        "versionControl": "Git",
-        "deployements": ""
+        "versionControl": ["Git"],
+        "deployements": [""]
       },
       "misc": [
         {"type": "", "tools": []}
@@ -73,8 +73,8 @@
         "frameworks": []
       },
       "devOps": {
-        "versionControl": "Git",
-        "deployements": ""
+        "versionControl": ["Git"],
+        "deployements": [""]
       },
       "misc": [
         {"type": "", "tools": []}
@@ -116,8 +116,8 @@
         "frameworks": []
       },
       "devOps": {
-        "versionControl": "Git",
-        "deployements": ""
+        "versionControl": ["Git"],
+        "deployements": [""]
       },
       "misc": [
         {"type": "", "tools": []}
@@ -159,8 +159,8 @@
         "frameworks": []
       },
       "devOps": {
-        "versionControl": "Git",
-        "deployements": ""
+        "versionControl": ["Git"],
+        "deployements": [""]
       },
       "misc": [
         {"type": "", "tools": []}
@@ -202,8 +202,8 @@
         "frameworks": []
       },
       "devOps": {
-        "versionControl": "Git",
-        "deployements": ""
+        "versionControl": ["Git"],
+        "deployements": [""]
       },
       "misc": [
         {"type": "", "tools": []}
@@ -223,33 +223,34 @@
     "inDevelopment": false,
     "topProject": true,
     "descritption": {
-      "short": "",
-      "long": ""
+      "short": "An e-commerce project that born from the curiosity of a group of students back in 2021. The beloved project has brought them several achievement, including a fully functioning web app that serves their customers in 2023.",
+      "long": "Dermanifest is a small Jakarta-based bodycare product that operates their business since 2021. Dermanifest began its initial development from a small college project. The project started with a limited range of products and marketing platform. Over time, the business project grew, expanding its product line and marketing channels. As in 2022, the project was submitted to the Student Entrepreneurship: PMW UNJ 2022 in Universitas Negeri Jakarta, Indonesia. In the aforementioned program, the project became a small operating business and achieved several achievements, namely receiving intensive entrepreneurial training along with passing entrepreneurial funding. With those opportunity, the business started to develop and launch its own web app e-commerce in 2023.\n blelenlelelebelbel"
     },
     "startDate": "2023-07-20T12:00:00Z",
     "endDate": "2024-01-04T12:00:00Z",
-    "repo": "",
+    "repo": "https://github.com/anindyoo/dermanifest",
     "deployment": "",
     "download": "",
-    "tags": [""],
+    "tags": ["E-Commerce", "Web App", "Full Stack", "PHP", "Laravel", "MySQL", "Bootstrap"],
     "thumbnail": "",
     "technologies": {
       "frontEnd": {
-        "languages": [],
-        "css": [],
-        "libraries": []
+        "languages": ["HTML"],
+        "css": ["CSS 3", "Bootstrap"],
+        "libraries": ["JQuery"]
       },
       "backEnd": {
-        "languages": [],
-        "databases": [],
-        "frameworks": []
+        "languages": ["PHP"],
+        "databases": ["MySQL"],
+        "frameworks": ["Laravel"]
       },
       "devOps": {
-        "versionControl": "Git",
-        "deployements": ""
+        "versionControl": ["Git"],
+        "deployements": [""]
       },
       "misc": [
-        {"type": "", "tools": []}
+        {"type": "Shipping Cost", "tools": ["RajaOngkir — Indonesian shipping cost API service"]},
+        {"type": "Transaction", "tools": ["Midtrans"]}
       ]
     },
     "images": [
