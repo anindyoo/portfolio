@@ -13,9 +13,11 @@
     },
     "startDate": "2021-11-01T12:00:00Z",
     "endDate": "2021-12-05T12:00:00Z",    
-    "repo": "https://github.com/rg-km/final-project-engineering-72",
-    "deployment": "",
-    "download": "",
+    "links": {
+      "repo": "https://github.com/rg-km/final-project-engineering-72",
+      "deployment": "",
+      "download": ""
+    },
     "tags": [""],
     "thumbnail": "",
     "technologies": {
@@ -56,9 +58,11 @@
     },
     "startDate": "2022-06-01T12:00:00Z",
     "endDate": "2022-06-29T12:00:00Z",
-    "repo": "https://github.com/rg-km/final-project-engineering-72",
-    "deployment": "",
-    "download": "",
+    "links": {
+      "repo": "https://github.com/rg-km/final-project-engineering-72",
+      "deployment": "",
+      "download": ""
+    },
     "tags": [""],
     "thumbnail": "",
     "technologies": {
@@ -99,9 +103,11 @@
     },
     "startDate": "2022-07-29T12:00:00Z",
     "endDate": "2022-08-05T12:00:00Z",
-    "repo": "",
-    "deployment": "",
-    "download": "",
+    "links": {
+      "repo": "",
+      "deployment": "",
+      "download": ""
+    },
     "tags": [""],
     "thumbnail": "",
     "technologies": {
@@ -142,9 +148,11 @@
     },
     "startDate": "2022-08-15T12:00:00Z",
     "endDate": "2022-11-15T12:00:00Z",
-    "repo": "",
-    "deployment": "",
-    "download": "",
+    "links": {
+      "repo": "",
+      "deployment": "",
+      "download": ""
+    },
     "tags": [""],
     "thumbnail": "",
     "technologies": {
@@ -185,9 +193,11 @@
     },
     "startDate": "2022-09-13T12:00:00Z",
     "endDate": "2022-11-18T12:00:00Z",
-    "repo": "",
-    "deployment": "",
-    "download": "",
+    "links": {
+      "repo": "",
+      "deployment": "",
+      "download": ""
+    },
     "tags": [""],
     "thumbnail": "",
     "technologies": {
@@ -228,9 +238,11 @@
     },
     "startDate": "2023-07-20T12:00:00Z",
     "endDate": "2024-01-04T12:00:00Z",
-    "repo": "https://github.com/anindyoo/dermanifest",
-    "deployment": "",
-    "download": "",
+    "links": {
+      "repo": "https://github.com/anindyoo/dermanifest",
+      "deployment": "",
+      "download": ""
+    },
     "tags": ["E-Commerce", "Web App", "Full Stack", "PHP", "Laravel", "MySQL", "Bootstrap"],
     "thumbnail": "",
     "technologies": {
