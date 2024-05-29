@@ -19,12 +19,12 @@ const TimelineComp = (props) => {
       {isOdd ? (
         <li className="grid grid-cols-subgrid col-span-2">
           <TimelineDesc {...descAttributes} />
-          <TimelineImg />
+          <TimelineImg project={project} />
         </li>
 
       ) : (
         <li className="grid grid-cols-subgrid col-span-2">
-          <TimelineImg />
+          <TimelineImg project={project} />
           <TimelineDesc {...descAttributes} />
         </li>
 
