@@ -12,6 +12,8 @@ const ProjectDetail = () => {
   const { projectId } = useParams();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     const projectById = projectsData.find((proj) => proj.id === projectId);
     setProject(projectById);
   }, [projectId]);
