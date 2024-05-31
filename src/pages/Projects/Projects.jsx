@@ -6,6 +6,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.title = 'projects — muhammad anindyo poetra mufatyta';
 
     const compareDate = (a, b) => {

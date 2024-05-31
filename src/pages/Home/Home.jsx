@@ -9,6 +9,7 @@ const Home = () => {
   const [topProjects, setTopProjects] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.title = 'home — muhammad anindyo poetra mufatyta';
 
     const compareDate = (a, b) => {
