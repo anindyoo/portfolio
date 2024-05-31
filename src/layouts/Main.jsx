@@ -4,11 +4,15 @@ import Footer from '../components/Footer/Footer';
 import ScreenFrame from '../components/ScreenFrame/ScreenFrame';
 
 const Main = (props) => {
-  const { withNavbar } = props;
+  const {
+    noNavbar,
+    noFooter,
+  } = props;
+
   return (
     <>
       <ScreenFrame />
-      {withNavbar && (
+      {!noNavbar && (
         <header>
           <Navbar />
         </header>
@@ -19,7 +23,7 @@ const Main = (props) => {
       >
         <Outlet />
       </main>
-      <Footer />
+      {!noFooter && <Footer />}
     </>
   );
 };
