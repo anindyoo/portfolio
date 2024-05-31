@@ -4,11 +4,12 @@ import Main from './layouts/Main';
 import Projects from './pages/Projects/Projects';
 import ProjectDetail from './pages/Projects/ProjectDetail';
 import NotFound from './pages/NotFound/NotFound';
+import Experiences from './pages/Experiences/Experiences';
 
 const App = () => {
   const router = createBrowserRouter([
     {
-      element: <Main withNavbar />,
+      element: <Main />,
       children: [
         {
           path: '*',
@@ -25,7 +26,7 @@ const App = () => {
       ],
     },
     {
-      element: <Main withNavbar={false} />,
+      element: <Main noNavbar />,
       children: [
         {
           path: '/',
@@ -33,7 +34,17 @@ const App = () => {
         },
       ],
     },
+    {
+      element: <Main noFooter />,
+      children: [
+        {
+          path: '/experiences',
+          element: <Experiences />,
+        },
+      ],
+    },
   ]);
+
   return (
     <div className="
     APP
