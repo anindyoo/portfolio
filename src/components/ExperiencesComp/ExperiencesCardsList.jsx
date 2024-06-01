@@ -10,7 +10,7 @@ const ExperiencesCardsList = () => {
     >
       <div className="
       EXPERIENCES-CARDS-LIST-SCROLL
-      absolute top-0
+      fixed top-0
       max-h-screen
       overflow-y-scroll"
       >
