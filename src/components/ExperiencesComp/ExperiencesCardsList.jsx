@@ -6,12 +6,14 @@ const ExperiencesCardsList = () => {
   return (
     <aside className="
     EXPERIENCES-CARDS-LIST-SECTION
-    w-[16.25rem]"
+    flex
+    min-w-[16.25rem]
+    mr-6"
     >
       <div className="
       EXPERIENCES-CARDS-LIST-SCROLL
       fixed top-0
-      max-h-screen
+      max-h-screen pr-6
       overflow-y-scroll"
       >
         <div className="
