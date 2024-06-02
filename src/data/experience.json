@@ -1,0 +1,59 @@
+[
+  {
+    "id": "microcredential",
+    "role": "Associate Data Scientist Trainee (Microcredential Certification)",
+    "company": "Directorate General of Higher Education, Research and Technology with Kemendikbudristek",
+    "startDate": "2021-11-01T12:00:00Z",
+    "endDate": "2021-12-10T12:00:00Z",
+    "isStillWorking": false,
+    "preface": "lorem ipsum",
+    "workDescription": "lorem ipsum",
+    "worksList": [],
+    "asscociatedProjectsIds": [],
+    "certificates": [
+      {"title": "", "link": ""}
+    ],
+    "links": [
+      {"title": "", "link": ""}
+    ],
+    "images": []
+  },
+  {
+    "id": "rg-fe",
+    "role": "Front End Engineer Student",
+    "company": "Ruangguru",
+    "startDate": "2022-02-14T12:00:00Z",
+    "endDate": "2022-07-27T12:00:00Z",
+    "isStillWorking": false,
+    "preface": "rg lorem rgfe",
+    "workDescription": "ummm",
+    "worksList": [],
+    "asscociatedProjectsIds": ["subaku"],
+    "certificates": [
+      {"title": "", "link": ""}
+    ],
+    "links": [
+      {"title": "", "link": ""}
+    ],
+    "images": []
+  },
+  {
+    "id": "sagara-fe",
+    "role": "Front End Engineer Specialist",
+    "company": "Sagara Technology",
+    "startDate": "2022-08-15T12:00:00Z",
+    "endDate": "2022-11-15T12:00:00Z",
+    "isStillWorking": false,
+    "preface": "sg lorem rgfe",
+    "workDescription": "sgsgssgsgsgsgsgsgsgststststs",
+    "worksList": [],
+    "asscociatedProjectsIds": ["mom-and-kids-app"],
+    "certificates": [
+      {"title": "", "link": ""}
+    ],
+    "links": [
+      {"title": "", "link": ""}
+    ],
+    "images": []
+  }
+]
