@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import helpers from '../../helpers/helpers';
 
 const TimelineDesc = (props) => {
   const {
@@ -8,10 +9,7 @@ const TimelineDesc = (props) => {
     isLast,
   } = props;
 
-  const options = { month: 'long', year: 'numeric' };
-  const startFinal = new Intl.DateTimeFormat('en-US', options).format(new Date(project.startDate));
-  const endFinal = new Intl.DateTimeFormat('en-US', options).format(new Date(project.endDate));
-  const finalDate = `${startFinal}—${endFinal}`;
+  const dateRange = helpers.formateDateRange(project.startDate, project.endDate);
 
   return (
     <div
@@ -41,7 +39,7 @@ const TimelineDesc = (props) => {
         flex flex-col
         w-fit"
       >
-        <span className="text-base font-medium">{finalDate}</span>
+        <span className="text-base font-medium">{dateRange}</span>
         <span className="text-[4rem] italic">{project.title}</span>
         <span className="text-base font-light">{project.subtitle}</span>
       </Link>

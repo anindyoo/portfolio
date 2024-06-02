@@ -1,14 +1,8 @@
+import helpers from '../../helpers/helpers';
+
 /* eslint-disable no-nested-ternary */
 const ProjectBanner = (props) => {
   const { project } = props;
-
-  const formatDate = (start, end) => {
-    const options = { month: 'long', year: 'numeric' };
-    const startFinal = new Intl.DateTimeFormat('en-US', options).format(new Date(start));
-    const endFinal = new Intl.DateTimeFormat('en-US', options).format(new Date(end));
-    const finalDate = `${startFinal}—${endFinal}`;
-    return finalDate;
-  }
 
   return (
     <div className="
@@ -35,7 +29,7 @@ const ProjectBanner = (props) => {
           flex flex-col"
           >
             <span className="TITLE text-[4rem] italic">{project.title}</span>
-            <span className="DATE text-base font-medium">{project.startDate && formatDate(project?.startDate, project?.endDate)}</span>
+            <span className="DATE text-base font-medium">{project.startDate && helpers.formateDateRange(project?.startDate, project?.endDate)}</span>
           </div>
           <div className="
           MIDDLE-SECTION
