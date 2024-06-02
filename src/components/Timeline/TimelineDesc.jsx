@@ -9,7 +9,7 @@ const TimelineDesc = (props) => {
     isLast,
   } = props;
 
-  const dateRange = helpers.formateDateRange(project.startDate, project.endDate);
+  const dateRange = helpers.formatDateRange(project.startDate, project.endDate);
 
   return (
     <div

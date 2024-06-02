@@ -29,7 +29,7 @@ const ProjectBanner = (props) => {
           flex flex-col"
           >
             <span className="TITLE text-[4rem] italic">{project.title}</span>
-            <span className="DATE text-base font-medium">{project.startDate && helpers.formateDateRange(project?.startDate, project?.endDate)}</span>
+            <span className="DATE text-base font-medium">{project.startDate && helpers.formatDateRange(project?.startDate, project?.endDate)}</span>
           </div>
           <div className="
           MIDDLE-SECTION

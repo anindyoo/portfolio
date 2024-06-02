@@ -8,7 +8,7 @@ const sortByDate = (array) => {
   return array.sort((a, b) => compareDate(a.startDate, b.startDate));
 }
 
-const formateDateRange = (startDate, endDate) => {
+const formatDateRange = (startDate, endDate) => {
   const options = { month: 'long', year: 'numeric' };
   const startFinal = new Intl.DateTimeFormat('en-US', options).format(new Date(startDate));
   const endFinal = new Intl.DateTimeFormat('en-US', options).format(new Date(endDate));
@@ -19,5 +19,5 @@ const formateDateRange = (startDate, endDate) => {
 
 export default {
   sortByDate,
-  formateDateRange,
+  formatDateRange,
 };
