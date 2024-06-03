@@ -8,9 +8,12 @@
     "endDate": "2021-12-10T12:00:00Z",
     "isStillWorking": false,
     "preface": "lorem ipsum",
-    "workDescription": "lorem ipsum",
-    "worksList": [],
-    "asscociatedProjectsIds": [],
+    "workDescription": "the description of the work",
+    "worksList": [
+      "Learn cores of data sciences ranging from data collection, data cleansing, data exploration, model building, and model deployment.", 
+      "Learn and utilize AI and IT in data science projects using Python & Jupyter."
+    ],
+    "associatedProjectsIds": [],
     "certificates": [
       {"title": "", "link": ""}
     ],
@@ -30,7 +33,7 @@
     "preface": "rg lorem rgfe",
     "workDescription": "ummm",
     "worksList": [],
-    "asscociatedProjectsIds": ["subaku"],
+    "associatedProjectsIds": ["subaku"],
     "certificates": [
       {"title": "", "link": ""}
     ],
@@ -50,7 +53,7 @@
     "preface": "sg lorem rgfe",
     "workDescription": "sgsgssgsgsgsgsgsgsgststststs",
     "worksList": [],
-    "asscociatedProjectsIds": ["mom-and-kids-app"],
+    "associatedProjectsIds": ["mom-and-kids-app"],
     "certificates": [
       {"title": "", "link": ""}
     ],
