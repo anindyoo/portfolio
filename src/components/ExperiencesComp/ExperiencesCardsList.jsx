@@ -1,7 +1,11 @@
 import ExperiencesCard from './ExperiencesCard';
 
-const ExperiencesCardsList = () => {
-  console.log();
+const ExperiencesCardsList = (props) => {
+  const {
+    experiences,
+    activeCardId,
+    activeCardClickHandler,
+  } = props;
 
   return (
     <aside className="
@@ -16,14 +20,21 @@ const ExperiencesCardsList = () => {
       max-h-screen pr-6
       overflow-y-scroll"
       >
-        <div className="
+        <ul className="
         EXPERIENCES-CARDS-LIST-CONTAINER
         py-[5.625rem]"
         >
-          {[...'1234567890'].map((x) => <ExperiencesCard key={x} />)}
-        </div>
+          {experiences.map((exp) => (
+            <li key={exp.id}>
+              <ExperiencesCard
+                exp={exp}
+                activeCardClickHandler={activeCardClickHandler}
+                activeCardId={activeCardId}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
-
     </aside>
   );
 };
