@@ -14,6 +14,7 @@ const Experiences = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = 'experiences — muhammad anindyo poetra mufatyta';
 
     const sortedExperiences = helpers.sortByDate(experiencesData);
     setExperiences(sortedExperiences);
