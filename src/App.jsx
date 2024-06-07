@@ -5,6 +5,7 @@ import Projects from './pages/Projects/Projects';
 import ProjectDetail from './pages/Projects/ProjectDetail';
 import NotFound from './pages/NotFound/NotFound';
 import Experiences from './pages/Experiences/Experiences';
+import About from './pages/About/About';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const App = () => {
         {
           path: '/projects/:projectId',
           element: <ProjectDetail />,
+        },
+        {
+          path: '/about',
+          element: <About />,
         },
       ],
     },
