@@ -9,7 +9,7 @@ const TimelineImg = (props) => {
       w-full h-screen max-h-[calc(100vh*(66.25/100))]
       flex items-center justify-center`}
     >
-      <Link to={project.id}>
+      <Link to={`/projects/${project.id}`}>
         <img
           src="https://i.scdn.co/image/ab67616d0000b2731572698fff8a1db257a53599"
           alt="alt"

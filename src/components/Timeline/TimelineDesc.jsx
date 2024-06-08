@@ -33,7 +33,7 @@ const TimelineDesc = (props) => {
       `}
     >
       <Link
-        to={project.id}
+        to={`/projects/${project.id}`}
         className="
         DESCRIPTION-TEXT-CONTAINER
         flex flex-col
