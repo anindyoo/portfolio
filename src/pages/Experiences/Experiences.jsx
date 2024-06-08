@@ -29,7 +29,7 @@ const Experiences = () => {
     <div className="
     EXPERIENCES-PAGE
     flex flex-row
-    max-h-[calc(100vh-20px)]"
+    min-h-screen"
     >
       <ExperiencesCardsList
         experiences={experiences}
