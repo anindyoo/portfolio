@@ -15,11 +15,11 @@ const ProjectsTimeline = (props) => {
       flex flex-col
       py-[7.5rem]"
     >
-      <div className="
+      <div className={`
       PROJECTS-TITLE
       w-full
       flex flew-row justify-between
-      text-2xl"
+      ${!isHome && 'text-6xl font-extralight'}`}
       >
         {[...`${isHome ? 'highlighted ' : ''}projects`].map((letter, index) => (
           <span key={`latestProjects-${index}`}>{letter}</span>
