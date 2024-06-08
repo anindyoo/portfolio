@@ -19,7 +19,7 @@ const ProjectsTimeline = (props) => {
       PROJECTS-TITLE
       w-full
       flex flew-row justify-between
-      ${!isHome && 'text-6xl font-extralight'}`}
+      ${isHome ? 'text-4xl' : 'text-6xl font-extralight'}`}
       >
         {[...`${isHome ? 'highlighted ' : ''}projects`].map((letter, index) => (
           <span key={`latestProjects-${index}`}>{letter}</span>
@@ -43,7 +43,7 @@ const ProjectsTimeline = (props) => {
       PROJECTS-MORE
       w-full
       flex flew-row justify-between
-      text-2xl"
+      text-2xl font-extralight"
       >
         {isHome && [...'see more projects'].map((letter, index) => (
           <span key={`seeMoreProjects-${index}`}>{letter}</span>
