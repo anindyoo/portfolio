@@ -123,7 +123,8 @@ const ExperiencesMarquee = (props) => {
           className="
           EXPERIENCES-CARDS
           relative
-          flex items-center"
+          flex items-center
+          mb-20"
           style={{
             height: expCardsH * 1.8,
             left: -expCardsW,
