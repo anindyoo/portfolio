@@ -13,6 +13,9 @@ module.exports = {
     },
     extend: { 
       backgroundImage: {
+        // MAIN BACKGROUND GRADIENT
+        'frozenForest': 'linear-gradient(90deg, rgba(0, 81, 52, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 36, 44, 1) 120%)',
+
         // TIMELINE BORDER
         'timeline_gradient_utb': 'linear-gradient(0deg, rgb(255, 233, 173) 0%, rgba(255,255,255,0) 100%)',
         'timeline_gradient_btu': 'linear-gradient(180deg, rgb(255, 233, 173) 0%, rgba(255,255,255,0) 100%)',
