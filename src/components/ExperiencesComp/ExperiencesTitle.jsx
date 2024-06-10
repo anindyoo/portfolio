@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 const ExperiencesTitle = (props) => {
   const {
     isOdd,
@@ -16,8 +17,8 @@ const ExperiencesTitle = (props) => {
       h-fit w-[37.5rem]
       ${isOdd ? 'skew-y-[15deg]' : '-skew-y-[15deg]'}`}
       >
-        {[...'experiences • experiences • '].map((letter) => (
-          <span>{letter}</span>
+        {[...'experiences • experiences • '].map((letter, index) => (
+          <span key={`exp-title-span-letter-${index}`}>{letter}</span>
         ))}
       </div>
     </div>
