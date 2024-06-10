@@ -5,7 +5,7 @@ const MenuNavLink = (props) => {
   const { className, name, link } = props;
   const [isHovered, setIsHovered] = useState(false)
 
-  const hoveredStyle = 'italic font-bold text-white text-stroke';
+  const hoveredStyle = 'italic font-bold text-orangePith text-stroke stroke-cyan-700';
   const loopSize = 5;
 
   const onMouseEnterHandler = () => setIsHovered(true);
@@ -21,8 +21,7 @@ const MenuNavLink = (props) => {
       className={`
       ${className} 
       NAVLINK-CONTAINER
-      flex flex-col items-end w-fit
-`}
+      flex flex-col items-end w-fit`}
     >
       <span className={`
       NAVLINK-TEXT-CONTAINER
@@ -30,8 +29,8 @@ const MenuNavLink = (props) => {
       transition-all duration-100`}
       >
         <span className={`
-        NAVLINK-MAIN-TEXT"        
-        ${isHovered && hoveredStyle}`}
+        NAVLINK-MAIN-TEXT
+        ${isHovered ? hoveredStyle : 'HEADLINE-TEXT'}`}
         >
           {name}
         </span>

@@ -54,8 +54,8 @@ const App = () => {
     <div className="
     APP
     relative
-    min-h-screen
-    box-border bg-stone-400"
+    min-h-screen h-full
+    box-border text-lightSweetener"
     >
       <RouterProvider router={router} />
     </div>

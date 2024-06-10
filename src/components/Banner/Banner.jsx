@@ -102,7 +102,7 @@ const pinLogo = () => {
 };
 
 const Banner = () => {
-  const nameBannerStyle = 'mt-[-2.031rem]';
+  const nameBannerStyle = 'mt-[-2.031rem] HEADLINE-TEXT';
 
   useEffect(() => {
     const triggerPinLogo = pinLogo();
@@ -141,7 +141,7 @@ const Banner = () => {
           <span className={`name-ref ${nameBannerStyle}`}>muhammad</span>
           <span
             title="anindyo logo"
-            className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal hover:underline`}
+            className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal hover:underline HEADLINE-TEXT`}
           >
             <Link to="/">
               anindyo

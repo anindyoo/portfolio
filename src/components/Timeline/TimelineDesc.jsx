@@ -24,7 +24,7 @@ const TimelineDesc = (props) => {
         ? `${isFirst
           ? 'before:bg-timeline_gradient_utb before:pb-px'
           : 'before:bg-timeline_gradient_btu '}`
-        : 'before:bg-black before:pb-px'
+        : 'before:bg-sunglowMuted before:pb-px'
       }
       ${isOdd
         ? `before:pl-px ${!isLast && 'before:rounded-bl-[12.5rem]'}`
@@ -39,8 +39,8 @@ const TimelineDesc = (props) => {
         flex flex-col
         w-fit"
       >
-        <span className="text-base font-medium">{dateRange}</span>
-        <span className="text-[4rem] italic">{project.title}</span>
+        <span className="text-sunglowMuted text-base font-medium">{dateRange}</span>
+        <span className="HEADLINE-TEXT text-[4rem] italic">{project.title}</span>
         <span className="text-base font-light">{project.subtitle}</span>
       </Link>
     </div>
