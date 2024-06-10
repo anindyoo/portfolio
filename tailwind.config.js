@@ -13,10 +13,22 @@ module.exports = {
     },
     extend: { 
       backgroundImage: {
-        'timeline_gradient_utb': 'linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%)',
-        'timeline_gradient_btu': 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%)',
-        'timeline_gradient_rtl': 'linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%)',
-      }     
+        // TIMELINE BORDER
+        'timeline_gradient_utb': 'linear-gradient(0deg, rgb(255, 233, 173) 0%, rgba(255,255,255,0) 100%)',
+        'timeline_gradient_btu': 'linear-gradient(180deg, rgb(255, 233, 173) 0%, rgba(255,255,255,0) 100%)',
+        'timeline_gradient_rtl': 'linear-gradient(270deg, rgb(255, 233, 173) 0%, rgba(255,255,255,0) 100%)',
+        
+        // TEXT HEADLINE
+        'vagueGold': 'linear-gradient(180deg, rgba(254, 249, 240, 1) 25%, rgba(248, 207, 62, 1) 75%)',
+      },
+      colors: {
+        'transparent': 'transparent',
+        'white': 'white',
+        'sunglow': 'rgba(248, 207, 62, 1)',
+        'sunglowMuted': 'rgb(255, 233, 173)',
+        'orangePith': 'rgba(254, 249, 240, 1)',
+        'lightSweetener': 'rgba(255, 240, 214, 1)',
+      },
     },
   },
   plugins: [],
