@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Draggable } from 'gsap/all';
 import SkewedCard from '../SkewedCard/SkewedCard';
 import ExperiencesTitle from './ExperiencesTitle';
+import StrecthedStrings from '../StretchedString/StretchedString';
 
 gsap.registerPlugin(Draggable);
 
@@ -128,17 +129,10 @@ const ExperiencesMarquee = () => {
           ))}
         </div>
       </div>
-      <div className="
-      EXPERIENCES-FOOTER
-      w-full
-      flex flew-row justify-between
-      pt-7
-      text-2xl"
-      >
-        {[...'see more experiences'].map((letter) => (
-          <span>{letter}</span>
-        ))}
-      </div>
+      <StrecthedStrings
+        text="see more experiences"
+        link="/experiences"
+      />
     </section>
   );
 };
