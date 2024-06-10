@@ -13,6 +13,7 @@ const ExperiencesTitle = (props) => {
     >
       <div className={`
       EXPERIENCES-TITLE-CONTENT
+      HEADLINE-TEXT
       flex justify-between
       h-fit w-[37.5rem]
       ${isOdd ? 'skew-y-[15deg]' : '-skew-y-[15deg]'}`}
