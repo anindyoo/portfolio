@@ -1,4 +1,5 @@
 /* eslint-disable react/no-array-index-key */
+import StrecthedStrings from '../StretchedString/StretchedString';
 import TimelineComp from '../Timeline/TimelineComp';
 
 const ProjectsTimeline = (props) => {
@@ -40,16 +41,10 @@ const ProjectsTimeline = (props) => {
           />
         ))}
       </ul>
-      <div className="
-      STRETCH-MORE
-      flex justify-center items-center
-      h-12 max-w-[calc(100vw-56px)]
-      text-center text-3xl font-extralight text-sunglowMuted
-      hover:underline
-      tracking-[2em] transition-all ease-out duration-500 hover:tracking-[0.6em]"
-      >
-        see more projects
-      </div>
+      <StrecthedStrings
+        text="see more projects"
+        link="/projects"
+      />
     </section>
   );
 };
