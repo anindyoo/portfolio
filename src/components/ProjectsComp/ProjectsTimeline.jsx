@@ -17,6 +17,7 @@ const ProjectsTimeline = (props) => {
     >
       <div className={`
       PROJECTS-TITLE
+      HEADLINE-TEXT
       w-full
       flex flew-row justify-between
       ${isHome ? 'text-4xl' : 'text-6xl font-extralight'}`}
@@ -40,14 +41,14 @@ const ProjectsTimeline = (props) => {
         ))}
       </ul>
       <div className="
-      PROJECTS-MORE
-      w-full
-      flex flew-row justify-between
-      text-2xl font-extralight"
+      STRETCH-MORE
+      flex justify-center items-center
+      h-12 max-w-[calc(100vw-56px)]
+      text-center text-3xl font-extralight text-sunglowMuted
+      hover:underline
+      tracking-[2em] transition-all ease-out duration-500 hover:tracking-[0.6em]"
       >
-        {isHome && [...'see more projects'].map((letter, index) => (
-          <span key={`seeMoreProjects-${index}`}>{letter}</span>
-        ))}
+        see more projects
       </div>
     </section>
   );
