@@ -23,6 +23,10 @@ module.exports = {
         
         // TEXT HEADLINE
         'vagueGold': 'linear-gradient(180deg, rgba(254, 249, 240, 1) 25%, rgba(248, 207, 62, 1) 75%)',
+
+        // SKEWED CARD GRADIENTS
+        'skewedCardOdd':'linear-gradient(180deg, rgba(248, 207, 62, 50%) 0%, rgba(254, 249, 240, 14%) 100%)',
+        'skewedCardEven':'linear-gradient(180deg, rgba(254, 249, 240, 14%) 0%, rgba(248, 207, 62, 50%) 100%)',
       },
       colors: {
         'transparent': 'transparent',
@@ -31,6 +35,7 @@ module.exports = {
         'sunglowMuted': 'rgb(255, 233, 173)',
         'orangePith': 'rgba(254, 249, 240, 1)',
         'lightSweetener': 'rgba(255, 240, 214, 1)',
+        'skewedCardBuffer':'rgba(248, 207, 62, 0.1)',
       },
     },
   },
