@@ -144,6 +144,7 @@ const ExperiencesMarquee = (props) => {
             <SkewedCard
               key="buffer-exp"
               expRole="experiences"
+              buffer
             />
           )}
         </div>
