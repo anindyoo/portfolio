@@ -73,7 +73,6 @@ const ExperiencesMarquee = (props) => {
       relative
       h-screen"
     >
-      {JSON.stringify(experiences)}
       <div className="
       EXPERIENCES-TITLE-ABS-WRAPPER
       absolute
