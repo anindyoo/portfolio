@@ -1,6 +1,8 @@
 const SkewedCard = (props) => {
   const {
-    desc,
+    expRole,
+    date,
+    company,
     isOdd,
   } = props;
 
@@ -23,17 +25,10 @@ const SkewedCard = (props) => {
         CARD-TITLE-CONTAINER
         flex flex-col"
         >
-          <span className="
-          CARD-TITLE
-          text-5xl"
-          >
-            Front End Engineer
-            {' '}
-            {desc}
-          </span>
-          <span className="CARD-COMPANY text-2xl">Company name</span>
+          <span className="CARD-TITLE text-5xl line-clamp-2">{expRole}</span>
+          <span className="CARD-COMPANY text-2xl line-clamp-1">{company}</span>
         </div>
-        <span className="text-base font-light">September 2021 — February 2024</span>
+        <span className="text-base font-light">{date}</span>
       </div>
     </div>
   );
