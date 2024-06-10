@@ -4,12 +4,13 @@ import { Draggable } from 'gsap/all';
 import SkewedCard from '../SkewedCard/SkewedCard';
 import ExperiencesTitle from './ExperiencesTitle';
 import StrecthedStrings from '../StretchedString/StretchedString';
+import helpers from '../../helpers/helpers';
 
 gsap.registerPlugin(Draggable);
 
 const animateMarquee = (element, className, direction, duration) => {
   const count = 4;
-  const elementWidth = element.clientWidth;
+  const elementWidth = element?.clientWidth;
   const widthTotal = elementWidth * count;
 
   gsap.set(className, {
@@ -43,25 +44,27 @@ const animateMarquee = (element, className, direction, duration) => {
   return animation
 };
 
-const ExperiencesMarquee = () => {
+const ExperiencesMarquee = (props) => {
+  const { experiences } = props;
+
   const [expCardsW, setExpCardsW] = useState(0);
   const [expCardsH, setExpCardsH] = useState(0);
 
   useEffect(() => {
-    const cardElement = document.querySelector('.SKEWED-CARD');
-    const titleElement = document.querySelector('.EXPERIENCES-TITLE');
+    const cardElement = experiences && document.querySelector('.SKEWED-CARD');
+    const titleElement = experiences && document.querySelector('.EXPERIENCES-TITLE');
 
-    setExpCardsW(cardElement.clientWidth);
-    setExpCardsH(cardElement.clientHeight);
+    setExpCardsW(cardElement?.clientWidth);
+    setExpCardsH(cardElement?.clientHeight);
 
-    const cardMarquee = animateMarquee(cardElement, '.SKEWED-CARD', '+', 20);
-    const titleMarquee = animateMarquee(titleElement, '.EXPERIENCES-TITLE', '-', 40);
+    const cardMarquee = experiences && animateMarquee(cardElement, '.SKEWED-CARD', '+', 20);
+    const titleMarquee = experiences && animateMarquee(titleElement, '.EXPERIENCES-TITLE', '-', 40);
 
     return () => {
       cardMarquee.kill();
       titleMarquee.kill();
     }
-  }, []);
+  }, [experiences]);
 
   return (
     <section className="
@@ -70,6 +73,7 @@ const ExperiencesMarquee = () => {
       relative
       h-screen"
     >
+      {JSON.stringify(experiences)}
       <div className="
       EXPERIENCES-TITLE-ABS-WRAPPER
       absolute
@@ -94,12 +98,18 @@ const ExperiencesMarquee = () => {
               right: expCardsW,
             }}
           >
-            {[1, 2, 3, 4].map((card, index) => (
+            {experiences.map((exp, index) => (
               <ExperiencesTitle
-                key={card}
+                key={`exp-title-${exp?.id}`}
                 isOdd={(index + 1) % 2 === 1}
               />
             ))}
+            {experiences.length % 2 !== 0 && (
+              <ExperiencesTitle
+                key="title-buffer-exp"
+                isOdd={false}
+              />
+            )}
           </div>
         </div>
       </div>
@@ -120,13 +130,22 @@ const ExperiencesMarquee = () => {
             left: -expCardsW,
           }}
         >
-          {[1, 2, 3, 4].map((card, index) => (
+          {experiences.map((exp, index) => (
             <SkewedCard
-              key={card}
-              desc={card}
+              key={exp.id}
+              id={exp.id}
+              expRole={exp.role}
+              date={helpers.formatDateRange(exp.startDate, exp.endDate)}
+              company={exp.company}
               isOdd={(index + 1) % 2 === 1}
             />
           ))}
+          {experiences.length % 2 !== 0 && (
+            <SkewedCard
+              key="buffer-exp"
+              expRole="experiences"
+            />
+          )}
         </div>
       </div>
       <StrecthedStrings
