@@ -8,11 +8,11 @@
 }
 
 body {
-  @apply box-border
+  @apply box-border bg-frozenForest bg-no-repeat
 }
 
 .text-stroke {
-  -webkit-text-stroke: 0.05rem hsl(0, 0%, 0%);
+  -webkit-text-stroke: 0.05rem theme('colors.sunglow');
 }
 
 .TIMELINE-DESCRIPTION:before,
@@ -21,4 +21,8 @@ body {
   mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+}
+
+.HEADLINE-TEXT {
+  @apply text-transparent bg-clip-text bg-vagueGold
 }
