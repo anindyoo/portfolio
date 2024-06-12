@@ -143,7 +143,7 @@ const Banner = () => {
             title="anindyo logo"
             className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal hover:underline HEADLINE-TEXT`}
           >
-            <Link to="/">
+            <Link to="/" className="pr-4">
               anindyo
             </Link>
           </span>
