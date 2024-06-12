@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const SkewedCard = (props) => {
   const {
     expRole,
@@ -8,7 +10,8 @@ const SkewedCard = (props) => {
   } = props;
 
   return (
-    <div
+    <Link
+      to="/experiences"
       className="
       SKEWED-CARD
       absolute
@@ -36,7 +39,7 @@ const SkewedCard = (props) => {
         </div>
         <span className="text-base font-light">{date}</span>
       </div>
-    </div>
+    </Link>
   );
 };
 

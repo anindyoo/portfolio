@@ -1,4 +1,5 @@
 /* eslint-disable react/no-array-index-key */
+import { Link } from 'react-router-dom';
 import contactData from '../../data/contact.json'
 
 const Contact = () => {
@@ -25,6 +26,7 @@ const Contact = () => {
           >
             <span className="
             CONTACT-CATEGORY
+            HEADLINE-TEXT
             flex justify-between
             text-2xl text-gray-500
             mb-2"
@@ -35,16 +37,25 @@ const Contact = () => {
             </span>
             <ul className="
             CONTACT-LINKS-LIST
-            flex flex-col gap-1 tracking-tight"
+            flex flex-col gap-1 tracking-tight
+            text-center"
             >
               {links.map((link) => (
                 <li
-                  key={link.name}
+                  key={link.url}
+                  title={link.name}
                   className="
                   CONTACT-LINK
-                  font-light text-2xl"
+                  font-light text-2xl
+                  hover:underline"
                 >
-                  {link.name}
+                  <Link
+                    to={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -59,14 +70,14 @@ const Contact = () => {
       >
         <span className="
         CONTACT-TITLE
+        HEADLINE-TEXT
         italic font-bold text-[10.375rem]"
         >
           contact
         </span>
         <span className="
         CONTACT-SUBTITLE
-        text-right
-        text-2xl tracking-[-0.06em]"
+        text-sunglowMuted text-right text-2xl tracking-[-0.06em]"
         >
           {contactText}
         </span>
