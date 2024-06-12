@@ -19,7 +19,7 @@ const Navbar = () => (
     px-7 py-5
     text-2xl tracking-[-0.08em]"
   >
-    <span className="NAVBAR-LOGO italic hover:underline">
+    <span className="NAVBAR-LOGO HEADLINE-TEXT decoration-lightSweetener italic hover:underline">
       <NavLink to="/">
         anindyo
       </NavLink>
