@@ -27,6 +27,9 @@ module.exports = {
         // SKEWED CARD GRADIENTS
         'skewedCardOdd':'linear-gradient(180deg, rgba(248, 207, 62, 50%) 0%, rgba(254, 249, 240, 14%) 100%)',
         'skewedCardEven':'linear-gradient(180deg, rgba(254, 249, 240, 14%) 0%, rgba(248, 207, 62, 50%) 100%)',
+        
+        // FOOTER GRADIENT
+        'footerGradient':'linear-gradient(180deg, rgba(248, 207, 62, 60%) 0%, rgba(254, 249, 240, 14%) 100%)',
       },
       colors: {
         'transparent': 'transparent',
