@@ -23,7 +23,7 @@ const ExperiencesArticle = (props) => {
       ARTICLE-HEADER
       flex flex-col gap-2
       w-full
-      border-b-[1px] border-black
+      border-b-[1px] border-sunglowMuted
       pb-[1.875rem]"
       >
         <h1 className="
