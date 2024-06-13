@@ -24,6 +24,17 @@ const ExperiencesCardsList = (props) => {
         EXPERIENCES-CARDS-LIST-CONTAINER
         py-[5.625rem]"
         >
+          <li>
+            <div className="
+            EXPERIENCES-TITLE
+            HEADLINE-TEXT
+            text-5xl
+            -skew-y-12
+            mb-10"
+            >
+              experiences
+            </div>
+          </li>
           {experiences.map((exp) => (
             <li key={exp.id}>
               <ExperiencesCard
