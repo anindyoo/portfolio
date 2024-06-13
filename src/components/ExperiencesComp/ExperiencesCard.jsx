@@ -36,7 +36,7 @@ const ExperiencesCard = (props) => {
       transition-all duration-400 ease-out
       ${activeCardId === exp?.id
         ? 'bg-skewedCardOdd'
-        : 'hover:bg-sunglowMuted hover:!text-warmMoss'}`}
+        : 'hover:bg-sunglowMuted'}`}
     >
       <div className={`
       TITLE-SUBTITLE
@@ -45,21 +45,22 @@ const ExperiencesCard = (props) => {
         <span className={`
         EXP-ROLE
         text-xl font-bold leading-none line-clamp-2
-        ${hovered ? 'text-warmMoss' : 'HEADLINE-TEXT'}`}
+        ${hovered && activeCardId !== exp?.id ? 'text-warmMoss' : 'HEADLINE-TEXT'}`}
         >
           {exp?.role}
         </span>
         <span className={`
         EXP-COMPANY
         text-base font-medium line-clamp-1
-        ${hovered ? 'text-warmMoss' : 'text-sunglowMuted'}`}
+        ${hovered && activeCardId !== exp?.id ? 'text-warmMoss' : 'text-sunglowMuted'}`}
         >
           {exp?.company}
         </span>
       </div>
       <div className={`
       EXP-DATE 
-      text-sm`}
+      text-sm
+      ${hovered && activeCardId !== exp?.id ? 'text-warmMoss' : 'text-sunglowMuted'}`}
       >
         {helpers.formatDateRange(exp?.startDate, exp?.endDate)}
       </div>
