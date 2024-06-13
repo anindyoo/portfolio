@@ -26,11 +26,17 @@ const ExperiencesArticle = (props) => {
       border-b-[1px] border-black
       pb-[1.875rem]"
       >
-        <h1 className="text-[2.5rem] font-semibold tracking-[-0.04em]">{activeCard?.role}</h1>
+        <h1 className="
+        HEADLINE-TEXT
+        text-[2.5rem] font-semibold tracking-[-0.04em]"
+        >
+          {activeCard?.role}
+        </h1>
         <div className="
         HEADER-INFOS
         flex flex-col gap-1.5
-        text-xl font-medium tracking-tight"
+        text-xl font-medium tracking-tight
+        text-sunglowMuted"
         >
           <h2 className="flex flex-row gap-2.5 items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -58,14 +64,14 @@ const ExperiencesArticle = (props) => {
       ARTICLE-PREFACE
       flex flex-col gap-3"
       >
-        <h1 className="text-2xl font-medium tracking-[-0.08em] italic">preface to the experience</h1>
+        <h1 className="text-sunglowMuted text-2xl font-medium tracking-[-0.08em] italic">preface to the experience</h1>
         <p className="leading-relaxed">{activeCard?.preface}</p>
       </section>
       <section className="
       ARTICLE-MAIN
       flex flex-col gap-3"
       >
-        <h1 className="text-2xl font-medium tracking-[-0.08em] italic">the experience</h1>
+        <h1 className="text-sunglowMuted text-2xl font-medium tracking-[-0.08em] italic">the experience</h1>
         <p className="leading-relaxed">{activeCard?.workDescription}</p>
         <ul className="list-inside list-disc">
           {activeCard?.worksList.map((item, index) => (
@@ -77,7 +83,7 @@ const ExperiencesArticle = (props) => {
       ARTICLE-PROJECTS
       flex flex-col gap-3"
       >
-        <h1 className="text-2xl font-medium tracking-[-0.08em] italic">associated projects</h1>
+        <h1 className="text-sunglowMuted text-2xl font-medium tracking-[-0.08em] italic">associated projects</h1>
         <ul className="
         ASSOCIATED-PROJECTT-LIST
         flex flex-row flex-wrap gap-10"
@@ -104,7 +110,7 @@ const ExperiencesArticle = (props) => {
       ARTICLE-CERTIFICATES
       flex flex-col gap-3"
       >
-        <h1 className="text-2xl font-medium tracking-[-0.08em] italic">certificates & credentials</h1>
+        <h1 className="text-sunglowMuted text-2xl font-medium tracking-[-0.08em] italic">certificates & credentials</h1>
         <ul className="CERTIFICATES-LIST flex flex-col gap-1">
           {!activeCard?.certificates?.length
             ? (<p className="italic">No certificates are available.</p>)
@@ -141,23 +147,28 @@ const ExperiencesArticle = (props) => {
       ARTICLE-LINKS
       flex flex-col gap-3"
       >
-        <h1 className="text-2xl font-medium tracking-[-0.08em] italic">external links</h1>
+        <h1 className="text-sunglowMuted text-2xl font-medium tracking-[-0.08em] italic">external links</h1>
         <ul className="LINKS-LIST flex flex-row flex-wrap gap-3">
           {!activeCard?.links?.length
             ? (<p className="italic">No external links are available.</p>)
             : activeCard?.links.map((link) => (
-              <li key={link.link}>
+              <li
+                key={link.link}
+                className=""
+              >
                 <a
                   href={link.link}
                   className="
-                LINK-CONTAINER
-                flex flex-row gap-1
-                bg-teal-300
-                rounded-full
-                px-4 py-2"
+                  LINK-CONTAINER
+                  flex flex-row gap-1
+                  transition-all duration-200 ease-in
+                  bg-vagueGold45 hover:bg-skewedCardOdd
+                  text-warmMoss hover:text-lightSweetener font-semibold
+                  rounded-full
+                  px-4 py-2"
                 >
                   <span>{link.title}</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 p-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 p-0.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
                   </svg>
                 </a>
@@ -169,7 +180,7 @@ const ExperiencesArticle = (props) => {
       ARTICLE-GALLERY
       flex flex-col gap-3"
       >
-        <h1 className="text-2xl font-medium tracking-[-0.08em] italic">gallery</h1>
+        <h1 className="text-sunglowMuted text-2xl font-medium tracking-[-0.08em] italic">gallery</h1>
       </section>
     </article>
   );
