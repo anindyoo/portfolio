@@ -11,6 +11,7 @@ const ProjectDescription = (props) => {
     >
       <div className="
       THE-STORY
+      HEADLINE-TEXT
       flex flex-row justify-between
       text-5xl"
       >

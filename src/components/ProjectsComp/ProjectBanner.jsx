@@ -28,8 +28,8 @@ const ProjectBanner = (props) => {
           TOP-SECTION
           flex flex-col"
           >
-            <span className="TITLE text-[4rem] italic">{project.title}</span>
-            <span className="DATE text-base font-medium">{project.startDate && helpers.formatDateRange(project?.startDate, project?.endDate)}</span>
+            <span className="TITLE HEADLINE-TEXT text-[4rem] italic">{project.title}</span>
+            <span className="DATE text-sunglowMuted text-base font-medium">{project.startDate && helpers.formatDateRange(project?.startDate, project?.endDate)}</span>
           </div>
           <div className="
           MIDDLE-SECTION
@@ -52,7 +52,7 @@ const ProjectBanner = (props) => {
               flex flex-row gap-1
               w-[50%]"
               >
-                <span className="font-medium">Role:</span>
+                <span className="text-sunglowMuted font-medium">Role:</span>
                 <span>{project.role}</span>
               </div>
               <div className="
@@ -60,19 +60,24 @@ const ProjectBanner = (props) => {
               flex flex-row gap-1
               w-[50%]"
               >
-                <span className="font-medium">Status:</span>
+                <span className="text-sunglowMuted font-medium">Status:</span>
                 <span>{project.status}</span>
               </div>
             </div>
             <ul className="
-            TAGS
+            TAGS-LIST
             flex flex-row flex-wrap gap-2.5
             text-sm"
             >
               {project.tags?.map((tag) => (
                 <li
                   key={tag}
-                  className="px-2 py-1 bg-gray-300 rounded-full"
+                  className="
+                  TAG
+                  px-3 py-1
+                  rounded-full
+                  bg-vagueGold45
+                  text-warmMoss font-medium"
                 >
                   {tag}
                 </li>
