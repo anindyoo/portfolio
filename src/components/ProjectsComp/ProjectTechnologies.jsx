@@ -5,12 +5,13 @@ const ProjectTechnologies = (props) => {
   return (
     <div className="
     PROJECT-TECHNOLOGIES
-    flex flex-col gap-16 border
+    flex flex-col gap-16
     min-h-screen
     py-16"
     >
       <div className="
       THE-TECHNOLOGIES
+      HEADLINE-TEXT
       flex flex-row justify-between
       text-5xl"
       >
@@ -34,7 +35,7 @@ const ProjectTechnologies = (props) => {
             ${stack}-LIST-CONTAINER
             flex flex-col gap-2`}
           >
-            <span className="text-4xl italic">{stack.split('-').join(' ')}</span>
+            <span className="text-4xl text-sunglowMuted italic">{stack.split('-').join(' ')}</span>
             <div className={`
             ${stack}-SUBSTACK-LIST-CONTAINER
             flex flex-col gap-2.5`}
@@ -45,7 +46,7 @@ const ProjectTechnologies = (props) => {
                   className={`
                   ${subStack}-SUBSTACK`}
                 >
-                  <span className="text-xl">{subStack.split('-').join(' ')}</span>
+                  <span className="text-sunglowMuted underline text-xl">{subStack.split('-').join(' ')}</span>
                   <ul className={`
                   ${subStack}-TECH-LIST
                   list-disc ps-8`}
