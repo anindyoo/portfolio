@@ -154,7 +154,6 @@ const ExperiencesArticle = (props) => {
             : activeCard?.links.map((link) => (
               <li
                 key={link.link}
-                className=""
               >
                 <a
                   href={link.link}
