@@ -30,10 +30,14 @@ module.exports = {
         
         // FOOTER GRADIENT
         'footerGradient':'linear-gradient(180deg, rgba(248, 207, 62, 60%) 0%, rgba(254, 249, 240, 14%) 100%)',
+
+        // TAG GRADIENT
+        'vagueGold45': 'linear-gradient(-45deg, rgba(248, 207, 62, 1) 0%, rgb(255, 233, 173) 25%, rgba(248, 207, 62, 1) 100%)',
       },
       colors: {
         'transparent': 'transparent',
         'white': 'white',
+        'warmMoss': 'rgba(0, 59, 38, 1)',
         'sunglow': 'rgba(248, 207, 62, 1)',
         'sunglowMuted': 'rgb(255, 233, 173)',
         'orangePith': 'rgba(254, 249, 240, 1)',
