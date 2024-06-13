@@ -98,7 +98,11 @@ const ProjectBanner = (props) => {
               text-xl
               hover:underline"
             >
-              <a href={link}>
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {key === 'repo'
                   ? 'visit repo'
                   : key === 'deployment'
