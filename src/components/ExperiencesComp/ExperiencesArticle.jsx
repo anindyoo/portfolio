@@ -118,7 +118,7 @@ const ExperiencesArticle = (props) => {
               <li key={certificate.link}>
                 <a
                   href={certificate.link}
-                  className="flex flex-row gap-2"
+                  className="flex flex-row gap-2 w-fit transition-all ease-out hover:text-sunglow"
                   target="_blank"
                   rel="noreferrer"
                 >
