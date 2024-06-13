@@ -5,7 +5,7 @@ const ProjectDescription = (props) => {
   return (
     <div className="
     PROJECT-DESCRIPTION
-    flex flex-col gap-16 border
+    flex flex-col gap-16
     min-h-screen
     py-16"
     >
