@@ -41,10 +41,12 @@ const ProjectsTimeline = (props) => {
           />
         ))}
       </ul>
-      <StrecthedStrings
-        text="see more projects"
-        link="/projects"
-      />
+      {isHome && (
+        <StrecthedStrings
+          text="see more projects"
+          link="/projects"
+        />
+      )}
     </section>
   );
 };
