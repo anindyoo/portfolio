@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import helpers from '../../helpers/helpers';
 
 const ExperiencesCard = (props) => {
@@ -7,7 +8,11 @@ const ExperiencesCard = (props) => {
     activeCardClickHandler,
   } = props;
 
+  const [hovered, setHovered] = useState(false);
+
   const cardClickHandler = () => activeCardClickHandler(exp);
+
+  const handleCardHover = () => setHovered(!hovered);
 
   return (
     <div
@@ -15,6 +20,8 @@ const ExperiencesCard = (props) => {
       tabIndex={0}
       onKeyDown={cardClickHandler}
       onClick={cardClickHandler}
+      onMouseEnter={handleCardHover}
+      onMouseLeave={handleCardHover}
       className={`
       EXPERIENCE-CARD
       appearance-none
@@ -33,19 +40,19 @@ const ExperiencesCard = (props) => {
     >
       <div className={`
       TITLE-SUBTITLE
-      flex flex-col hover:!text-warmMoss`}
+      flex flex-col`}
       >
         <span className={`
         EXP-ROLE
         text-xl font-bold leading-none line-clamp-2
-        ${activeCardId !== exp?.id && 'HEADLINE-TEXT'}`}
+        ${hovered ? 'text-warmMoss' : 'HEADLINE-TEXT'}`}
         >
           {exp?.role}
         </span>
         <span className={`
         EXP-COMPANY
         text-base font-medium line-clamp-1
-        ${activeCardId !== exp?.id && 'text-sunglowMuted'}`}
+        ${hovered ? 'text-warmMoss' : 'text-sunglowMuted'}`}
         >
           {exp?.company}
         </span>
