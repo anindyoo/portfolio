@@ -95,13 +95,14 @@ const ProjectBanner = (props) => {
               key={key}
               className="
               flex flex-row gap-2 items-center
-              text-xl
+              text-xl font-bold tracking-tighter
               hover:underline"
             >
               <a
                 href={link}
                 target="_blank"
                 rel="noreferrer"
+                className="HEADLINE-TEXT"
               >
                 {key === 'repo'
                   ? 'visit repo'
@@ -112,11 +113,10 @@ const ProjectBanner = (props) => {
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
+                  strokeWidth={2.5}
                   stroke="currentColor"
-                  className="size-5 pt-px"
+                  className="size-5 pt-px stroke-sunglowMuted"
                 >
                   <path
                     strokeLinecap="round"
