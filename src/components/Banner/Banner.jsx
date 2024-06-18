@@ -3,6 +3,8 @@ import { ScrollTrigger } from 'gsap/all';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MenuNavLink from '../MenuNavLink/MenuNavLink';
+import useScreenSize from '../../hooks/useScreenSize';
+import config from '../../config/config';
 
 const menuNavlinksClassName = (menu) => `MENU-NAVLINK-${menu}`;
 
@@ -105,19 +107,22 @@ const pinLogo = () => {
 const Banner = () => {
   const nameBannerStyle = 'mt-[-2.031rem] HEADLINE-TEXT';
 
+  const screenSize = useScreenSize();
+
   useEffect(() => {
     const triggerPinLogo = pinLogo();
-
+    const tabletWidth = config.screenBreakpoints.tablet;
     const triggers = [];
+
     menuNavlinks.forEach((menu, index) => {
       const { className } = menu
-      const trigger = menuNavlinkTrigger(className, index);
+      const trigger = screenSize.width > tabletWidth && menuNavlinkTrigger(className, index);
       triggers.push(trigger);
     });
 
     return () => {
       triggerPinLogo.kill();
-      triggers.forEach((trigger) => trigger.kill());
+      triggers.forEach((trigger) => screenSize.width > tabletWidth && trigger.kill());
     }
   });
 
