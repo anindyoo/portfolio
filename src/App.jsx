@@ -6,6 +6,7 @@ import ProjectDetail from './pages/Projects/ProjectDetail';
 import NotFound from './pages/NotFound/NotFound';
 import Experiences from './pages/Experiences/Experiences';
 import About from './pages/About/About';
+import ScreenFrame from './components/ScreenFrame/ScreenFrame';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -51,15 +52,18 @@ const App = () => {
   ]);
 
   return (
-    <div className="
-    APP
-    relative
-    min-h-screen h-full
-    box-border
-    text-lightSweetener decoration-lightSweetener"
-    >
-      <RouterProvider router={router} />
-    </div>
+    <>
+      <ScreenFrame />
+      <div className="
+      APP
+      relative
+      min-h-screen h-full
+      box-border
+      text-lightSweetener decoration-lightSweetener"
+      >
+        <RouterProvider router={router} />
+      </div>
+    </>
   );
 };
 
