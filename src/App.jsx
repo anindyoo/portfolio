@@ -56,7 +56,7 @@ const App = () => {
       <ScreenFrame />
       <div className="
       APP-CONTAINER
-      w-screen overflow-x-hidden"
+      w-full overflow-x-hidden"
       >
         <div className="
         APP-CONTENT
