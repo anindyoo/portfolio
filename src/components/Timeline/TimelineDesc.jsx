@@ -7,6 +7,8 @@ const TimelineDesc = (props) => {
     isOdd,
     isFirst,
     isLast,
+    mobile,
+    buffer,
   } = props;
 
   const dateRange = helpers.formatDateRange(project.startDate, project.endDate);
@@ -17,20 +19,36 @@ const TimelineDesc = (props) => {
       TIMELINE-DESCRIPTION
       relative before:absolute before:inset-0
       flex flex-col justify-center
-      w-full h-screen max-h-[calc(100vh*(66.25/100))]
-      px-[2.188rem]
+      w-full h-screen max-h-[500px] lg:max-h-[calc(100vh*(66.25/100))]
+      px-[2.188rem]      
       before:pointer-events-none
+      ${mobile && 'mb-[-1px]'}
       ${(isFirst || isLast)
         ? `${isFirst
           ? 'before:bg-timeline_gradient_utb before:pb-px'
-          : 'before:bg-timeline_gradient_btu '}`
-        : 'before:bg-sunglowMuted before:pb-px'
-      }
+          : `before:bg-timeline_gradient_btu ${mobile && 'before:pt-px'}`
+        }`
+        : `before:bg-sunglowMuted before:pb-px ${mobile && 'before:pt-px'}`
+      } 
       ${isOdd
-        ? `before:pl-px ${!isLast && 'before:rounded-bl-[12.5rem]'}`
-        : `before:pr-px ${!isLast && 'before:rounded-br-[12.5rem]'}`
-      }
-      `}
+        ? `before:pl-px 
+          ${mobile && 'before:w-[50%]'}
+          ${!isLast
+          ? `${mobile || buffer
+            ? `before:rounded-bl-[4.5rem] ${!isFirst && 'before:rounded-tl-[4.5rem]'}`
+            : 'before:rounded-bl-[12.5rem]'
+          }`
+          : `${mobile && 'before:rounded-tl-[4.5rem]'}`
+        }`
+        : `before:pr-px 
+          ${mobile && 'before:w-[50%] before:ml-auto'}
+          ${!isLast
+          ? `${mobile || buffer
+            ? `before:rounded-br-[4.5rem] ${!isFirst && 'before:rounded-tr-[4.5rem]'}`
+            : 'before:rounded-br-[12.5rem]'}`
+          : `${mobile && 'before:rounded-tr-[4.5rem]'}`
+        }`
+      }`}
     >
       <Link
         to={`/projects/${project.id}`}
@@ -39,9 +57,9 @@ const TimelineDesc = (props) => {
         flex flex-col
         w-fit"
       >
-        <span className="text-sunglowMuted text-base font-medium">{dateRange}</span>
-        <span className="HEADLINE-TEXT text-[4rem] italic">{project.title}</span>
-        <span className="text-base font-light">{project.subtitle}</span>
+        <span className="text-sunglowMuted text-base font-medium">{!buffer && dateRange}</span>
+        <span className="HEADLINE-TEXT text-[4rem] italic">{!buffer && project.title}</span>
+        <span className="text-base font-light">{!buffer && project.subtitle}</span>
       </Link>
     </div>
   )

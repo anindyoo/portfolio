@@ -21,7 +21,7 @@ const ProjectsTimeline = (props) => {
       HEADLINE-TEXT
       w-full
       flex flew-row justify-between
-      ${isHome ? 'text-4xl' : 'text-6xl font-extralight'}`}
+      ${isHome ? 'text-2xl md:text-4xl' : 'text-6xl font-extralight'}`}
       >
         {[...`${isHome ? 'highlighted ' : ''}projects`].map((letter, index) => (
           <span key={`latestProjects-${index}`}>{letter}</span>

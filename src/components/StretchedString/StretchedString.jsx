@@ -11,11 +11,10 @@ const StrecthedStrings = (props) => {
       to={link}
       className="
       STRETCHED-STRING
-      flex justify-center items-center
-      h-12 max-w-[calc(100vw-56px)]
-      text-center text-3xl font-extralight text-sunglowMuted
+      h-12 w-full
+      text-center text-xl lg:text-3xl font-extralight text-sunglowMuted
       hover:underline
-      tracking-[2em] transition-all ease-out duration-500 hover:tracking-[0.6em]"
+      tracking-[1em] lg:tracking-[2em] transition-all ease-out duration-500 hover:tracking-[0.6em]"
     >
       {text}
     </Link>
