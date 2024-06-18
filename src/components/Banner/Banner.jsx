@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect } from 'react';
@@ -61,7 +62,7 @@ const menuNavlinkTrigger = (menuName, menuIndex) => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-const pinLogo = () => {
+const pinLogo = (screenSize, initialFontSize) => {
   const pinElement = document.querySelector('.NAME-BANNER-LOGO');
   const trigger = ScrollTrigger.create({
     trigger: pinElement,
@@ -77,21 +78,21 @@ const pinLogo = () => {
       const { progress } = self;
       const spacerElement = document.querySelector('.pin-spacer-namePin');
 
-      const screenHeigth = window.innerHeight;
+      const screenHeigth = screenSize.height;
 
       const scallingFactor = screenHeigth / pinElement.clientHeight;
       const adjustedProgress = Math.min(progress * scallingFactor, 1);
 
-      const targetFontSize = gsap.utils.interpolate(128, 24, adjustedProgress);
+      const targetFontSize = gsap.utils.interpolate(initialFontSize, 24, adjustedProgress);
       const targetLetterSpacing = gsap.utils.interpolate(-0.025, -0.08, adjustedProgress);
       const targetTop = gsap.utils.interpolate(0, 20, adjustedProgress);
 
       gsap
         .to(pinElement, {
-          top: progress === 0 ? 0 : `${targetTop}`,
+          top: progress === 0 ? 0 : targetTop,
           height: progress === 0 ? document.querySelector('.name-ref').clientHeight : 'fit-content',
           width: progress === 0 ? document.querySelector('.name-ref').clientWidth : 'fit-content',
-          fontSize: progress === 0 ? '128px' : `${targetFontSize}px`,
+          fontSize: progress === 0 ? initialFontSize : `${targetFontSize}px`,
           letterSpacing: progress === 0 ? '-0.025em' : `${targetLetterSpacing}em`,
           duration: 0,
         })
@@ -105,12 +106,16 @@ const pinLogo = () => {
 };
 
 const Banner = () => {
-  const nameBannerStyle = 'mt-[-2.031rem] HEADLINE-TEXT';
+  const nameBannerStyle = 'mt-[-0.5rem] md:mt-[-2.031rem] HEADLINE-TEXT';
 
   const screenSize = useScreenSize();
 
   useEffect(() => {
-    const triggerPinLogo = pinLogo();
+    const screenWidth = screenSize.width
+    const breakpoints = config.screenBreakpoints;
+    const initialFontSize = screenWidth >= breakpoints.tablet
+      ? 128 : screenWidth >= breakpoints.mobileLarge ? 72 : 48;
+    const triggerPinLogo = pinLogo(screenSize, initialFontSize);
     const tabletWidth = config.screenBreakpoints.tablet;
     const triggers = [];
 
@@ -124,7 +129,7 @@ const Banner = () => {
       triggerPinLogo.kill();
       triggers.forEach((trigger) => screenSize.width > tabletWidth && trigger.kill());
     }
-  });
+  }, [screenSize]);
 
   return (
     <section className="
@@ -137,17 +142,17 @@ const Banner = () => {
       BANNER-SECTION-CONTAINER
       absolute
       z-50
-      flex w-full flex-row justify-between"
+      flex w-full flex-col lg:flex-row justify-between"
       >
         <div className="
         NAME-BANNER
         flex flex-col
-        text-9xl font-bold tracking-tight"
+        text-5xl xs:text-7xl md:text-9xl font-bold tracking-tight"
         >
           <span className={`name-ref ${nameBannerStyle}`}>muhammad</span>
           <span
             title="anindyo logo"
-            className={`NAME-BANNER-LOGO text-9xl ${nameBannerStyle} italic !font-normal hover:underline HEADLINE-TEXT decoration-lightSweetener`}
+            className={`NAME-BANNER-LOGO text-5xl xs:text-7xl md:text-9xl ${nameBannerStyle} italic !font-normal hover:underline HEADLINE-TEXT decoration-lightSweetener`}
           >
             <Link to="/" className="pr-4">
               anindyo
@@ -158,12 +163,13 @@ const Banner = () => {
         </div>
         <div className="
         MENU-BANNER
-        flex"
+        flex justify-end
+        mt-4 lg:m-0"
         >
           <nav className="
           NAV-MENU-CONTAINER
-          flex flex-col items-end justify-between
-          text-5xl tracking-tight"
+          flex flex-col items-end gap-4 lg:gap-0 lg:justify-between
+          text-2xl xs:text-3xl md:text-5xl tracking-tight"
           >
             {menuNavlinks.map((navlink) => (
               <MenuNavLink
