@@ -1,6 +1,8 @@
 import { Fragment } from 'react';
 import TimelineDesc from './TimelineDesc';
 import TimelineImg from './TimelineImg';
+import useScreenSize from '../../hooks/useScreenSize';
+import config from '../../config/config';
 
 const TimelineComp = (props) => {
   const {
@@ -14,22 +16,41 @@ const TimelineComp = (props) => {
     project, isOdd, isFirst, isLast,
   };
 
+  const screenSize = useScreenSize();
+  const screenWidth = screenSize.width;
+  const { screenBreakpoints } = config;
+
   return (
     <Fragment key={project.id}>
       {isOdd ? (
-        <li className="grid grid-cols-subgrid col-span-2">
-          <TimelineDesc {...descAttributes} />
-          <TimelineImg project={project} />
+        <li className="grid col-span-2 lg:grid-cols-subgrid lg:col-span-2">
+          {screenWidth > screenBreakpoints.tablet ? (
+            <>
+              <TimelineDesc {...descAttributes} />
+              <TimelineImg project={project} />
+            </>
+          ) : (
+            <TimelineDesc {...descAttributes} mobile />
+          )}
         </li>
 
       ) : (
-        <li className="grid grid-cols-subgrid col-span-2">
-          <TimelineImg project={project} />
-          <TimelineDesc {...descAttributes} />
+        <li className="grid col-span-2 lg:grid-cols-subgrid lg:col-span-2">
+          {screenWidth > screenBreakpoints.tablet ? (
+            <>
+              <TimelineImg project={project} />
+              <TimelineDesc {...descAttributes} />
+            </>
+          ) : (
+            <>
+              <TimelineDesc {...descAttributes} mobile />
+              {/* <TimelineDesc {...descAttributes} buffer /> */}
+            </>
+          )}
         </li>
-
       )}
-      {!isLast && (
+
+      {!isLast && screenWidth > screenBreakpoints.tablet && (
         <li className={
         `TIMLINE-BUFFER-CONTAINER
         relative 
