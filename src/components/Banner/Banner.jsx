@@ -39,6 +39,7 @@ const menuNavlinkTrigger = (menuName, menuIndex) => {
           ? acc + document.querySelector(`.${menu.className}`).clientWidth
           : acc
       ), 0);
+
       const leftOffside = screenWidth - otherMenusOffside - borderOffside - totalGap;
 
       gsap.to(element, {
@@ -122,10 +123,10 @@ const Banner = () => {
 
   return (
     <section className="
-      BANNER-SECTION
-      h-screen
-      relative
-      flex items-center"
+    BANNER-SECTION
+    h-screen
+    relative
+    flex items-center"
     >
       <div className="
       BANNER-SECTION-CONTAINER
