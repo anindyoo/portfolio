@@ -55,13 +55,20 @@ const App = () => {
     <>
       <ScreenFrame />
       <div className="
-      APP
-      relative
-      min-h-screen h-full
-      box-border
-      text-lightSweetener decoration-lightSweetener"
+      APP-CONTAINER
+      w-screen overflow-x-hidden"
       >
-        <RouterProvider router={router} />
+        <div className="
+        APP-CONTENT
+        relative
+        mx-auto
+        w-full max-w-[125rem]
+        min-h-screen h-full
+        box-border
+        text-lightSweetener decoration-lightSweetener"
+        >
+          <RouterProvider router={router} />
+        </div>
       </div>
     </>
   );
