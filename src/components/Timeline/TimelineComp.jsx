@@ -23,8 +23,8 @@ const TimelineComp = (props) => {
   return (
     <Fragment key={project.id}>
       {isOdd ? (
-        <li className="grid col-span-2 lg:grid-cols-subgrid lg:col-span-2">
-          {screenWidth > screenBreakpoints.tablet ? (
+        <li className="grid col-span-2 lg:grid-cols-subgrid">
+          {screenWidth >= screenBreakpoints.laptop ? (
             <>
               <TimelineDesc {...descAttributes} />
               <TimelineImg project={project} />
@@ -35,22 +35,19 @@ const TimelineComp = (props) => {
         </li>
 
       ) : (
-        <li className="grid col-span-2 lg:grid-cols-subgrid lg:col-span-2">
-          {screenWidth > screenBreakpoints.tablet ? (
+        <li className="grid col-span-2 lg:grid-cols-subgrid">
+          {screenWidth >= screenBreakpoints.laptop ? (
             <>
               <TimelineImg project={project} />
               <TimelineDesc {...descAttributes} />
             </>
           ) : (
-            <>
-              <TimelineDesc {...descAttributes} mobile />
-              {/* <TimelineDesc {...descAttributes} buffer /> */}
-            </>
+            <TimelineDesc {...descAttributes} mobile />
           )}
         </li>
       )}
 
-      {!isLast && screenWidth > screenBreakpoints.tablet && (
+      {!isLast && screenWidth >= screenBreakpoints.laptop && (
         <li className={
         `TIMLINE-BUFFER-CONTAINER
         relative 
