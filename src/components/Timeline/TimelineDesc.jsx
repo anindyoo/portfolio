@@ -53,13 +53,47 @@ const TimelineDesc = (props) => {
       <Link
         to={`/projects/${project.id}`}
         className="
-        DESCRIPTION-TEXT-CONTAINER
+        DESCRIPTION-CONTAINER
         flex flex-col
         w-fit"
       >
-        <span className="text-sunglowMuted text-base font-medium">{!buffer && dateRange}</span>
-        <span className="HEADLINE-TEXT text-[4rem] italic">{!buffer && project.title}</span>
-        <span className="text-base font-light">{!buffer && project.subtitle}</span>
+        <div className={`
+        DESCRIPTION-TEXT-CONTAINER
+        flex flex-col
+        ${mobile
+          ? 'absolute bottom-16'
+          : ''}
+        `}
+        >
+          <span className="text-sunglowMuted text-base font-medium">{!buffer && dateRange}</span>
+          <span className="HEADLINE-TEXT text-5xl md:text-[4rem] italic">{!buffer && project.title}</span>
+          <span className="text-base font-light">{!buffer && project.subtitle}</span>
+        </div>
+        {mobile && (
+          <div className={`
+          MOBILE-IMAGE-CONTAINER
+          absolute -z-10 top-14
+          w-full h-full max-w-[540px] max-h-[360px]
+          ${isOdd ? 'left-6' : 'right-6'}
+          `}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Miamimetroarea.jpg"
+              alt="background"
+              className={`
+              TIMLINE-MOBILE-THUMBNAIL
+              w-full h-full 
+              object-cover
+              `}
+            />
+            <div className="
+            absolute
+            z-10 top-0
+            w-full h-full
+            bg-gradient-to-b from-transparent via-transparent to-warmMoss"
+            />
+          </div>
+        )}
       </Link>
     </div>
   )
