@@ -11,7 +11,7 @@ const TimelineImg = (props) => {
     >
       <Link to={`/projects/${project.id}`}>
         <img
-          src="https://i.scdn.co/image/ab67616d0000b2731572698fff8a1db257a53599"
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Miamimetroarea.jpg"
           alt="alt"
           className="
           TIMELINE-IMAGE
