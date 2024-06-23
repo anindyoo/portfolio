@@ -55,7 +55,7 @@ const ExperiencesMarquee = (props) => {
 
   const screenSize = useScreenSize();
   const screenWidth = screenSize.width;
-  const tabletBreakpoint = config.screenBreakpoints.tablet;
+  const laptopBreakpoint = config.screenBreakpoints.laptop;
 
   useEffect(() => {
     const cardElement = experiences && document.querySelector('.SKEWED-CARD');
@@ -99,8 +99,8 @@ const ExperiencesMarquee = (props) => {
             relative
             flex items-center"
             style={{
-              height: screenWidth > tabletBreakpoint ? expCardsH * 0.8 : 0,
-              right: screenWidth > tabletBreakpoint ? expCardsW : expCardsW * 2,
+              height: screenWidth >= laptopBreakpoint ? expCardsH * 0.8 : 0,
+              right: screenWidth >= laptopBreakpoint ? expCardsW : expCardsW * 2,
             }}
           >
             {experiences.map((exp, index) => (
