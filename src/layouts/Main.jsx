@@ -17,7 +17,7 @@ const Main = (props) => {
       )}
       <main className="
       MAIN-CONTAINER
-      px-7 py-5"
+      px-5 lg:px-7 py-5"
       >
         <Outlet />
       </main>

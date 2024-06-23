@@ -3,7 +3,7 @@ const ScreenFrame = () => (
   SCREEN-FRAME-CONTAINER
   fixed z-10
   w-full h-screen
-  p-3 pointer-events-none"
+  p-2.5 lg:p-3 pointer-events-none"
   >
     <div className="
     SCREEN-FRAME
