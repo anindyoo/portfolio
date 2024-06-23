@@ -5,6 +5,8 @@ import SkewedCard from '../SkewedCard/SkewedCard';
 import ExperiencesTitle from './ExperiencesTitle';
 import StrecthedStrings from '../StretchedString/StretchedString';
 import helpers from '../../helpers/helpers';
+import useScreenSize from '../../hooks/useScreenSize';
+import config from '../../config/config';
 
 gsap.registerPlugin(Draggable);
 
@@ -18,6 +20,7 @@ const animateMarquee = (element, className, direction, duration) => {
   });
 
   const animation = gsap.to(className, {
+    // paused: true,
     duration,
     ease: 'none',
     x: `${direction}=${widthTotal}`,
@@ -50,6 +53,10 @@ const ExperiencesMarquee = (props) => {
   const [expCardsW, setExpCardsW] = useState(0);
   const [expCardsH, setExpCardsH] = useState(0);
 
+  const screenSize = useScreenSize();
+  const screenWidth = screenSize.width;
+  const tabletBreakpoint = config.screenBreakpoints.tablet;
+
   useEffect(() => {
     const cardElement = experiences && document.querySelector('.SKEWED-CARD');
     const titleElement = experiences && document.querySelector('.EXPERIENCES-TITLE');
@@ -64,14 +71,14 @@ const ExperiencesMarquee = (props) => {
       cardMarquee.kill();
       titleMarquee.kill();
     }
-  }, [experiences]);
+  }, [experiences, screenWidth]);
 
   return (
     <section className="
-      EXPERIENCES-SECTION
-      flex flex-col justify-center
-      relative
-      h-screen"
+    EXPERIENCES-SECTION
+    flex flex-col justify-center
+    relative
+    h-[calc(100vh-300px)] lg:h-screen"
     >
       <div className="
       EXPERIENCES-TITLE-ABS-WRAPPER
@@ -84,8 +91,7 @@ const ExperiencesMarquee = (props) => {
         flex
         mx-[-28px]
         text-xl
-        w-[calc(100vw-20px)]
-        overflow-hidden"
+        w-[20rem] lg:w-[calc(100vw-20px)]"
         >
           <div
             className="
@@ -93,8 +99,8 @@ const ExperiencesMarquee = (props) => {
             relative
             flex items-center"
             style={{
-              height: expCardsH * 0.8,
-              right: expCardsW,
+              height: screenWidth >= tabletBreakpoint ? expCardsH * 0.8 : 0,
+              right: screenWidth >= tabletBreakpoint ? expCardsW : expCardsW * 2,
             }}
           >
             {experiences.map((exp, index) => (
