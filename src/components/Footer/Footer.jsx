@@ -1,9 +1,25 @@
 import config from '../../config/config';
 import useScreenSize from '../../hooks/useScreenSize';
 
-const Footer = () => {
+const ScrollToTopButton = () => {
   const handleScrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
+  return (
+    <span className="SCROLL-TO-THE-TOP flex lg:block">
+      <button
+        type="button"
+        title="Scroll to the top"
+        onClick={handleScrollTop}
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+        </svg>
+      </button>
+    </span>
+  )
+}
+
+const Footer = () => {
   const screenSize = useScreenSize();
   const screenWidth = screenSize.width;
   const tabletBreakpoint = config.screenBreakpoints.tablet;
@@ -19,14 +35,26 @@ const Footer = () => {
       FOOTER-CONTAINER
       bg-footerGradient
       flex flex-col justify-between
+      gap-10 lg:gap-0
       w-full lg:h-[11.25rem]
       pt-3 pb-5 px-3"
       >
         <div className="
         FOOTER-MAIN
-        flex flex-col lg:flex-row justify-between"
+        flex flex-col lg:flex-row lg:justify-between
+        gap-8 lg:gap-0"
         >
-          <span className="HEADLINE-TEXT text-5xl md:text-[4rem] tracking-tight">talk to me nice.</span>
+          <div className="
+          FOOTER-TITLE
+          flex flex-row justify-between lg:block
+          text-4xl xs:text-5xl md:text-[4rem]
+          tracking-tight"
+          >
+            <span className="HEADLINE-TEXT">
+              talk to me nice.
+            </span>
+            {screenWidth <= tabletBreakpoint && <ScrollToTopButton />}
+          </div>
           <div className="
           FOOTER-LINKS
           flex flex-col"
@@ -159,20 +187,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <span className="SCROLL-TO-THE-TOP">
-            <button
-              type="button"
-              title="Scroll to the top"
-              onClick={handleScrollTop}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-              </svg>
-            </button>
-          </span>
+          {screenWidth > tabletBreakpoint && <ScrollToTopButton />}
         </div>
         <div className="
-        FOOTER-COPYRIGHT"
+        FOOTER-COPYRIGHT
+        text-sm lg:text-base"
         >
           Designed & Coded by Muhammad Anindyo Poetra Mufatyta © 2024 All Rights Reserved
         </div>
