@@ -155,10 +155,18 @@ const ExperiencesMarquee = (props) => {
           )}
         </div>
       </div>
-      <StrecthedStrings
-        text="see more experiences"
-        link="/experiences"
-      />
+      <div className="
+      EXPERIENCES-STRETCHED-STRINGS-CONTAINER
+      flex justify-center
+      text-center"
+      >
+        <div className="absolute lg:static bottom-28">
+          <StrecthedStrings
+            text="see more experiences"
+            link="/experiences"
+          />
+        </div>
+      </div>
     </section>
   );
 };
