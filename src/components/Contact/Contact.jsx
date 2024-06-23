@@ -1,19 +1,39 @@
 /* eslint-disable react/no-array-index-key */
 import { Link } from 'react-router-dom';
 import contactData from '../../data/contact.json'
+import useScreenSize from '../../hooks/useScreenSize';
+import config from '../../config/config';
+
+const ContactSubtitle = () => {
+  const contactText = '“i bow to all that you\'ve given me. thank you for staying while we learn to find our resonance where we do connect” — björk.';
+
+  return (
+    <span className="
+    CONTACT-SUBTITLE
+    w-[calc(100vw*(56/100))] lg:w-full
+    text-sunglowMuted lg:text-right text-lg lg:text-2xl tracking-[-0.06em]"
+    >
+      {contactText}
+    </span>
+  )
+}
 
 const Contact = () => {
   const contactArray = Object.entries(contactData);
-
-  const contactText = '“i bow to all that you\'ve given me. thank you for staying while we learn to find our resonance where we do connect” — björk.';
+  const screenSize = useScreenSize();
+  const screenWidth = screenSize.width;
+  // const tabletBreakpoint = config.screenBreakpoints.tablet;
+  const laptopBreakpoint = config.screenBreakpoints.laptop;
 
   return (
     <section className="
     CONTACT-SECTION
     flex flex-col-reverse lg:flex-row justify-end lg:justify-between items-center
-    gap-16 lg:gap-0
-    h-screen"
+    gap-12 lg:gap-0
+    pt-10 lg:pt-0
+    h-[calc(100vh-80px)] lg:h-screen"
     >
+      {screenWidth < laptopBreakpoint && <ContactSubtitle />}
       <div className="
       CONTACT-LINKS
       flex flex-col justify-between gap-16
@@ -67,22 +87,18 @@ const Contact = () => {
       CONTACT-TITLE
       h-fit
       flex flex-col justify-center items-center lg:items-end
-      w-[calc(100vw*(76/100))] md:w-[calc(100vw*(56/100))] lg:w-[calc(100vw*(36.08/100))]"
+      w-full lg:w-[calc(100vw*(36.08/100))]"
       >
         <span className="
         CONTACT-TITLE
         HEADLINE-TEXT
         lg:text-end
-        italic font-bold text-8xl md:text-9xl lg:text-[10.375rem]"
+        italic font-bold
+        text-[2.6rem] 2xs:text-5xl xs:text-[3.5rem] md:text-8xl lg:text-[10.375rem]"
         >
           contact & links
         </span>
-        <span className="
-        CONTACT-SUBTITLE
-        text-sunglowMuted lg:text-right text-lg lg:text-2xl tracking-[-0.06em]"
-        >
-          {contactText}
-        </span>
+        {screenWidth >= laptopBreakpoint && <ContactSubtitle />}
       </div>
     </section>
   );
