@@ -50,9 +50,15 @@ const Footer = () => {
           text-4xl xs:text-5xl md:text-[4rem]
           tracking-tight"
           >
-            <span className="HEADLINE-TEXT">
+            <a
+              href="https://www.youtube.com/watch?v=RVLGp0Ph9lA"
+              target="_blank"
+              rel="noreferrer"
+              title="talk to me nice."
+              className="HEADLINE-TEXT"
+            >
               talk to me nice.
-            </span>
+            </a>
             {screenWidth <= tabletBreakpoint && <ScrollToTopButton />}
           </div>
           <div className="
