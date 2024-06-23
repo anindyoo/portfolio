@@ -1,5 +1,12 @@
+import config from '../../config/config';
+import useScreenSize from '../../hooks/useScreenSize';
+
 const Footer = () => {
   const handleScrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  const screenSize = useScreenSize();
+  const screenWidth = screenSize.width;
+  const tabletBreakpoint = config.screenBreakpoints.tablet;
 
   return (
     <footer className="
@@ -12,14 +19,14 @@ const Footer = () => {
       FOOTER-CONTAINER
       bg-footerGradient
       flex flex-col justify-between
-      w-full h-[11.25rem]
+      w-full lg:h-[11.25rem]
       pt-3 pb-5 px-3"
       >
         <div className="
         FOOTER-MAIN
-        flex flex-row justify-between"
+        flex flex-col lg:flex-row justify-between"
         >
-          <span className="HEADLINE-TEXT text-[4rem] tracking-tight">talk to me nice.</span>
+          <span className="HEADLINE-TEXT text-5xl md:text-[4rem] tracking-tight">talk to me nice.</span>
           <div className="
           FOOTER-LINKS
           flex flex-col"
@@ -30,6 +37,7 @@ const Footer = () => {
             border-b border-sunglowMuted
             mb-2"
             >
+              {screenWidth <= tabletBreakpoint && 'email me: '}
               <a
                 title="Email"
                 href="mailto:anindyo0216@gmail.com"

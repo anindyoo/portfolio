@@ -10,13 +10,14 @@ const Contact = () => {
   return (
     <section className="
     CONTACT-SECTION
-    flex flex-row justify-between items-center
+    flex flex-col-reverse lg:flex-row justify-end lg:justify-between items-center
+    gap-16 lg:gap-0
     h-screen"
     >
       <div className="
       CONTACT-LINKS
       flex flex-col justify-between gap-16
-      w-[calc(100vw*(36.08/100))]"
+      lg:w-[calc(100vw*(36.08/100))]"
       >
         {contactArray.map(([category, links]) => (
           <div
@@ -28,7 +29,7 @@ const Contact = () => {
             CONTACT-CATEGORY
             HEADLINE-TEXT
             flex justify-between
-            text-2xl text-gray-500
+            text-2xl
             mb-2"
             >
               {[...category].map((letter, index) => (
@@ -65,19 +66,20 @@ const Contact = () => {
       <div className="
       CONTACT-TITLE
       h-fit
-      flex flex-col justify-center items-end
-      w-[calc(100vw*(36.08/100))]"
+      flex flex-col justify-center items-center lg:items-end
+      w-[calc(100vw*(76/100))] md:w-[calc(100vw*(56/100))] lg:w-[calc(100vw*(36.08/100))]"
       >
         <span className="
         CONTACT-TITLE
         HEADLINE-TEXT
-        italic font-bold text-[10.375rem]"
+        lg:text-end
+        italic font-bold text-8xl md:text-9xl lg:text-[10.375rem]"
         >
-          contact
+          contact & links
         </span>
         <span className="
         CONTACT-SUBTITLE
-        text-sunglowMuted text-right text-2xl tracking-[-0.06em]"
+        text-sunglowMuted lg:text-right text-lg lg:text-2xl tracking-[-0.06em]"
         >
           {contactText}
         </span>
