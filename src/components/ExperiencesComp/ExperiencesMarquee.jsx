@@ -99,8 +99,8 @@ const ExperiencesMarquee = (props) => {
             relative
             flex items-center"
             style={{
-              height: screenWidth >= tabletBreakpoint ? expCardsH * 0.8 : 0,
-              right: screenWidth >= tabletBreakpoint ? expCardsW : expCardsW * 2,
+              height: screenWidth > tabletBreakpoint ? expCardsH * 0.8 : 0,
+              right: screenWidth > tabletBreakpoint ? expCardsW : expCardsW * 2,
             }}
           >
             {experiences.map((exp, index) => (
