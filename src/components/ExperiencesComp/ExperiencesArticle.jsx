@@ -4,11 +4,17 @@ import helpers from '../../helpers/helpers';
 import projectsData from '../../data/project.json';
 
 const ExperiencesArticle = (props) => {
-  const { activeCard } = props;
+  const {
+    activeCard,
+    closeCardHandler,
+    mobile,
+  } = props;
 
   const associatedProjects = activeCard?.associatedProjectsIds
     .map((associatedProjectId) => projectsData
       .find((project) => project.id === associatedProjectId));
+
+  const closeArticleClickHandler = () => closeCardHandler();
 
   return (
     activeCard ? (
@@ -20,6 +26,17 @@ const ExperiencesArticle = (props) => {
       px-2.5 pb-28
       overflow-hidden"
       >
+        {mobile && (
+          <button
+            type="button"
+            onClick={closeArticleClickHandler}
+            className="
+            CLOSE-ARTICLE-BUTTON
+            border"
+          >
+            close
+          </button>
+        )}
         <section className="
         ARTICLE-HEADER
         flex flex-col gap-2
@@ -92,12 +109,15 @@ const ExperiencesArticle = (props) => {
             {!associatedProjects?.length
               ? (<p className="italic">No projects are available.</p>)
               : associatedProjects.map((project) => (
-                <li key={project.id}>
+                <li
+                  key={project.id}
+                  className="w-full"
+                >
                   <Link to={`/projects/${project.id}`}>
                     <div className="
                     ASSOCIATED-PROJECT-CARD
                     flex justify-center items-center
-                    w-[27.75rem] h-[15rem]
+                    w-full max-w-[27.75rem] h-[15rem]
                     bg-yellow-300"
                     >
                       <span className="text-4xl font-medium italic tracking-[-0.08em]">{project.title}</span>
