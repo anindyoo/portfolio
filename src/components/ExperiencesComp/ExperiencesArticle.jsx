@@ -23,7 +23,7 @@ const ExperiencesArticle = (props) => {
       flex flex-col gap-[3.125rem]
       w-full h-fit
       my-[1.875rem]
-      px-2.5 pb-28
+      px-2.5 pb-28 pt-6 lg:pt-0
       overflow-hidden"
       >
         {mobile && (
