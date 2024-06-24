@@ -46,7 +46,7 @@ const ExperiencesArticle = (props) => {
         >
           <h1 className="
           HEADLINE-TEXT
-          text-[2.5rem] font-semibold tracking-[-0.04em]"
+          text-2xl lg:text-[2.5rem] font-semibold tracking-[-0.04em]"
           >
             {activeCard?.role}
           </h1>
