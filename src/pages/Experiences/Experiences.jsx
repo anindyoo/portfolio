@@ -18,13 +18,16 @@ const Experiences = () => {
     setActiveCard(exp);
   }
 
+  const closeCardHandler = () => {
+    setActiveCard(null);
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = 'experiences — muhammad anindyo poetra mufatyta';
 
     const sortedExperiences = helpers.sortByDate(experiencesData);
     setExperiences(sortedExperiences);
-    setActiveCard(sortedExperiences[0]);
   }, []);
 
   useEffect(() => {
@@ -37,12 +40,31 @@ const Experiences = () => {
     flex flex-row
     min-h-screen"
     >
-      <ExperiencesCardsList
-        experiences={experiences}
-        activeCardId={activeCard?.id}
-        activeCardClickHandler={activeCardClickHandler}
-      />
-      {screenWidth >= laptopBreakpoint && <ExperiencesArticle activeCard={activeCard} />}
+      {((!activeCard && screenWidth < laptopBreakpoint) || (screenWidth >= laptopBreakpoint)) && (
+        <ExperiencesCardsList
+          experiences={experiences}
+          activeCardId={activeCard?.id}
+          activeCardClickHandler={activeCardClickHandler}
+        />
+      )}
+      {screenWidth >= laptopBreakpoint ? (
+        <ExperiencesArticle activeCard={activeCard} />
+      ) : (
+        activeCard && (
+          <div className="
+          ARTICLE-MOBILE-CONTAINER
+          absolute z-[60]
+          w-screen
+          pr-10"
+          >
+            <ExperiencesArticle
+              activeCard={activeCard}
+              closeCardHandler={closeCardHandler}
+              mobile
+            />
+          </div>
+        )
+      )}
     </div>
   );
 };
