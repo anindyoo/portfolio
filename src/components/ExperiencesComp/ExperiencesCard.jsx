@@ -32,6 +32,7 @@ const ExperiencesCard = (props) => {
       -skew-y-12
       hover:cursor-pointer
       mb-8
+      bg-skewedCardBuffer
       outline-sunglow
       transition-all duration-400 ease-out
       ${activeCardId === exp?.id
