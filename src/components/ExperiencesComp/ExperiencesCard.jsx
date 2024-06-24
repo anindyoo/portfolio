@@ -27,7 +27,7 @@ const ExperiencesCard = (props) => {
       appearance-none
       border border-sunglowMuted
       flex flex-col justify-between
-      w-[16.25rem] h-[7.5rem]
+      lg:w-[16.25rem] h-[7.5rem]
       px-2.5 py-3
       -skew-y-12
       hover:cursor-pointer

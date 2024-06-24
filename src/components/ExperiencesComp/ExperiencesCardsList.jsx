@@ -11,13 +11,15 @@ const ExperiencesCardsList = (props) => {
     <aside className="
     EXPERIENCES-CARDS-LIST-SECTION
     flex
+    w-full lg:w-auto
     min-w-[16.25rem]
     mr-6"
     >
       <div className="
       EXPERIENCES-CARDS-LIST-SCROLL
       fixed top-0
-      max-h-screen pr-6
+      w-full lg:w-auto
+      max-h-screen pr-10 lg:pr-6
       overflow-y-scroll"
       >
         <ul className="
