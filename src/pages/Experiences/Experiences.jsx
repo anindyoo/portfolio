@@ -3,10 +3,16 @@ import ExperiencesCardsList from '../../components/ExperiencesComp/ExperiencesCa
 import ExperiencesArticle from '../../components/ExperiencesComp/ExperiencesArticle';
 import experiencesData from '../../data/experience.json';
 import helpers from '../../helpers/helpers';
+import useScreenSize from '../../hooks/useScreenSize';
+import config from '../../config/config';
 
 const Experiences = () => {
   const [experiences, setExperiences] = useState([]);
   const [activeCard, setActiveCard] = useState(null);
+
+  const screenSize = useScreenSize();
+  const screenWidth = screenSize.width;
+  const laptopBreakpoint = config.screenBreakpoints.laptop;
 
   const activeCardClickHandler = (exp) => {
     setActiveCard(exp);
@@ -36,7 +42,7 @@ const Experiences = () => {
         activeCardId={activeCard?.id}
         activeCardClickHandler={activeCardClickHandler}
       />
-      <ExperiencesArticle activeCard={activeCard} />
+      {screenWidth >= laptopBreakpoint && <ExperiencesArticle activeCard={activeCard} />}
     </div>
   );
 };
