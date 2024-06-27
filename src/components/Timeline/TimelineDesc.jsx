@@ -55,7 +55,7 @@ const TimelineDesc = (props) => {
         className="
         DESCRIPTION-CONTAINER
         flex flex-col
-        w-full h-[calc(100%-100px)] border"
+        w-full h-[calc(100%-100px)]"
       >
         <div className={`
         DESCRIPTION-TEXT-CONTAINER
