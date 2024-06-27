@@ -2,15 +2,22 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const MenuNavLink = (props) => {
-  const { className, name, link } = props;
+  const {
+    className,
+    name,
+    link,
+    handleMenuTogglerClick,
+    mobile,
+  } = props;
   const [isHovered, setIsHovered] = useState(false)
 
   const hoveredStyle = 'italic font-bold text-orangePith text-stroke stroke-cyan-700';
   const loopSize = 5;
 
   const onMouseEnterHandler = () => setIsHovered(true);
-
   const onMouseLeaveHandler = () => setIsHovered(false);
+
+  const menuClickHandler = () => handleMenuTogglerClick(false);
 
   return (
     <NavLink
@@ -18,6 +25,7 @@ const MenuNavLink = (props) => {
       title={name}
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
+      onClick={mobile && menuClickHandler}
       className={`
       ${className} 
       NAVLINK-CONTAINER
