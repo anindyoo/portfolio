@@ -12,9 +12,9 @@ const ProjectsTimeline = (props) => {
 
   return (
     <section className="
-      PROJECTS-SECTION
-      flex flex-col
-      py-[7.5rem]"
+    PROJECTS-SECTION
+    flex flex-col
+    py-20 lg:py-[7.5rem]"
     >
       <div className={`
       PROJECTS-TITLE
