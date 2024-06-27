@@ -55,7 +55,7 @@ const TimelineDesc = (props) => {
         className="
         DESCRIPTION-CONTAINER
         flex flex-col
-        w-fit"
+        w-full h-[calc(100%-100px)] border"
       >
         <div className={`
         DESCRIPTION-TEXT-CONTAINER
@@ -74,8 +74,7 @@ const TimelineDesc = (props) => {
           MOBILE-IMAGE-CONTAINER
           absolute -z-10 top-14
           w-full h-full max-w-[540px] max-h-[360px]
-          ${isOdd ? 'left-6' : 'right-6'}
-          `}
+          ${isOdd ? 'left-6' : 'right-6'}`}
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Miamimetroarea.jpg"
@@ -83,8 +82,7 @@ const TimelineDesc = (props) => {
               className={`
               TIMLINE-MOBILE-THUMBNAIL
               w-full h-full 
-              object-cover
-              `}
+              object-cover`}
             />
             <div className="
             absolute
