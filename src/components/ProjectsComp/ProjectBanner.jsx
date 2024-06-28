@@ -7,16 +7,17 @@ const ProjectBanner = (props) => {
   return (
     <div className="
     PROJECT-BANNER
-    flex flex-row justify-between items-center gap-8
-    h-screen"
+    flex flex-col-reverse lg:flex-row justify-between lg:items-center gap-8
+    w-full lg:w-auto
+    lg:h-screen"
     >
       <div className="
       PROJECT-BANNER-DESCRIPTION
       before:bg-timeline_gradient_rtl
       relative before:absolute before:inset-0
       flex flex-col justify-between
-      w-[50%] h-[60%]
-      px-5 py-10 before:p-px
+      w-[95%] lg:w-[50%] lg:h-[60%]
+      mt-60 lg:mt-0 px-5 py-10 before:p-px
       before:rounded-e-[5rem]
       before:pointer-events-none"
       >
@@ -28,8 +29,14 @@ const ProjectBanner = (props) => {
           TOP-SECTION
           flex flex-col"
           >
-            <span className="TITLE HEADLINE-TEXT text-[4rem] italic">{project.title}</span>
-            <span className="DATE text-sunglowMuted text-base font-medium">{project.startDate && helpers.formatDateRange(project?.startDate, project?.endDate)}</span>
+            <span className="TITLE HEADLINE-TEXT text-4xl 2xs:text-5xl md:text-[4rem] italic">{project.title}</span>
+            <span className="
+            DATE
+            mt-2 md:mt-0
+            text-sunglowMuted text-base font-medium"
+            >
+              {project.startDate && helpers.formatDateRange(project?.startDate, project?.endDate)}
+            </span>
           </div>
           <div className="
           MIDDLE-SECTION
@@ -38,19 +45,19 @@ const ProjectBanner = (props) => {
             <span className="
             SHORT-DESCRIPTION
             font-light
-            pb-3"
+            pb-6 lg:pb-3"
             >
               {project.description?.short}
             </span>
             <div className="
             ROLE-AND-STATUS-SECTION
-            flex flex-row justify-between
-            pb-5"
+            flex flex-col 2xs:flex-row justify-between gap-2 lg:gap-0
+            pb-6 lg:pb-5"
             >
               <div className="
               ROLE-CONTAINER
               flex flex-row gap-1
-              w-[50%]"
+              xs:w-[50%]"
               >
                 <span className="text-sunglowMuted font-medium">Role:</span>
                 <span>{project.role}</span>
@@ -58,7 +65,7 @@ const ProjectBanner = (props) => {
               <div className="
               STATUS-CONTAINER
               flex flex-row gap-1
-              w-[50%]"
+              xs:w-[50%]"
               >
                 <span className="text-sunglowMuted font-medium">Status:</span>
                 <span>{project.status}</span>
@@ -88,7 +95,8 @@ const ProjectBanner = (props) => {
         <ul className="
         DESCRIPTION-LINKS
         flex flex-row flex-wrap gap-6
-        text-xl"
+        text-xl
+        mt-10 lg:mt-0"
         >
           {project.links && Object.entries(project?.links).map(([key, link]) => link && (
             <li
@@ -129,16 +137,19 @@ const ProjectBanner = (props) => {
           ))}
         </ul>
       </div>
-      <div className="PROJECT-BANNER-THUMBNAIL
+      <div className="
+      PROJECT-BANNER-THUMBNAIL
+      absolute -z-20 top-0 left-0 lg:static
       flex justify-center
-      w-[50%] h-[60%]"
+      w-full lg:w-[50%] h-[400px] lg:h-[60%]"
       >
         <img
           src="https://i.scdn.co/image/ab67616d0000b2731572698fff8a1db257a53599"
           alt="alt"
           className="
           TIMELINE-IMAGE
-          w-full h-full
+          FADE-IMG
+          w-full lg:h-full
           object-cover"
         />
       </div>
