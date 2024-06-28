@@ -22,7 +22,9 @@ const ProjectTechnologies = (props) => {
       </div>
       <div className="
       PROJECT-TECHNOLOGIES-CONTENT
-      flex flex-row justify-center gap-32
+      flex flex-row flex-wrap justify-between lg:justify-evenly gap-x-8 lg:gap-x-32 gap-y-14
+      mx-auto
+      max-w-[calc(100vw*82/100)] lg:w-full
       tracking-[-0.06em]"
       >
         {project.technologies
@@ -44,7 +46,8 @@ const ProjectTechnologies = (props) => {
                 <div
                   key={subStack}
                   className={`
-                  ${subStack}-SUBSTACK`}
+                  ${subStack}-SUBSTACK
+                  max-w-[calc(100vw*50/100)]`}
                 >
                   <span className="text-sunglowMuted underline text-xl">{subStack.split('-').join(' ')}</span>
                   <ul className={`

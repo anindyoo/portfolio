@@ -26,7 +26,7 @@ const ProjectDescription = (props) => {
       >
         <p className="
         DESCRIPTION-PARAGRAPH
-        max-w-[calc(100vw*37.64/100)]
+        max-w-[calc(100vw*82/100)] lg:max-w-[calc(100vw*37.64/100)]
         text-base font-normal leading-7 whitespace-pre-wrap text-justify"
         >
           {project?.description?.long}
