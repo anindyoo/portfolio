@@ -116,18 +116,18 @@ const Banner = () => {
     const initialFontSize = screenWidth >= breakpoints.tablet
       ? 128 : screenWidth >= breakpoints.mobileLarge ? 72 : 48;
     const triggerPinLogo = pinLogo(screenSize, initialFontSize);
-    const tabletWidth = config.screenBreakpoints.tablet;
+    const laptopBreakpoint = config.screenBreakpoints.laptop;
     const triggers = [];
 
     menuNavlinks.forEach((menu, index) => {
       const { className } = menu
-      const trigger = screenSize.width > tabletWidth && menuNavlinkTrigger(className, index);
+      const trigger = screenSize.width >= laptopBreakpoint && menuNavlinkTrigger(className, index);
       triggers.push(trigger);
     });
 
     return () => {
       triggerPinLogo.kill();
-      triggers.forEach((trigger) => screenSize.width > tabletWidth && trigger.kill());
+      triggers.forEach((trigger) => screenSize.width >= laptopBreakpoint && trigger.kill());
     }
   }, [screenSize]);
 
