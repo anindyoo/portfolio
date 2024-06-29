@@ -21,7 +21,7 @@ const menuNavlinkTrigger = (menuName, menuIndex) => {
   const trigger = ScrollTrigger.create({
     trigger: element,
     start: 'top top',
-    end: document.documentElement.scrollHeight,
+    end: document.documentElement.scrollHeight * 2,
     pin: true,
     scrub: true,
     pinSpacing: false,
