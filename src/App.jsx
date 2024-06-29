@@ -32,7 +32,7 @@ const App = () => {
       ],
     },
     {
-      element: <Main noNavbar />,
+      element: <Main noLogo navbarMobileOnly />,
       children: [
         {
           path: '/',
