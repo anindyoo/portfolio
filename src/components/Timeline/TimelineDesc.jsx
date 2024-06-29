@@ -52,10 +52,12 @@ const TimelineDesc = (props) => {
     >
       <Link
         to={`/projects/${project.id}`}
-        className="
-        DESCRIPTION-CONTAINER
-        flex flex-col
-        w-full h-[calc(100%-100px)]"
+        className={`
+        LINK-DESCRIPTION-CONTAINER
+        flex flex-col justify-center
+        w-full h-[calc(100%-100px)]
+        ${isOdd && 'text-right'}
+        `}
       >
         <div className={`
         DESCRIPTION-TEXT-CONTAINER
