@@ -14,7 +14,10 @@ const menuNavlinks = [
 ];
 
 const Navbar = (props) => {
-  const { noLogo } = props;
+  const {
+    noLogo,
+    navbarMobileOnly,
+  } = props;
 
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -41,6 +44,8 @@ const Navbar = (props) => {
         )}
       </span>
       {(screenWidth >= laptopBreakpoint) ? (
+        !navbarMobileOnly
+        && (
         <span className="
         NAVBAR-LINKS
         flex flex-row gap-7"
@@ -54,6 +59,7 @@ const Navbar = (props) => {
             />
           ))}
         </span>
+        )
       ) : (
         <>
           <button
