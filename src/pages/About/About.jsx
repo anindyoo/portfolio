@@ -91,9 +91,9 @@ const About = () => {
               when a group of students visited my school to promote their universities. One of the
               student groups exhibited a Computer Science major, in which they demonstrated how a
               website is made and how it can affect people&#39;s lives. By that moment, Computer
-              Sciencewas LOCKED IN as my major in higher education. Thankfully, I was able to enroll
-              at Universitas Negeri Jakarta, of course, studying Computer Science, and was able to
-              learn more about web development, especially the front-end aspect of it.
+              Science was LOCKED IN as my major in higher education. Thankfully, I was able to
+              enroll at Universitas Negeri Jakarta, of course, studying Computer Science, and was
+              able to learn more about web development, especially the front-end aspect of it.
             </p>
             <p>
               And.... yeahh.... mhmm mhmm..... I graduated in March 2024. Since then, I have kept
