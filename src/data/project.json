@@ -94,17 +94,17 @@
     "inDevelopment": false,
     "topProject": false,
     "description": {
-      "short": "",
+      "short": "Short Desc.",
       "long": ""
     },
     "startDate": "2022-07-29T12:00:00Z",
     "endDate": "2022-08-05T12:00:00Z",
     "links": {
-      "repo": "",
+      "repo": "https://github.com/anindyoo/inviora",
       "deployment": "",
-      "download": ""
+      "download": "https://github.com/anindyoo/inviora/releases/download/inviora-v1.0/inviora-release.apk"
     },
-    "tags": [],
+    "tags": ["Android", "Mobile App", "Books & Reference App"],
     "thumbnail": "",
     "technologies": {
       "front-end": {
@@ -116,6 +116,11 @@
         "languages": [],
         "databases": [],
         "frameworks": []
+      },
+      "mobile dev.": {
+        "languages": ["Kotlin"],
+        "toolkit": ["Android Studio"],
+        "SDK": ["Android SDK"]
       },
       "devops": {
         "version-control": ["Git"],
@@ -173,10 +178,10 @@
   },
   {
     "id": "github-user-app",
-    "title": "GitHub User App",
+    "title": "GitHubUser App",
     "subtitle": "Mobile App (Android)",
     "role": "Android Developer",
-    "status": "Released (Apk)",
+    "status": "Released (Debug Apk)",
     "inDevelopment": false,
     "topProject": false,
     "description": {
@@ -186,11 +191,11 @@
     "startDate": "2022-09-13T12:00:00Z",
     "endDate": "2022-11-18T12:00:00Z",
     "links": {
-      "repo": "",
+      "repo": "https://github.com/anindyoo/GitHubUserApp",
       "deployment": "",
-      "download": ""
+      "download": "https://github.com/anindyoo/GitHubUserApp/releases/download/GHUApp-debug-v1.0/githubuserapp_by_anindyo-debug.apk"
     },
-    "tags": [],
+    "tags": ["Android", "GitHub", "Mobile App", "Productivity App"],
     "thumbnail": "",
     "technologies": {
       "front-end": {
@@ -203,11 +208,18 @@
         "databases": [],
         "frameworks": []
       },
+      "mobile dev.": {
+        "languages": ["Kotlin"],
+        "toolkit": ["Android Studio"],
+        "SDK": ["Android SDK"]
+      },
       "devops": {
         "version-control": ["Git"],
         "deployements": []
       },
-      "miscellaneous": {}
+      "miscellaneous": {
+        "api": ["GitHub REST API"]
+      }
     },
     "images": [
       {"name": "", "file": "", "caption": ""},
