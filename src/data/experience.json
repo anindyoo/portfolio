@@ -7,58 +7,63 @@
     "startDate": "2021-11-01T12:00:00Z",
     "endDate": "2021-12-10T12:00:00Z",
     "isStillWorking": false,
-    "preface": "lorem ipsum",
+    "preface": "preface",
     "workDescription": "the description of the work",
     "worksList": [
       "Learn cores of data sciences ranging from data collection, data cleansing, data exploration, model building, and model deployment.", 
       "Learn and utilize AI and IT in data science projects using Python & Jupyter."
     ],
     "associatedProjectsIds": [],
-    "certificates": [
-      {"title": "", "link": ""}
-    ],
-    "links": [
-      {"title": "", "link": ""}
-    ],
+    "certificates": [],
+    "links": [],
     "images": []
   },
   {
     "id": "rg-fe",
-    "role": "Front End Engineer Student",
+    "role": "Front-End Engineer Student",
     "company": "Ruangguru",
     "location": "Jakarta, Indonesia",
     "startDate": "2022-02-14T12:00:00Z",
     "endDate": "2022-07-27T12:00:00Z",
     "isStillWorking": false,
-    "preface": "rg lorem rgfe",
-    "workDescription": "ummm",
-    "worksList": [],
+    "preface": "A Certified Internship and Independent Studies (MSIB) bootcamp program as a collaboration of Ruangguru/PT Ruang Raya Indonesia and Kampus Merdeka, a high educational program organized by Indonesian Ministry of Education and Culture. The botcamp program was held for six months. In this timeframe, the participants learned from the very basic concept of programming to a fundamental front-end software engeneering directly from its professional expert.",
+    "workDescription": "The program started with learning basic JavaScript Programming, then introduction to Front-End Engineering with React, and concluded with a final project in collaboration with the Back-End team.\nHere are the activities and the outcome of the program:",
+    "worksList": [
+      "Graduated with perfect GPA: 4.00/4.00.",
+      "Participated in two separate projects: one on a personal level, which included constructing an Instagram clone app with React, and another is the final project in collaboration with the Back-End team in developing a web app.",
+      "Master the fundamentals of component programming with React: SCSS, JavaScript ES6, async & synchronous programming, basic data structures, basic JSX syntax, state & props, handling events, React Context & Provider, and Zustand.",
+      "Learn Interacting with API: able to use Postman and consume API with Axios library."
+    ],
     "associatedProjectsIds": ["subaku"],
     "certificates": [
-      {"title": "", "link": ""}
+      {"title": "Certificate of Completion—Front-End Engineering Bootcamp", "link": "https://drive.google.com/file/d/1mti_DBLLgcZA-dMBLJnOb7oF2zjxYI77/view?usp=sharing"},
+      {"title": "Transcript (in Indonesian)", "link": "https://drive.google.com/file/d/1zP0G5D0jbvBDPCFdkb1bmXVJntE5mT1p/view?usp=sharing"},
+      {"title": "Bootcamp Report (in Indonesian)", "link": "https://drive.google.com/file/d/1GqkwIWaeKqt61q1mOMsd7WMHv0PFyQww/view?usp=sharing"}
     ],
     "links": [
-      {"title": "", "link": ""}
     ],
     "images": []
   },
   {
     "id": "sagara-fe",
-    "role": "Front End Engineer Specialist",
+    "role": "Front-End Engineer Specialist",
     "company": "Sagara Technology",
     "location": "Jakarta, Indonesia",
     "startDate": "2022-08-15T12:00:00Z",
     "endDate": "2022-11-15T12:00:00Z",
     "isStillWorking": false,
-    "preface": "sg lorem rgfe",
-    "workDescription": "sgsgssgsgsgsgsgsgsgststststs",
+    "preface": "The preface",
+    "workDescription": "Work Description",
     "worksList": [],
     "associatedProjectsIds": ["mom-and-kids-app"],
     "certificates": [
-      {"title": "", "link": ""}
+      {"title": "Internship Certificate", "link": "https://drive.google.com/drive/folders/1LdKEcuee2H5yySVLzbcXk-2DAf_EaKd-?usp=sharing"},
+      {"title": "Internship Report (in Indonesian)", "link": "https://drive.google.com/drive/folders/1GCcWiZz0XORUZ93Mhic7U9d_MOVytkQd?usp=sharing"}
     ],
     "links": [
-      {"title": "", "link": ""}
+      {"title": "test 1", "link": "https://test.com"},
+      {"title": "test 2", "link": "https://test2.com"},
+      {"title": "test 3", "link": "https://test3.com"}
     ],
     "images": []
   }
