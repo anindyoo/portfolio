@@ -34,7 +34,8 @@ const Navbar = (props) => {
     flex flex-row justify-between
     w-full max-w-[125rem]
     px-7 py-5
-    text-2xl tracking-[-0.08em]"
+    text-2xl tracking-[-0.08em]
+    pointer-events-none"
     >
       <span className="NAVBAR-LOGO HEADLINE-TEXT decoration-lightSweetener italic hover:underline">
         {!noLogo && (
