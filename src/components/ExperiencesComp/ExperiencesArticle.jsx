@@ -42,7 +42,7 @@ const ExperiencesArticle = (props) => {
         ARTICLE-HEADER
         flex flex-col gap-2
         w-full
-        border-b-[1px] border-sunglowMuted
+        text-left border-b-[1px] border-sunglowMuted
         pb-[1.875rem]"
         >
           <h1 className="
@@ -109,7 +109,7 @@ const ExperiencesArticle = (props) => {
           <p className="leading-relaxed">{activeCard?.workDescription}</p>
           <ul className="list-inside list-disc">
             {activeCard?.worksList.map((item, index) => (
-              <li key={item[0] + index}>{item}</li>
+              <li key={item[0] + index} className="mb-2">{item}</li>
             ))}
           </ul>
         </section>
@@ -119,7 +119,7 @@ const ExperiencesArticle = (props) => {
         >
           <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">associated projects</h1>
           <ul className="
-          ASSOCIATED-PROJECTT-LIST
+          ASSOCIATED-PROJECT-LIST
           flex flex-row flex-wrap gap-10"
           >
             {!associatedProjects?.length
@@ -145,36 +145,45 @@ const ExperiencesArticle = (props) => {
         </section>
         <section className="
         ARTICLE-CERTIFICATES
-        flex flex-col gap-3"
+        flex flex-col gap-3
+        text-left"
         >
           <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">certificates & credentials</h1>
-          <ul className="CERTIFICATES-LIST flex flex-col gap-1">
+          <ul className="CERTIFICATES-LIST flex flex-col gap-3">
             {!activeCard?.certificates?.length
               ? (<p className="italic">No certificates are available.</p>)
               : activeCard?.certificates.map((certificate) => (
                 <li key={certificate.link}>
                   <a
                     href={certificate.link}
-                    className="flex flex-row gap-2 w-fit transition-all ease-out hover:text-sunglow"
                     target="_blank"
                     rel="noreferrer"
+                    className="
+                    CERTIFICATE-LINK
+                    flex flex-row gap-2
+                    w-full
+                    transition-all ease-out hover:text-sunglow"
                   >
                     <span className="no-underline">•</span>
-                    <span className="underline">{certificate.title}</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                      stroke="currentColor"
-                      className="size-5 pt-1"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                      />
-                    </svg>
+                    <div className="flex flex-row justify-between items-center sm:justify-normal gap-1 w-full">
+                      <span className="underline">{certificate.title}</span>
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={2}
+                          stroke="currentColor"
+                          className="size-5 pt-1"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </a>
                 </li>
               ))}
@@ -182,7 +191,8 @@ const ExperiencesArticle = (props) => {
         </section>
         <section className="
         ARTICLE-LINKS
-        flex flex-col gap-3"
+        flex flex-col gap-3
+        text-left"
         >
           <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">external links</h1>
           <ul className="LINKS-LIST flex flex-row flex-wrap gap-3">
