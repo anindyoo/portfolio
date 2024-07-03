@@ -98,14 +98,14 @@ const ExperiencesArticle = (props) => {
         ARTICLE-PREFACE
         flex flex-col gap-3"
         >
-          <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">preface to the experience</h1>
+          <h1 className="text-sunglowMuted text-xl lg:text-2xl font-medium tracking-[-0.08em] italic">preface to the experience</h1>
           <p className="leading-relaxed">{activeCard?.preface}</p>
         </section>
         <section className="
         ARTICLE-MAIN
         flex flex-col gap-3"
         >
-          <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">the experience</h1>
+          <h1 className="text-sunglowMuted text-xl lg:text-2xl font-medium tracking-[-0.08em] italic">the experience</h1>
           <p className="leading-relaxed">{activeCard?.workDescription}</p>
           <ul className="list-inside list-disc">
             {activeCard?.worksList.map((item, index) => (
@@ -117,7 +117,7 @@ const ExperiencesArticle = (props) => {
         ARTICLE-PROJECTS
         flex flex-col gap-3"
         >
-          <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">associated projects</h1>
+          <h1 className="text-sunglowMuted text-xl lg:text-2xl font-medium tracking-[-0.08em] italic">associated projects</h1>
           <ul className="
           ASSOCIATED-PROJECT-LIST
           flex flex-row flex-wrap gap-10"
@@ -148,7 +148,7 @@ const ExperiencesArticle = (props) => {
         flex flex-col gap-3
         text-left"
         >
-          <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">certificates & credentials</h1>
+          <h1 className="text-sunglowMuted text-xl lg:text-2xl font-medium tracking-[-0.08em] italic">certificates & credentials</h1>
           <ul className="CERTIFICATES-LIST flex flex-col gap-3">
             {!activeCard?.certificates?.length
               ? (<p className="italic">No certificates are available.</p>)
@@ -194,7 +194,7 @@ const ExperiencesArticle = (props) => {
         flex flex-col gap-3
         text-left"
         >
-          <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">external links</h1>
+          <h1 className="text-sunglowMuted text-xl lg:text-2xl font-medium tracking-[-0.08em] italic">external links</h1>
           <ul className="LINKS-LIST flex flex-row flex-wrap gap-3">
             {!activeCard?.links?.length
               ? (<p className="italic">No external links are available.</p>)
@@ -228,7 +228,7 @@ const ExperiencesArticle = (props) => {
         ARTICLE-GALLERY
         flex flex-col gap-3"
         >
-          <h1 className="text-sunglowMuted text-lg lg:text-2xl font-medium tracking-[-0.08em] italic">gallery</h1>
+          <h1 className="text-sunglowMuted text-xl lg:text-2xl font-medium tracking-[-0.08em] italic">gallery</h1>
         </section>
       </article>
     ) : (
