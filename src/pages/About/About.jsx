@@ -63,8 +63,9 @@ const About = () => {
           lg:pr-10 mt-6"
           >
             <p>
-              Hey, I&#39;m Muhammad Anindyo Poetra Mufatyta, the man who&#39;s secretlyhiding behind
-              this website and the device that you use to access it right now (just kidding&#160;
+              Hey, I&#39;m Muhammad Anindyo Poetra Mufatyta, the man who&#39;s secretly hiding
+              behind this website and the device that you use to access it right now
+              (just kidding&#160;
               <span
                 className="relative italic underline decoration-dotted hover:cursor-help"
                 onMouseEnter={handleTooltipHover}
