@@ -204,6 +204,8 @@ const ExperiencesArticle = (props) => {
                 >
                   <a
                     href={link.link}
+                    target="_blank"
+                    rel="noreferrer"
                     className="
                     LINK-CONTAINER
                     flex flex-row gap-1
