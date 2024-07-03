@@ -142,8 +142,8 @@
     "inDevelopment": false,
     "topProject": true,
     "description": {
-      "short": "",
-      "long": ""
+      "short": "Mom & Kids App is a parental & toddler educational multi-platform mobile app. The intention of the project development was for the internship program at Sagara Technology in 2023.",
+      "long": "Mom & Kids App is one of the projects handled by Sagara Technology. The initial development started before my internship program took place. The front-end development began when I joined the internship, causing me to develop the app's UI code from zero. This experience was quite challenging because I only have developed mobile apps for Android instead of multi-platform. Thanks to my mentor's guide & free courses available on the internet, I successfully delivered 7 out of 11 core front-end pages. Unfortunately, I couldn't continue my contribution to the app because my contract was over & I couldn't extend it due to the college priority. I'm eternally grateful for everything I've experienced in this company & project."
     },
     "startDate": "2022-08-15T12:00:00Z",
     "endDate": "2022-11-15T12:00:00Z",
@@ -152,7 +152,7 @@
       "deployment": "",
       "download": ""
     },
-    "tags": [],
+    "tags": ["Multi-Platform Mobile App", "Front-End", "Flutter", "Health & Fitness App"],
     "thumbnail": "",
     "technologies": {
       "front-end": {
@@ -185,8 +185,8 @@
     "inDevelopment": false,
     "topProject": false,
     "description": {
-      "short": "",
-      "long": ""
+      "short": "GitHubUser App is an Android app that lets you search, view, & bookmark GitHub users' profiles. The app was a part of the Dicoding Android Developer Bootcamp, which was the final project.",
+      "long": "GitHubUser App development took place in the Dicoding Android Developer Bootcamp. The app development aims to teach the participant about implementing APIs (GitHub API for this context) into the Android App project. The app development consisted of two parts. The first part took place from September to October 2022 and aimed to implement the initial features: the user search & the user profile feature. The last part of development took place from October to November 2022. In this part, the app development focused on the favoriting user feature & the dark mode switch. On November 18th, 2022, the app evaluation happened. It passed all testing cases, resulting in a score of 4 out of 5. On the same day, the app was released to the public."
     },
     "startDate": "2022-09-13T12:00:00Z",
     "endDate": "2022-11-18T12:00:00Z",

@@ -15,7 +15,9 @@
     ],
     "associatedProjectsIds": [],
     "certificates": [],
-    "links": [],
+    "links": [
+      {"title": "Microcredential", "link": "https://gtk.kemdikbud.go.id/microcredential/"}
+    ],
     "images": []
   },
   {
@@ -41,6 +43,8 @@
       {"title": "Bootcamp Report (in Indonesian)", "link": "https://drive.google.com/file/d/1GqkwIWaeKqt61q1mOMsd7WMHv0PFyQww/view?usp=sharing"}
     ],
     "links": [
+      {"title": "Ruangguru", "link": "https://www.ruangguru.com/"},
+      {"title": "Kampus Merdeka", "link": "https://kampusmerdeka.kemdikbud.go.id/"}
     ],
     "images": []
   },
@@ -52,18 +56,18 @@
     "startDate": "2022-08-15T12:00:00Z",
     "endDate": "2022-11-15T12:00:00Z",
     "isStillWorking": false,
-    "preface": "The preface",
-    "workDescription": "Work Description",
-    "worksList": [],
+    "preface": "A three-month internship program at Sagara Technology—an Indonesian technology company engaged in software production & development. I was involved in a parental & toddler education mobile app development in the front-end part. The internship program was also a part of the college course.",
+    "workDescription": "The internship started with a company onboarding, introducing the company's life & the related projects. The actual work began after the HR team arranged me into a team that developed a mobile app called Mom & Kids App. I collaborated with various teams, including Back-End Engineer, UI/UX, & QA team. As a part of the Front-End Engineer team, I was responsible for developing the app's interactive UI using the Flutter framework by slicing the UI/UX design into lines of code. I successfully delivered 7 of the 11 core front-end pages for the Mom & Kids App using the Flutter framework, meeting all requirements and receiving approval from the Scrum Master and Product Owner. These pages were:",
+    "worksList": [
+      "Splash Screen", "Home Page", "Consultation Page", "Chat Consultation Page", "Article Page", "Community Page: Forum", "Community Page: Forum Detail"
+    ],
     "associatedProjectsIds": ["mom-and-kids-app"],
     "certificates": [
       {"title": "Internship Certificate", "link": "https://drive.google.com/file/d/1R-Q2ly3cI4AGcd-SlnXIM6DxJCOCTp0a/view?usp=sharing"},
       {"title": "Internship Report (in Indonesian)", "link": "https://drive.google.com/file/d/1EhkCcexbC82T-993jPgnL7PayqGO6hgg/view?usp=sharing"}
     ],
     "links": [
-      {"title": "test 1", "link": "https://test.com"},
-      {"title": "test 2", "link": "https://test2.com"},
-      {"title": "test 3", "link": "https://test3.com"}
+      {"title": "Sagara Technology", "link": "https://sagaratechnology.com/en"}
     ],
     "images": []
   }
