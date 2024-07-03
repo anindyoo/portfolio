@@ -127,7 +127,7 @@ const ExperiencesArticle = (props) => {
               : associatedProjects.map((project) => (
                 <li
                   key={project.id}
-                  className="w-full"
+                  className="w-full max-w-[27.75rem]"
                 >
                   <Link to={`/projects/${project.id}`}>
                     <div className="
