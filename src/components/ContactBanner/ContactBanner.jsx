@@ -18,11 +18,10 @@ const ContactSubtitle = () => {
   )
 }
 
-const Contact = () => {
+const ContactBanner = () => {
   const contactArray = Object.entries(contactData);
   const screenSize = useScreenSize();
   const screenWidth = screenSize.width;
-  // const tabletBreakpoint = config.screenBreakpoints.tablet;
   const laptopBreakpoint = config.screenBreakpoints.laptop;
 
   return (
@@ -104,4 +103,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactBanner;
