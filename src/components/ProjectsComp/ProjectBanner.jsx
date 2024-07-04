@@ -144,13 +144,21 @@ const ProjectBanner = (props) => {
       w-full lg:w-[50%] h-[400px] lg:h-[60%]"
       >
         <img
-          src="https://i.scdn.co/image/ab67616d0000b2731572698fff8a1db257a53599"
+          src={project.thumbnail && require(`../../assets/images/project_gallery/${project.thumbnail}`)}
           alt="alt"
           className="
           TIMELINE-IMAGE
           FADE-IMG
           w-full lg:h-full
           object-cover"
+        />
+        <div className="
+        IMG-GRADIENT
+        absolute lg:hidden
+        z-10
+        w-full lg:w-[50%] h-[400px] lg:h-[60%]
+        bg-gradient-to-b from-warmMoss via-transparent to-transparent
+        opacity-40"
         />
       </div>
     </div>
