@@ -28,14 +28,14 @@ const Navbar = (props) => {
   const handleMenuTogglerClick = () => setMenuToggle(!menuToggle);
 
   return (
-    <nav className="
+    <nav className={`
     NAVBAR
     fixed z-[70]
     flex flex-row justify-between
     w-full max-w-[125rem]
     px-7 py-5
     text-2xl tracking-[-0.08em]
-    pointer-events-auto"
+    ${navbarMobileOnly ? 'pointer-events-none' : 'pointer-events-auto'}`}
     >
       <span className="NAVBAR-LOGO HEADLINE-TEXT decoration-lightSweetener italic hover:underline">
         {!noLogo && (
