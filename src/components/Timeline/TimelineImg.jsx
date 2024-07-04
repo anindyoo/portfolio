@@ -4,22 +4,23 @@ const TimelineImg = (props) => {
   const { project } = props;
 
   return (
-    <div className={`
+    <Link to={`/projects/${project.id}`}>
+      <div className={`
       TIMELINE-IMAGE-CONTAINER
+      relative
       w-full h-screen max-h-[calc(100vh*(66.25/100))]
       flex items-center justify-center`}
-    >
-      <Link to={`/projects/${project.id}`}>
+      >
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Miamimetroarea.jpg"
+          src={project.thumbnail && require(`../../assets/images/project_gallery/${project.thumbnail}`)}
           alt="alt"
           className="
           TIMELINE-IMAGE
           object-cover
           w-[calc(100vw*(40.28/100))] h-[calc(100vh*(56.25/100))]"
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 
