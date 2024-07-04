@@ -79,7 +79,7 @@ const TimelineDesc = (props) => {
           ${isOdd ? 'left-6' : 'right-6'}`}
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Miamimetroarea.jpg"
+              src={project.thumbnail && require(`../../assets/images/project_gallery/${project.thumbnail}`)}
               alt="background"
               className={`
               TIMLINE-MOBILE-THUMBNAIL
@@ -90,13 +90,14 @@ const TimelineDesc = (props) => {
             absolute
             z-10 top-0
             w-full h-full
+            border border-sunglowMuted
             bg-gradient-to-b from-transparent via-transparent to-warmMoss"
             />
           </div>
         )}
       </Link>
     </div>
-  )
-}
+  );
+};
 
 export default TimelineDesc;
