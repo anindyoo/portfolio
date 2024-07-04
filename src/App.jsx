@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Main from './layouts/Main';
 import Projects from './pages/Projects/Projects';
@@ -56,9 +56,7 @@ const App = () => {
     },
   ];
 
-  const router = createBrowserRouter(routes, {
-    basename: '/portfolio',
-  });
+  const router = createHashRouter(routes);
 
   return (
     <>
