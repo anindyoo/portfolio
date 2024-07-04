@@ -65,7 +65,7 @@ const ProjectTechnologies = (props) => {
           ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ProjectTechnologies;

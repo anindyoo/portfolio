@@ -1,5 +1,5 @@
 const NotFound = () => {
-  console.log()
+  console.log();
 
   return (
     <div>NOT FOUND</div>

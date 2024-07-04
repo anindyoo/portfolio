@@ -16,11 +16,11 @@ const Experiences = () => {
 
   const activeCardClickHandler = (exp) => {
     setActiveCard(exp);
-  }
+  };
 
   const closeCardHandler = () => {
     setActiveCard(null);
-  }
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);

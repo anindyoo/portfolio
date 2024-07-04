@@ -7,6 +7,6 @@ const Contact = () => (
   >
     <ContactBanner />
   </div>
-)
+);
 
 export default Contact;

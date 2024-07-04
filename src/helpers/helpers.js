@@ -6,7 +6,7 @@ const sortByDate = (array) => {
   };
 
   return array.sort((a, b) => compareDate(a.startDate, b.startDate));
-}
+};
 
 const formatDateRange = (startDate, endDate) => {
   const options = { month: 'long', year: 'numeric' };
@@ -15,7 +15,7 @@ const formatDateRange = (startDate, endDate) => {
   const finalDate = `${startFinal}—${endFinal}`;
 
   return finalDate;
-}
+};
 
 export default {
   sortByDate,

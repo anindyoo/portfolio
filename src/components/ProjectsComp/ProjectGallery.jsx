@@ -1,5 +1,5 @@
 const ProjectGallery = () => {
-  console.log()
+  console.log();
 
   return (
     <div className="
@@ -8,7 +8,7 @@ const ProjectGallery = () => {
     >
       PROJECT GALLERY
     </div>
-  )
-}
+  );
+};
 
 export default ProjectGallery;
