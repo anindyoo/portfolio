@@ -20,15 +20,16 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {
+  rules: {    
+    'global-require': "off",
     'react/react-in-jsx-scope': 'off',
+    'import/no-dynamic-require': 'off',
     'react/function-component-definition': [
       2,
       {
         namedComponents: 'arrow-function',
       },
     ],
-    semi: 0,
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
