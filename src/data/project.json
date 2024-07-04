@@ -14,12 +14,12 @@
     "startDate": "2021-11-01T12:00:00Z",
     "endDate": "2021-12-05T12:00:00Z",    
     "links": {
-      "repo": "https://github.com/rg-km/final-project-engineering-72",
+      "repo": "",
       "deployment": "",
       "download": ""
     },
     "tags": [],
-    "thumbnail": "",
+    "thumbnail": "numania/numania_thumbnail.png",
     "technologies": {
       "front-end": {
         "languages": [],
@@ -62,7 +62,7 @@
       "download": ""
     },
     "tags": [],
-    "thumbnail": "",
+    "thumbnail": "subaku/subaku_thumbnail.png",
     "technologies": {
       "front-end": {
         "languages": [],
@@ -94,8 +94,8 @@
     "inDevelopment": false,
     "topProject": false,
     "description": {
-      "short": "Short Desc.",
-      "long": ""
+      "short": "Inviora is a book & reference app that provides selected information on endangered plants worldwide. The app was a part of course projects in the Dicoding Android Developer Bootcamp.",
+      "long": "Inviora development took place in the early stage of the Dicoding Android Developer Bootcamp after completing Kotlin fundamental course. The app development objective was to introduce participants to Android Studio. Moreover, it also taught participants to implement Activity, Intent & RecyclerView to an applicable Android project. The given theme of the app was uncategorized so that participants could choose any theme as long as it stuck with the main app's objectives. I chose the book & reference type of app with the theme of endangered plants because I'm into plants & flora so much. I took the plant information from the Wikipedia site. I named the app \"Inviora,\" a combination between \"invisible\" & \"flora.\" The app development only took two weeks, between July & August 2022. The app evaluation process was on August 5th, 2022, and resulted in a perfect score of 5/5 stars. Later on, the app is available to the public."
     },
     "startDate": "2022-07-29T12:00:00Z",
     "endDate": "2022-08-05T12:00:00Z",
@@ -105,7 +105,7 @@
       "download": "https://github.com/anindyoo/inviora/releases/download/inviora-v1.0/inviora-release.apk"
     },
     "tags": ["Android", "Mobile App", "Books & Reference App"],
-    "thumbnail": "",
+    "thumbnail": "inviora/inviora_thumbnail.png",
     "technologies": {
       "front-end": {
         "languages": [],
@@ -153,12 +153,12 @@
       "download": ""
     },
     "tags": ["Multi-Platform Mobile App", "Front-End", "Flutter", "Health & Fitness App"],
-    "thumbnail": "",
+    "thumbnail": "momandkidsapp/mnk_thumbnail.png",
     "technologies": {
       "front-end": {
-        "languages": [],
+        "languages": ["Dart"],
         "css": [],
-        "libraries": []
+        "libraries": ["Flutter"]
       },
       "back-end": {
         "languages": [],
@@ -196,7 +196,7 @@
       "download": "https://github.com/anindyoo/GitHubUserApp/releases/download/GHUApp-debug-v1.0/githubuserapp_by_anindyo-debug.apk"
     },
     "tags": ["Android", "GitHub", "Mobile App", "Productivity App"],
-    "thumbnail": "",
+    "thumbnail": "githubuserapp/ghu_app_thumbnail.png",
     "technologies": {
       "front-end": {
         "languages": [],
@@ -246,7 +246,7 @@
       "download": ""
     },
     "tags": ["E-Commerce", "Web App", "Full Stack", "PHP", "Laravel", "MySQL", "Bootstrap"],
-    "thumbnail": "",
+    "thumbnail": "dermanifest/dermanifest_thumbnail.png",
     "technologies": {
       "front-end": {
         "languages": ["HTML"],
