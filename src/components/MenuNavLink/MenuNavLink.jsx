@@ -9,7 +9,7 @@ const MenuNavLink = (props) => {
     handleMenuTogglerClick,
     mobile,
   } = props;
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   const hoveredStyle = 'italic font-bold text-orangePith text-stroke stroke-cyan-700';
   const loopSize = 5;
