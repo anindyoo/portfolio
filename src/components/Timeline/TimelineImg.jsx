@@ -19,6 +19,12 @@ const TimelineImg = (props) => {
           object-cover
           w-[calc(100vw*(40.28/100))] h-[calc(100vh*(56.25/100))]"
         />
+        <div className="
+        absolute z-10
+        w-[calc(100vw*(40.28/100))] h-[calc(100vh*(56.25/100))]
+        border border-sunglowMuted
+        bg-gradient-to-b from-transparent via-transparent to-warmMoss"
+        />
       </div>
     </Link>
   );
