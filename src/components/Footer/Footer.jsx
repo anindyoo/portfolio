@@ -16,8 +16,8 @@ const ScrollToTopButton = () => {
         </svg>
       </button>
     </span>
-  )
-}
+  );
+};
 
 const Footer = () => {
   const screenSize = useScreenSize();
@@ -203,7 +203,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
+  );
 };
 
 export default Footer;
