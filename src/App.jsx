@@ -10,7 +10,7 @@ import ScreenFrame from './components/ScreenFrame/ScreenFrame';
 import Contact from './pages/Contact/Contact';
 
 const App = () => {
-  const router = createBrowserRouter([
+  const routes = [
     {
       element: <Main />,
       children: [
@@ -54,7 +54,11 @@ const App = () => {
         },
       ],
     },
-  ]);
+  ];
+
+  const router = createBrowserRouter(routes, {
+    basename: '/portfolio',
+  });
 
   return (
     <>
