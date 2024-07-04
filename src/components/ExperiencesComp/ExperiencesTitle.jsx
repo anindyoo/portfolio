@@ -23,7 +23,7 @@ const ExperiencesTitle = (props) => {
         ))}
       </div>
     </div>
-  )
+  );
 };
 
 export default ExperiencesTitle;
