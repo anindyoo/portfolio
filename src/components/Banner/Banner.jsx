@@ -95,7 +95,7 @@ const pinLogo = (screenSize, initialFontSize) => {
           fontSize: progress === 0 ? initialFontSize : `${targetFontSize}px`,
           letterSpacing: progress === 0 ? '-0.025em' : `${targetLetterSpacing}em`,
           duration: 0,
-        })
+        });
 
       gsap.to(spacerElement, {
         height: document.querySelector('.name-ref').clientHeight,
@@ -111,7 +111,7 @@ const Banner = () => {
   const screenSize = useScreenSize();
 
   useEffect(() => {
-    const screenWidth = screenSize.width
+    const screenWidth = screenSize.width;
     const breakpoints = config.screenBreakpoints;
     const initialFontSize = screenWidth >= breakpoints.tablet
       ? 128 : screenWidth >= breakpoints.mobileLarge ? 72 : 48;
@@ -120,7 +120,7 @@ const Banner = () => {
     const triggers = [];
 
     menuNavlinks.forEach((menu, index) => {
-      const { className } = menu
+      const { className } = menu;
       const trigger = screenSize.width >= laptopBreakpoint && menuNavlinkTrigger(className, index);
       triggers.push(trigger);
     });
@@ -128,7 +128,7 @@ const Banner = () => {
     return () => {
       triggerPinLogo.kill();
       triggers.forEach((trigger) => screenSize.width >= laptopBreakpoint && trigger.kill());
-    }
+    };
   }, [screenSize]);
 
   return (
