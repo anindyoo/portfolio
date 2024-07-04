@@ -154,7 +154,7 @@ const ProjectBanner = (props) => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ProjectBanner;
