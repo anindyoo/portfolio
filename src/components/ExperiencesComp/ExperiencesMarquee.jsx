@@ -44,7 +44,7 @@ const animateMarquee = (element, className, direction, duration) => {
   //   },
   // })
 
-  return animation
+  return animation;
 };
 
 const ExperiencesMarquee = (props) => {
@@ -70,7 +70,7 @@ const ExperiencesMarquee = (props) => {
     return () => {
       cardMarquee.kill();
       titleMarquee.kill();
-    }
+    };
   }, [experiences, screenWidth]);
 
   return (
