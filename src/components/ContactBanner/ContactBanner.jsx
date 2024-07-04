@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import { Link } from 'react-router-dom';
-import contactData from '../../data/contact.json'
+import contactData from '../../data/contact.json';
 import useScreenSize from '../../hooks/useScreenSize';
 import config from '../../config/config';
 
@@ -15,8 +15,8 @@ const ContactSubtitle = () => {
     >
       {contactText}
     </span>
-  )
-}
+  );
+};
 
 const ContactBanner = () => {
   const contactArray = Object.entries(contactData);
