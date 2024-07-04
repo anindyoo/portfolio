@@ -33,7 +33,7 @@ const ProjectDescription = (props) => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ProjectDescription;
