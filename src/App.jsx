@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Experiences from './pages/Experiences/Experiences';
 import About from './pages/About/About';
 import ScreenFrame from './components/ScreenFrame/ScreenFrame';
+import Contact from './pages/Contact/Contact';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const App = () => {
         {
           path: '/about',
           element: <About />,
+        },
+        {
+          path: '/contact',
+          element: <Contact />,
         },
       ],
     },
