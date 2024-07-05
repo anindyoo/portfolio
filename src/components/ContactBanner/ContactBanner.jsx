@@ -30,7 +30,7 @@ const ContactBanner = () => {
     flex flex-col-reverse lg:flex-row justify-end lg:justify-between items-center
     gap-12 lg:gap-0
     pt-10 lg:pt-0
-    h-screen"
+    min-h-screen"
     >
       {screenWidth < laptopBreakpoint && <ContactSubtitle />}
       <div className="
