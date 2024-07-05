@@ -2,8 +2,8 @@ import ContactBanner from '../../components/ContactBanner/ContactBanner';
 
 const Contact = () => (
   <div className="
-    CONTACT-PAGE
-    h-screen"
+  CONTACT-PAGE
+  min-h-screen"
   >
     <ContactBanner />
   </div>
