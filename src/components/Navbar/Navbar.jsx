@@ -35,7 +35,7 @@ const Navbar = (props) => {
     w-full max-w-[125rem]
     px-7 py-5
     text-2xl tracking-[-0.08em]
-    ${navbarMobileOnly ? 'pointer-events-none' : 'pointer-events-auto'}`}
+    ${navbarMobileOnly ? 'pointer-events-auto lg:pointer-events-none' : 'pointer-events-auto'}`}
     >
       <span className="NAVBAR-LOGO HEADLINE-TEXT decoration-lightSweetener italic hover:underline">
         {!noLogo && (
