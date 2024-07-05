@@ -25,12 +25,15 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="
+    HOME-PAGE
+    min-h-screen"
+    >
       <Banner />
       <ProjectsTimeline projects={topProjects} isHome />
       <ExperiencesMarquee experiences={topExp} />
       <ContactBanner />
-    </>
+    </div>
   );
 };
 
