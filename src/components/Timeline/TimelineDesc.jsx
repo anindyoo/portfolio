@@ -56,7 +56,7 @@ const TimelineDesc = (props) => {
         LINK-DESCRIPTION-CONTAINER
         flex flex-col justify-center
         w-full h-[calc(100%-100px)]
-        ${isOdd && 'text-right'}
+        ${isOdd && 'text-right items-end'}
         `}
       >
         <div className={`
