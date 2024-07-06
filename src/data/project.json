@@ -8,8 +8,8 @@
     "inDevelopment": false,
     "topProject": false,
     "description": {
-      "short": "",
-      "long": ""
+      "short": "Numania is a mobile mathematical guessing game for kids in elementary school. It was a part of the Computer Learning course assignment.",
+      "long": "Numania is a mobile game for kids where the gameplay is guessing mathematical numbers based on certain conditions, for example, the large or small value of a number. This project involved a team of five with different roles, including the game designer, game programmer, game artist, and game sound designer. I served as a game artist in this project, in which I designed & drew various visual assets for the game UI. I entirely generated the assets using Figma with its vector tools. Some of the assets I created were the app logo, background art, buttons, menus, & game-level UI. As of today, the game is still in the prototype state."
     },
     "startDate": "2021-11-01T12:00:00Z",
     "endDate": "2021-12-05T12:00:00Z",    
@@ -18,18 +18,12 @@
       "deployment": "",
       "download": ""
     },
-    "tags": [],
+    "tags": ["Mobile Game", "Education App", "Graphic Design", "Figma"],
     "thumbnail": "numania/numania_thumbnail.png",
     "technologies": {
-      "front-end": {
-        "languages": [],
-        "css": [],
-        "libraries": []
-      },
-      "back-end": {
-        "languages": [],
-        "databases": [],
-        "frameworks": []
+      "game dev": {
+        "game engine": ["unity"],
+        "visual assets tool": ["Figma"]
       },
       "devops": {
         "version-control": ["Git"],
