@@ -51,8 +51,8 @@
     "inDevelopment": false,
     "topProject": true,
     "description": {
-      "short": "",
-      "long": ""
+      "short": "Subaku is a web app project that provides information about scholarships and how to apply for them. It served as the final project in the Ruangguru Bootcamp Program in 2022.",
+      "long": "Subaku was one of the earliest projects I had done. This project was deeply memorable because it was the first project where I had to collaborate with new people other than my college friends. I worked in a team of six with two web stacks: front-end & back-end. The front-end development utilized React as the library, while the back-end used Go programming language.\nThis project was a part of front-end web projects in the Rungguru Bootcamp program. As the final one, this project aimed for every participant to implement everything taught for four months in the Bootcamp. The deadline to finish the project was only a month. Unfortunately, the project has not yet been completed due to time limitations. However, there were still some website components that had been developed & these components are available to view in the gallery below."
     },
     "startDate": "2022-06-01T12:00:00Z",
     "endDate": "2022-06-29T12:00:00Z",
@@ -65,12 +65,12 @@
     "thumbnail": "subaku/subaku_thumbnail.png",
     "technologies": {
       "front-end": {
-        "languages": [],
-        "css": [],
-        "libraries": []
+        "languages": ["HTML"],
+        "css": ["Bootstrap"],
+        "libraries": ["React", "Axios"]
       },
       "back-end": {
-        "languages": [],
+        "languages": ["Go"],
         "databases": [],
         "frameworks": []
       },
