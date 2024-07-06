@@ -55,7 +55,7 @@
       "deployment": "",
       "download": ""
     },
-    "tags": [],
+    "tags": ["Web App", "React", "Go", "Education App"],
     "thumbnail": "subaku/subaku_thumbnail.png",
     "technologies": {
       "front-end": {
