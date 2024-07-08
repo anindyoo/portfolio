@@ -196,8 +196,13 @@
       }
     },
     "images": [
-      {"name": "", "file": "", "caption": ""},
-      {"name": "", "file": "", "caption": ""}
+      {"name": "Splash Screen (Dark)", "file": "githubuserapp/1_ghu_app_splash_dark.png", "caption": "The dark variant of the splash screen, a starting screen notification that appears when you start the app."},
+      {"name": "Splash Screen (Light)", "file": "githubuserapp/2_ghu_app_splash_light.png", "caption": "The light variant of the splash screen."},
+      {"name": "Home Screen (Dark)", "file": "githubuserapp/3_ghu_app_home_dark.png", "caption": "The main screen of the app where you can find a GitHub user with a searching feature utilized by the GitHub REST API."},
+      {"name": "Home Screen (Light)", "file": "githubuserapp/4_ghu_app_home_light.png", "caption": "The light variation of the Home Screen."},
+      {"name": "Profile Detail Screen (Dark)", "file": "githubuserapp/5_ghu_app_detail_dark.png", "caption": "The profile screen of a GitHub user, containing information such as name & username, website link, twitter link, location, & repo counts. Below the profile detail, there are tabs that show other user accounts that are the followers & following of the profile owner. There's also a Favorite button to save the profile into the user Favorite List."},
+      {"name": "Profile Detail Screen (Light)", "file": "githubuserapp/6_ghu_app_detail_light.png", "caption": "The light variant of the Profile Detail Screen."},
+      {"name": "User Favorite Screen", "file": "githubuserapp/7_ghu_app_fav_dark.png", "caption": "The page that contains the list of favorited GitHub users."}
     ]
   },
   {
