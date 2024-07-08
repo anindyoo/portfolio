@@ -43,7 +43,7 @@ const ProjectGallery = (props) => {
                 src={require(`../../assets/images/project_gallery/${img.file}`)}
                 alt={img.caption}
               />
-              <h1 className="text-xl text-sunglowMuted mt-2">
+              <h1 className="text-xl text-sunglowMuted mt-2 mb-1">
                 <span className="HEADLINE-TEXT">&#9650;</span>
                 <span className="ml-2">{img.name}</span>
               </h1>
