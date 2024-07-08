@@ -242,8 +242,18 @@
       }      
     },
     "images": [
-      {"name": "", "file": "", "caption": ""},
-      {"name": "", "file": "", "caption": ""}
+      {"name": "Home Page", "file": "dermanifest/1_derma_home.png", "caption": "Dermanifest Home Page, features a welcome banner, an about us bannet, a top product banner, a contact banner, and a footer navbar."},
+      {"name": "Product List Page", "file": "dermanifest/2_derma_product_list.png", "caption": "Dermanifest Product List Page consists of rows of product with each rows feature proudct cards. a prouduct card has the product image & short detail in it."},
+      {"name": "Product Detail Page", "file": "dermanifest/3_derma_product_detail.png", "caption": "Dermanifest Product Detail Page, a more detailed page that shows up after clicking on one of the product cards. It consists of the product images, description, product usage instruction, ingeridents, stock, weight, prices, & an add to cart button."},
+      {"name": "Cart Page", "file": "dermanifest/4_derma_cart.png", "caption": "Dermanifest Cart Page. It consits of a table representing the content of the cart, with a summary section that includes subtotal and quntity total on the right side."},
+      {"name": "Order Checkout Page", "file": "dermanifest/5_derma_order_checkout.png", "caption": "Dermanifest Order Checkout Page. It contains of a small table that resembles the Cart table & a summary section on the left side, and a checkout form that consists of recepient data, delivery address & options on the right side. The delivery information is provided by RajaOngkir API."},
+      {"name": "Order Detail Page", "file": "dermanifest/6_derma_order_detail.png", "caption": "Dermanifest Order Detail Page. It consits of a Payment section, an Order Detail section, & a small summary section."},
+      {"name": "Profile Page", "file": "dermanifest/7_derma_profile_detail.png", "caption": "Dermanifest Profile Page. It contains every detail of a registered Dermanfiest user. The detail includes name, email, phone, & addresses."},
+      {"name": "Order History", "file": "dermanifest/8_derma_profile_order_history.png", "caption": "Order History Section. It's a section below the profile detail that tabulates every created order. It has selectable tabs based on the order's status."},
+      {"name": "Order Payment Page", "file": "dermanifest/9_derma_order_payment.png", "caption": "A page that consits of a resemblence of the Order Detail Page & a payment feature via Midtrans API."},
+      {"name": "Order Invoice", "file": "dermanifest/10_derma_order_invoice.png", "caption": "A page that shows an invoice of an order."},
+      {"name": "About Page", "file": "dermanifest/11_derma_about.png", "caption": "A page that contains the information of Dermanifest & its proucts."},
+      {"name": "Contact & FAQs Page", "file": "dermanifest/12_derma_contact_faqs.png", "caption": "A page that consists of a contact form for sending messages to the Admins, & there's a FAQs section below it."}
     ]
   }
 ]
