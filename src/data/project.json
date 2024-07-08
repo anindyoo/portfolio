@@ -113,8 +113,11 @@
       "miscellaneous": {}
     },
     "images": [
-      {"name": "", "file": "", "caption": ""},
-      {"name": "", "file": "", "caption": ""}
+      {"name": "Splash Screen", "file": "inviora/1_inviora_splash.png", "caption": "The splash screen, A starting screen notification that appears when you start the app."},
+      {"name": "Home Screen (Dark)", "file": "inviora/2_inviora_home_dark.png", "caption": "The main screen of the app, consisting of the list of plants in dark appearance."},
+      {"name": "Home Screen (Light)", "file": "inviora/3_inviora_home_light.png", "caption": "The light variation of the Home Screen."},
+      {"name": "Plant Detail Screen (Dark)", "file": "inviora/4_inviora_detail_dark.png", "caption": "The screen that contains the detail of information about the selected plant on the Home Screen."},
+      {"name": "Plant Detail Screen (Light)", "file": "inviora/5_inviora_detail_light.png", "caption": "The light variation of the Plant Detail Screen."}
     ]
   },
   {
