@@ -80,8 +80,11 @@
       "miscellaneous": {}
     },
     "images": [
-      {"name": "", "file": "", "caption": ""},
-      {"name": "", "file": "", "caption": ""}
+      {"name": "Home Page (Pt. I)", "file": "subaku/1_subaku_home_one.png", "caption": "The top section of the Home Page, the main page of the web."},
+      {"name": "Home Page (Pt. II)", "file": "subaku/2_subaku_home_two.png", "caption": "The middle section of the Home Page."},
+      {"name": "Home Page (Pt. III)", "file": "subaku/3_subaku_home_three.png", "caption": "The bottom section of the Home Page."},
+      {"name": "Scholarship Registration Page", "file": "subaku/4_subaku_scholarship_registration.png", "caption": "The page that contains of the list of scholarships detail inside of cards with the register button inside."},
+      {"name": "Registration Procedure Page", "file": "subaku/5_subaku_procedure.png", "caption": "The page that contains of the procuder on how to use the web main feature, scholarship registration."}
     ]
   },
   {
