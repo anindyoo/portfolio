@@ -13,7 +13,7 @@ const ProjectTechnologies = (props) => {
       THE-TECHNOLOGIES
       HEADLINE-TEXT
       flex flex-row justify-between
-      text-5xl"
+      text-4xl sm:text-5xl"
       >
         {[...'the technologies'].map((letter, index) => (
           // eslint-disable-next-line react/no-array-index-key
