@@ -32,8 +32,13 @@
       "miscellaneous": {}
     },
     "images": [
-      {"name": "", "file": "", "caption": ""},
-      {"name": "", "file": "", "caption": ""}
+      {"name": "Start Screen", "file": "numania/1_numania_start.png", "caption": "The starting screen of the game."},
+      {"name": "Menu Screen", "file": "numania/2_numania_menu.png", "caption": "The main menu screen of the came, consisting of start game, setting, & exit button."},
+      {"name": "Level Selection Screen", "file": "numania/3_numania_level_select.png", "caption": "The level selection screen, consisting the list of the playable & locked levels."},
+      {"name": "Level Stage Screen", "file": "numania/4_numania_level_stage.png", "caption": "The UI of the gameplay level."},
+      {"name": "Menu Assets", "file": "numania/5_numania_menu_asset.png", "caption": "Assets for the Menu Screen, consisting various vectors of bamboo frame, variations of menu button, the game title, flowers, leaves, & stones."},
+      {"name": "Level Selection Assets", "file": "numania/6_numania_level_select_asset.png", "caption": "Assets for the Level Selection Screen, consisting of colorful boards with six different colors depending on the level."},
+      {"name": "Level Stage Assets", "file": "numania/7_numania_level_stage_asset.png", "caption": "Assets for the Level Stage Screen, consisting of the gameplay board, number button, gameplay buttons, timer indicator, coins counter, & lives counter."}
     ]
   },
   {
