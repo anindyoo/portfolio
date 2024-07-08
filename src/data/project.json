@@ -159,8 +159,11 @@
       "miscellaneous": {}
     },
     "images": [
-      {"name": "", "file": "", "caption": ""},
-      {"name": "", "file": "", "caption": ""}
+      {"name": "Home Screen", "file": "momandkidsapp/1_mnk_home", "caption": "The main screen, consisting of a dashboard & a to-do list."},
+      {"name": "Consultation Screen", "file": "momandkidsapp/2_mnk_consult", "caption": "The list of consultation that will available in this app."},
+      {"name": "Consultation Chat Screen", "file": "momandkidsapp/3_mnk_consulte_chat", "caption": "The chat room of the consultation feature."},
+      {"name": "Articles Screen", "file": "momandkidsapp/4_mnk_article", "caption": "The screen that contains a selection of health articles and news."},
+      {"name": "Forum Screen", "file": "momandkidsapp/5_mnk_forum", "caption": "The community forum that will connect every user."}
     ]
   },
   {
