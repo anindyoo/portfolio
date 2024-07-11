@@ -20,8 +20,8 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {    
-    'global-require': "off",
+  rules: {
+    'global-require': 'off',
     'react/react-in-jsx-scope': 'off',
     'import/no-dynamic-require': 'off',
     'react/function-component-definition': [
@@ -34,4 +34,4 @@ module.exports = {
     'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
   },
-}
+};
