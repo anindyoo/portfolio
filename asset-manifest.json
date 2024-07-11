@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.72415d16.css",
-    "main.js": "/portfolio/static/js/main.890fce96.js",
+    "main.css": "/portfolio/static/css/main.13906651.css",
+    "main.js": "/portfolio/static/js/main.21e98096.js",
     "static/js/453.c3e04eca.chunk.js": "/portfolio/static/js/453.c3e04eca.chunk.js",
     "static/media/11_derma_about.png": "/portfolio/static/media/11_derma_about.f7d76ff8e38b4ae9fb63.png",
     "static/media/5_inviora_detail_light.png": "/portfolio/static/media/5_inviora_detail_light.095048db948af6ef7fb4.png",
@@ -48,12 +48,12 @@
     "static/media/numania_thumbnail.png": "/portfolio/static/media/numania_thumbnail.683c15a459c92969da5f.png",
     "static/media/subaku_thumbnail.png": "/portfolio/static/media/subaku_thumbnail.cd12e9ebdd8f273c20ff.png",
     "index.html": "/portfolio/index.html",
-    "main.72415d16.css.map": "/portfolio/static/css/main.72415d16.css.map",
-    "main.890fce96.js.map": "/portfolio/static/js/main.890fce96.js.map",
+    "main.13906651.css.map": "/portfolio/static/css/main.13906651.css.map",
+    "main.21e98096.js.map": "/portfolio/static/js/main.21e98096.js.map",
     "453.c3e04eca.chunk.js.map": "/portfolio/static/js/453.c3e04eca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72415d16.css",
-    "static/js/main.890fce96.js"
+    "static/css/main.13906651.css",
+    "static/js/main.21e98096.js"
   ]
 }
