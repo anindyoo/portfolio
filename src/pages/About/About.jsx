@@ -6,6 +6,8 @@ const About = () => {
 
   const handleTooltipHover = () => setTooltipHovered(!tooltipHovered);
 
+  const portraitCaption = 'Anindyo, the website creator, holding a digitally painted sky full of clouds over his KTP or National Identity Card.';
+
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = 'about — muhammad anindyo poetra mufatyta';
@@ -42,29 +44,36 @@ const About = () => {
       >
         <div className="
         ABOUT-IMAGE
-        relative
         w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96"
         >
-          <img
-            src={portrait}
-            alt="Anindyo, the website creator, holding a digitally painted sky full of clouds over his KTP or National Identity Card."
-            className="
-            w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
-            object-cover
-            rounded-b-full rounded-tr-full"
-          />
-          <div className="
-            absolute
-            z-10 top-0
-            w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
-            border border-sunglowMuted
-            rounded-b-full rounded-tr-full
-            bg-gradient-to-b from-transparent via-transparent to-warmMoss"
-          />
+          <div className="relative">
+            <img
+              src={portrait}
+              alt={portraitCaption}
+              className="
+              w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
+              object-cover
+              rounded-b-full rounded-tr-full"
+            />
+            <div className="
+              absolute
+              z-10 top-0
+              w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
+              border border-sunglowMuted
+              rounded-b-full rounded-tr-full
+              bg-gradient-to-b from-transparent via-transparent to-warmMoss"
+            />
+          </div>
+          <div className="mt-10 text-base">
+            <span className="HEADLINE-TEXT text-xl">&#9650;</span>
+            {' '}
+            {portraitCaption}
+          </div>
         </div>
         <article className="
         ABOUT-MAIN
-        w-full"
+        w-full
+        lg:pl-10"
         >
           <h1 className="
           HEADLINE-TEXT
