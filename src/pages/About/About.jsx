@@ -90,7 +90,7 @@ const About = () => {
           ABOUT-CONTENT
           flex flex-col gap-10
           text-xl text-justify leading-loose
-          xl:pr-56 mt-6"
+          lg:pr-20 xl:pr-56 mt-6"
           >
             <article>
               Hey, I&#39;m Muhammad Anindyo Poetra Mufatyta, the man who&#39;s secretly hiding
