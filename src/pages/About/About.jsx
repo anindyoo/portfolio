@@ -24,7 +24,7 @@ const About = () => {
     >
       <div className="
       ABOUT-HELLO
-      absolute top-14 md:top-auto md:left-[18rem] lg:static
+      absolute top-14 md:top-auto md:left-[18rem] z-50 lg:static
       w-[16.25rem]
       pr-8 -ml-4 md:ml-0"
       >
@@ -44,21 +44,21 @@ const About = () => {
       >
         <div className="
         ABOUT-IMAGE
-        w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96"
+        w-full h-full max-w-[22.5rem] lg:h-[40rem] lg:max-w-96"
         >
           <div className="relative">
             <img
               src={portrait}
               alt={portraitCaption}
               className="
-              w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
+              w-full h-full max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
               object-cover
               rounded-b-full rounded-tr-full"
             />
             <div className="
               absolute
               z-10 top-0
-              w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
+              w-full h-full max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
               border border-sunglowMuted
               rounded-b-full rounded-tr-full
               bg-gradient-to-b from-transparent via-transparent to-warmMoss"
