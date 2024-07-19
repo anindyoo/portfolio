@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.13906651.css",
-    "main.js": "/portfolio/static/js/main.21e98096.js",
+    "main.css": "/portfolio/static/css/main.8e81e88c.css",
+    "main.js": "/portfolio/static/js/main.430f3830.js",
     "static/js/453.c3e04eca.chunk.js": "/portfolio/static/js/453.c3e04eca.chunk.js",
+    "static/media/mi_retrato.png": "/portfolio/static/media/mi_retrato.92ebe52567479693acb8.png",
     "static/media/11_derma_about.png": "/portfolio/static/media/11_derma_about.f7d76ff8e38b4ae9fb63.png",
     "static/media/5_inviora_detail_light.png": "/portfolio/static/media/5_inviora_detail_light.095048db948af6ef7fb4.png",
     "static/media/4_inviora_detail_dark.png": "/portfolio/static/media/4_inviora_detail_dark.548491fcab85745bfc1b.png",
@@ -48,12 +49,12 @@
     "static/media/numania_thumbnail.png": "/portfolio/static/media/numania_thumbnail.683c15a459c92969da5f.png",
     "static/media/subaku_thumbnail.png": "/portfolio/static/media/subaku_thumbnail.cd12e9ebdd8f273c20ff.png",
     "index.html": "/portfolio/index.html",
-    "main.13906651.css.map": "/portfolio/static/css/main.13906651.css.map",
-    "main.21e98096.js.map": "/portfolio/static/js/main.21e98096.js.map",
+    "main.8e81e88c.css.map": "/portfolio/static/css/main.8e81e88c.css.map",
+    "main.430f3830.js.map": "/portfolio/static/js/main.430f3830.js.map",
     "453.c3e04eca.chunk.js.map": "/portfolio/static/js/453.c3e04eca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13906651.css",
-    "static/js/main.21e98096.js"
+    "static/css/main.8e81e88c.css",
+    "static/js/main.430f3830.js"
   ]
 }
