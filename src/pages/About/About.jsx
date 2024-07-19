@@ -44,7 +44,7 @@ const About = () => {
       >
         <div className="
         ABOUT-IMAGE
-        w-full h-full max-w-[22.5rem] lg:h-[40rem] lg:max-w-96"
+        w-full h-full max-w-[22.5rem] lg:h-fit lg:max-w-96"
         >
           <div className="relative">
             <img
@@ -64,7 +64,11 @@ const About = () => {
               bg-gradient-to-b from-transparent via-transparent to-warmMoss"
             />
           </div>
-          <div className="mt-10 text-base">
+          <div className="
+          PORTRAIT-CAPTION
+          h-fit
+          mt-10 text-base"
+          >
             <span className="HEADLINE-TEXT text-xl">&#9650;</span>
             {' '}
             {portraitCaption}
@@ -73,7 +77,7 @@ const About = () => {
         <article className="
         ABOUT-MAIN
         w-full
-        lg:pl-10"
+        xl:pl-10"
         >
           <h1 className="
           HEADLINE-TEXT
@@ -86,7 +90,7 @@ const About = () => {
           ABOUT-CONTENT
           flex flex-col gap-10
           text-xl text-justify leading-loose
-          lg:pr-56 mt-6"
+          xl:pr-56 mt-6"
           >
             <article>
               Hey, I&#39;m Muhammad Anindyo Poetra Mufatyta, the man who&#39;s secretly hiding
