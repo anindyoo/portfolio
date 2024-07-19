@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import portrait from '../../assets/images/portraits/mi_retrato.png';
 
 const About = () => {
   const [tooltipHovered, setTooltipHovered] = useState(false);
@@ -25,14 +26,14 @@ const About = () => {
       w-[16.25rem]
       pr-8 -ml-4 md:ml-0"
       >
-        <p className="
+        <div className="
         md:rotate-90
         bg-red-500m
         italic md:not-italic text-6xl md:text-[10rem] lg:text-[18.25rem]/[1em] font-bold text-sunglow
         cursor-vertical-text"
         >
           hello
-        </p>
+        </div>
       </div>
       <div className="
       IMG-AND-ARTICLE-CONTAINER
@@ -41,9 +42,25 @@ const About = () => {
       >
         <div className="
         ABOUT-IMAGE
-        w-full max-w-[22.5rem]"
+        relative
+        w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96"
         >
-          <div className="w-full h-[25rem] xs:h-[30rem] border">image container</div>
+          <img
+            src={portrait}
+            alt="Anindyo, the website creator, holding a digitally painted sky full of clouds over his KTP or National Identity Card."
+            className="
+            w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
+            object-cover
+            rounded-b-full rounded-tr-full"
+          />
+          <div className="
+            absolute
+            z-10 top-0
+            w-full h-auto max-w-[22.5rem] lg:h-[40rem] lg:max-w-96
+            border border-sunglowMuted
+            rounded-b-full rounded-tr-full
+            bg-gradient-to-b from-transparent via-transparent to-warmMoss"
+          />
         </div>
         <article className="
         ABOUT-MAIN
@@ -58,11 +75,11 @@ const About = () => {
           </h1>
           <section className="
           ABOUT-CONTENT
-          flex flex-col gap-5
-          text-justify leading-loose
-          lg:pr-10 mt-6"
+          flex flex-col gap-10
+          text-xl text-justify leading-loose
+          lg:pr-56 mt-6"
           >
-            <p>
+            <article>
               Hey, I&#39;m Muhammad Anindyo Poetra Mufatyta, the man who&#39;s secretly hiding
               behind this website and the device that you use to access it right now
               (just kidding&#160;
@@ -77,12 +94,12 @@ const About = () => {
                 flex flex-col items-center
                 not-italic"
                 >
-                  {tooltipHovered && <div className="w-[12rem] px-2 bg-black text-white">i just burst out laughing</div>}
+                  {tooltipHovered && <div className="w-[12rem] px-2 bg-zinc-800 text-white text-left">i just burst out laughing</div>}
                 </div>
               </span>
               ).
               I&#39;m a front-end-focused web developer from the beloved city of Jakarta, Indonesia.
-            </p>
+            </article>
             <p>
               Creating a website user interface has been my dream since I was still in Junior
               High School. My curiosity in web development sparked a little when I was taught
@@ -97,7 +114,7 @@ const About = () => {
               able to learn more about web development, especially the front-end aspect of it.
             </p>
             <p>
-              And.... yeahh.... mhmm mhmm..... I graduated in March 2024. Since then, I have kept
+              I graduated in March 2024. Since then, I have kept
               burnishing my front-end web development capability by developing several small
               projects. Right now, I&#39;m also open to any freelance or full-time work
               possibilities to make use of my front-end knowledge. So, any form of connection would
