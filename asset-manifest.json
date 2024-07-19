@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8e81e88c.css",
-    "main.js": "/portfolio/static/js/main.430f3830.js",
+    "main.css": "/portfolio/static/css/main.8a759170.css",
+    "main.js": "/portfolio/static/js/main.e93d60a0.js",
     "static/js/453.c3e04eca.chunk.js": "/portfolio/static/js/453.c3e04eca.chunk.js",
     "static/media/mi_retrato.png": "/portfolio/static/media/mi_retrato.92ebe52567479693acb8.png",
     "static/media/11_derma_about.png": "/portfolio/static/media/11_derma_about.f7d76ff8e38b4ae9fb63.png",
@@ -49,12 +49,12 @@
     "static/media/numania_thumbnail.png": "/portfolio/static/media/numania_thumbnail.683c15a459c92969da5f.png",
     "static/media/subaku_thumbnail.png": "/portfolio/static/media/subaku_thumbnail.cd12e9ebdd8f273c20ff.png",
     "index.html": "/portfolio/index.html",
-    "main.8e81e88c.css.map": "/portfolio/static/css/main.8e81e88c.css.map",
-    "main.430f3830.js.map": "/portfolio/static/js/main.430f3830.js.map",
+    "main.8a759170.css.map": "/portfolio/static/css/main.8a759170.css.map",
+    "main.e93d60a0.js.map": "/portfolio/static/js/main.e93d60a0.js.map",
     "453.c3e04eca.chunk.js.map": "/portfolio/static/js/453.c3e04eca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e81e88c.css",
-    "static/js/main.430f3830.js"
+    "static/css/main.8a759170.css",
+    "static/js/main.e93d60a0.js"
   ]
 }
