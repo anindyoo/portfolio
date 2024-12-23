@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
 import ProjectsTimeline from '../../components/ProjectsComp/ProjectsTimeline';

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect } from 'react';
 import ContactBanner from '../../components/ContactBanner/ContactBanner';
 

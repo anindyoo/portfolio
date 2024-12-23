@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import projectsData from '../../data/project.json';
 import ProjectsTimeline from '../../components/ProjectsComp/ProjectsTimeline';

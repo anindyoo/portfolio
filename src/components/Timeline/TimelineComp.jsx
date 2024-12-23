@@ -1,3 +1,4 @@
+import React from 'react';
 import { Fragment } from 'react';
 import TimelineDesc from './TimelineDesc';
 import TimelineImg from './TimelineImg';

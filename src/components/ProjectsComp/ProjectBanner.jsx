@@ -1,8 +1,11 @@
+import React from 'react';
 import helpers from '../../helpers/helpers';
 
-/* eslint-disable no-nested-ternary */
 const ProjectBanner = (props) => {
   const { project } = props;
+  const imgUrl = project.thumbnail
+    ? new URL(`../../assets/images/project_gallery/${project.thumbnail}`, import.meta.url).href
+    : '';
 
   return (
     <div className="
@@ -144,7 +147,7 @@ const ProjectBanner = (props) => {
       w-full lg:w-[50%] h-[400px] lg:h-[60%]"
       >
         <img
-          src={project.thumbnail && require(`../../assets/images/project_gallery/${project.thumbnail}`)}
+          src={imgUrl}
           alt="alt"
           className="
           TIMELINE-IMAGE

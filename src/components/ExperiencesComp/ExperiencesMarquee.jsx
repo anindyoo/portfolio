@@ -1,3 +1,4 @@
+import React from 'react';
 import gsap from 'gsap';
 import { useEffect, useState } from 'react';
 import { Draggable } from 'gsap/all';
