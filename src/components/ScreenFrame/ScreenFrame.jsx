@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ScreenFrame = () => (
   <div className="
   SCREEN-FRAME-CONTAINER

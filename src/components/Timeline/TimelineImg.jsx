@@ -1,7 +1,11 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const TimelineImg = (props) => {
   const { project } = props;
+  const imgUrl = project.thumbnail
+    ? new URL(`../../assets/images/project_gallery/${project.thumbnail}`, import.meta.url).href
+    : '';
 
   return (
     <Link to={`/projects/${project.id}`}>
@@ -12,8 +16,8 @@ const TimelineImg = (props) => {
       flex items-center justify-center`}
       >
         <img
-          src={project.thumbnail && require(`../../assets/images/project_gallery/${project.thumbnail}`)}
-          alt="alt"
+          src={imgUrl}
+          alt={project.title}
           className="
           TIMELINE-IMAGE
           object-cover

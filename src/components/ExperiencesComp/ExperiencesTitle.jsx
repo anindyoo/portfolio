@@ -1,4 +1,4 @@
-/* eslint-disable react/no-array-index-key */
+import React from 'react';
 const ExperiencesTitle = (props) => {
   const {
     isOdd,

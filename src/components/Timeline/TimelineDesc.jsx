@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import helpers from '../../helpers/helpers';
 
@@ -11,6 +12,9 @@ const TimelineDesc = (props) => {
     buffer,
   } = props;
 
+  const imgUrl = project.thumbnail
+    ? new URL(`../../assets/images/project_gallery/${project.thumbnail}`, import.meta.url).href
+    : '';
   const dateRange = helpers.formatDateRange(project.startDate, project.endDate);
 
   return (
@@ -79,7 +83,7 @@ const TimelineDesc = (props) => {
           ${isOdd ? 'left-6' : 'right-6'}`}
           >
             <img
-              src={project.thumbnail && require(`../../assets/images/project_gallery/${project.thumbnail}`)}
+              src={imgUrl}
               alt="background"
               className={`
               TIMLINE-MOBILE-THUMBNAIL

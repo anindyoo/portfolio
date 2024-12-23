@@ -1,4 +1,4 @@
-/* eslint-disable react/no-array-index-key */
+import React from 'react';
 import StrecthedStrings from '../StretchedString/StretchedString';
 import TimelineComp from '../Timeline/TimelineComp';
 

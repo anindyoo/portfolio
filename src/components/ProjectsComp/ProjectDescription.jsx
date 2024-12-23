@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+import React from 'react';
 const ProjectDescription = (props) => {
   const { project } = props;
 
@@ -16,7 +16,6 @@ const ProjectDescription = (props) => {
       text-5xl"
       >
         {[...'the story'].map((letter, index) => (
-          // eslint-disable-next-line react/no-array-index-key
           <span key={`the-story-${index}`}>{letter}</span>
         ))}
       </div>

@@ -1,5 +1,9 @@
+import React from 'react';
+
 const ProjectGallery = (props) => {
   const { project } = props;
+
+  const getImgUrl = (img) => new URL(`../../assets/images/project_gallery/${img}`, import.meta.url).href;
 
   return (
     <div className="
@@ -16,7 +20,6 @@ const ProjectGallery = (props) => {
       pb-4"
       >
         {[...'gallery'].map((letter, index) => (
-          // eslint-disable-next-line react/no-array-index-key
           <span key={`gallery-${index}`}>{letter}</span>
         ))}
       </div>
@@ -40,7 +43,7 @@ const ProjectGallery = (props) => {
               w-[90%] sm:w-[80%]"
             >
               <img
-                src={require(`../../assets/images/project_gallery/${img.file}`)}
+                src={getImgUrl(img.file)}
                 alt={img.caption}
               />
               <h1 className="text-xl text-sunglowMuted mt-2 mb-1">
@@ -50,9 +53,11 @@ const ProjectGallery = (props) => {
               <p className="pb-4 border-b-[1px] border-sunglowMuted">{img.caption}</p>
             </li>
           ) : (
-            <div className="text-2xl text-sunglowMuted italic">
-              This projects doesn&#39;t have images.
-            </div>
+            <li key="empty-project-images">
+              <div className="text-2xl text-sunglowMuted italic">
+                This project doesn&#39;t have images.
+              </div>
+            </li>
           )))}
         </ul>
       </div>

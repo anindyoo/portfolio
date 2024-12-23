@@ -1,4 +1,4 @@
-/* eslint-disable react/no-array-index-key */
+import React from 'react';
 import { Link } from 'react-router-dom';
 import helpers from '../../helpers/helpers';
 import projectsData from '../../data/project.json';

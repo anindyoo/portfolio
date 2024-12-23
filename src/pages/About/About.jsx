@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import portrait from '../../assets/images/portraits/mi_retrato.png';
 

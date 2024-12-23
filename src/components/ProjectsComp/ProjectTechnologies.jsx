@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ProjectTechnologies = (props) => {
   const { project } = props;
   const isNotEmpty = (arrayObjects) => Object.values(arrayObjects).some((value) => value.length);
@@ -16,7 +18,6 @@ const ProjectTechnologies = (props) => {
       text-4xl sm:text-5xl"
       >
         {[...'the technologies'].map((letter, index) => (
-          // eslint-disable-next-line react/no-array-index-key
           <span key={`the-technologies-${index}`}>{letter}</span>
         ))}
       </div>
